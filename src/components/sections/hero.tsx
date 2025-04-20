@@ -77,8 +77,12 @@ export function Hero() {
                     Appeler maintenant
                   </a>
                 </Button>
-                <Button variant="black" className="flex items-center gap-2">
-                  Demander un devis <RiArrowRightLine className="text-xl" />
+                <Button
+                  variant="black"
+                  className="group flex items-center gap-2"
+                >
+                  Demander un devis
+                  <RiArrowRightLine className="text-xl group-hover:translate-x-1 transition-all duration-300" />
                 </Button>
               </div>
             </div>

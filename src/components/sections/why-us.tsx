@@ -8,6 +8,7 @@ import { PiLightning, PiNotepad } from "react-icons/pi";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { RiArrowRightLine } from "react-icons/ri";
+import { contactInfo } from "@/src/data";
 
 const reasons = [
   {
@@ -32,7 +33,7 @@ const reasons = [
 
 export function WhyUs() {
   return (
-    <section className="py-20 flex items-center gap-10">
+    <section className="pb-20 flex items-center gap-10">
       <div className="w-1/2">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +60,7 @@ export function WhyUs() {
               className=""
             >
               <div className="flex items-start gap-4">
-                <div className="bg-yellow rounded-full p-4 text-black text-2xl">
+                <div className="bg-yellow rounded-full p-3 text-black text-2xl">
                   {reason.icon}
                 </div>
                 <div>
@@ -75,8 +76,13 @@ export function WhyUs() {
             </motion.div>
           ))}
         </div>
-        <Button variant="black" className="flex items-center gap-2 mt-10">
-          Demander un devis <RiArrowRightLine className="text-xl" />
+        <Button className="mt-10">
+          <a
+            href={`tel:${contactInfo.phone}`}
+            className="flex items-center gap-2"
+          >
+            Appeler maintenant
+          </a>
         </Button>
       </div>
       <div className="relative w-1/2 h-[700px] aspect-square overflow-hidden rounded-3xl">

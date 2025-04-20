@@ -6,7 +6,7 @@ import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { RiArrowRightLine } from "react-icons/ri";
-import { PiFire, PiPipe, PiPipeLight, PiSnowflake } from "react-icons/pi";
+import { PiPipe, PiSnowflake } from "react-icons/pi";
 import { VscFlame } from "react-icons/vsc";
 
 const services = [
@@ -60,8 +60,9 @@ export function Services() {
         ))}
       </div>
       <div className="pt-20 flex justify-center">
-        <Button className="flex items-center gap-2">
-          Demander un devis <RiArrowRightLine className="text-xl" />
+        <Button className="group flex items-center gap-2">
+          Demander un devis{" "}
+          <RiArrowRightLine className="text-xl group-hover:translate-x-1 transition-all duration-300" />
         </Button>
       </div>
     </section>
