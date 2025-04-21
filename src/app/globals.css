@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@custom-variant dark (&:is(.dark *));
+
 @theme {
   /* Disable all default colors */
   --color-*: initial;
@@ -13,6 +15,7 @@
   --color-black: #182944;
   --color-dark-gray: #586272;
   --color-light-gray: #eceff3;
+  --color-light-gray-2: #f8f9fc;
   --color-white: #ffffff;
 
   /* Font weights */
@@ -27,4 +30,25 @@
 body {
   font-family: "Outfit", sans-serif;
   color: var(--color-black);
+}
+
+@theme inline {
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
 }
