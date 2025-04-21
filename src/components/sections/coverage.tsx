@@ -2,6 +2,11 @@
 
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
+import { CoverageTabs } from "./coverage-tabs";
+import { Typography } from "../ui/typography";
+import { Badge } from "../ui/badge";
+import { ButtonCall } from "../ui/button-call";
+import Image from "next/image";
 
 const cities = [
   "Montpellier",
@@ -19,7 +24,7 @@ const cities = [
 export function Coverage() {
   return (
     <section id="zone-intervention" className="py-20 bg-muted">
-      <div className="container">
+      <div className="">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,44 +32,59 @@ export function Coverage() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Zone d'intervention</h2>
-          <p className="text-muted-foreground">
-            Nous intervenons sur Montpellier et ses alentours
-          </p>
+          <Badge>Villes Desservies</Badge>
+          <Typography
+            as="h2"
+            variant="4xl"
+            weight="bold"
+            lineHeight="tight"
+            className="mb-4"
+          >
+            Nos zones d’intervention <br /> autour de Montpellier
+          </Typography>
+          <Typography as="p" variant="lg" className="text-dark-gray">
+            Basés à Montpellier, nous intervenons dans toute la métropole et les
+            villes voisines <br /> de l'Hérault pour vos besoins en plomberie,
+            chauffage et climatisation.
+          </Typography>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl font-semibold mb-6">Villes desservies</h3>
-            <ul className="grid grid-cols-2 gap-4">
-              {cities.map((city) => (
-                <li key={city} className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-primary" />
-                  <span>{city}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <CoverageTabs />
 
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-gray-100 rounded-lg h-[400px] flex items-center justify-center"
+            className="relative rounded-3xl w-full aspect-square overflow-hidden"
           >
-            <p className="text-muted-foreground text-center">
-              Carte Google Maps à intégrer
-              <br />
-              <span className="text-sm">(Emplacement réservé)</span>
-            </p>
+            <iframe
+              title="Carte Montpellier"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46221.341758509014!2d3.832970158538289!3d43.61000075252693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af0725dd9db1%3A0xad8756742894e802!2sMontpellier!5e0!3m2!1sfr!2sfr!4v1745274562379!5m2!1sfr!2sfr"
+              width="100%"
+              height="100%"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </motion.div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="mt-12 text-center">
+            <Typography as="p" variant="lg" className="text-dark-gray mb-6">
+              Vous ne voyez pas votre ville ? Consultez la liste complète de nos
+              zones d’intervention dans le pied de page.
+            </Typography>
+
+            <ButtonCall />
+          </div>
+        </motion.div>
       </div>
     </section>
   );

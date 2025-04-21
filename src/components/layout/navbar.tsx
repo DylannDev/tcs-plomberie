@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import { contactInfo, navigationLinks } from "@/src/data";
 import { Topbar } from "./topbar";
 import Logo from "../ui/Logo";
-import { Button } from "../ui/button";
+import { ButtonQuote } from "../ui/button-quote";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +34,7 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button variant="default">Contactez-nous</Button>
+            <ButtonQuote />
             {/* <button
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
