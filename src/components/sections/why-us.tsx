@@ -7,8 +7,8 @@ import { LiaToolsSolid } from "react-icons/lia";
 import { PiLightning, PiNotepad } from "react-icons/pi";
 import Image from "next/image";
 import { Button } from "../ui/button";
-import { RiArrowRightLine } from "react-icons/ri";
 import { contactInfo } from "@/src/data";
+import { ButtonCall } from "../ui/button-call";
 
 const reasons = [
   {
@@ -76,14 +76,9 @@ export function WhyUs() {
             </motion.div>
           ))}
         </div>
-        <Button className="mt-10">
-          <a
-            href={`tel:${contactInfo.phone}`}
-            className="flex items-center gap-2"
-          >
-            Appeler maintenant
-          </a>
-        </Button>
+        <div className="pt-10">
+          <ButtonCall />
+        </div>
       </div>
       <div className="relative w-1/2 h-[700px] aspect-square overflow-hidden rounded-3xl">
         <Image

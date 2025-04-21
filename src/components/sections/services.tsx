@@ -8,6 +8,7 @@ import { Button } from "../ui/button";
 import { RiArrowRightLine } from "react-icons/ri";
 import { PiPipe, PiSnowflake } from "react-icons/pi";
 import { VscFlame } from "react-icons/vsc";
+import { ButtonQuote } from "../ui/button-quote";
 
 const services = [
   {
@@ -60,10 +61,7 @@ export function Services() {
         ))}
       </div>
       <div className="pt-20 flex justify-center">
-        <Button className="group flex items-center gap-2">
-          Demander un devis{" "}
-          <RiArrowRightLine className="text-xl group-hover:translate-x-1 transition-all duration-300" />
-        </Button>
+        <ButtonQuote />
       </div>
     </section>
   );

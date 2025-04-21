@@ -1,11 +1,10 @@
 "use client";
 
-import { Button } from "../ui/button";
 import { motion } from "framer-motion";
 import { Typography } from "../ui/typography";
-import { RiArrowRightLine } from "react-icons/ri";
-import { contactInfo } from "@/src/data";
 import Image from "next/image";
+import { ButtonCall } from "../ui/button-call";
+import { ButtonQuote } from "../ui/button-quote";
 
 export function Hero() {
   return (
@@ -64,26 +63,13 @@ export function Hero() {
                 weight="medium"
                 className="mb-4 text-dark-gray"
               >
-                Besoin d’un dépannage en urgence, installation ou entretien à
+                Besoin d'un dépannage en urgence, installation ou entretien à
                 Montpellier ? <br /> TCS Plomberie intervient 7j/7 pour la
                 plomberie, le chauffage et la climatisation.
               </Typography>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button>
-                  <a
-                    href={`tel:${contactInfo.phone}`}
-                    className="flex items-center gap-2"
-                  >
-                    Appeler maintenant
-                  </a>
-                </Button>
-                <Button
-                  variant="black"
-                  className="group flex items-center gap-2"
-                >
-                  Demander un devis
-                  <RiArrowRightLine className="text-xl group-hover:translate-x-1 transition-all duration-300" />
-                </Button>
+                <ButtonCall />
+                <ButtonQuote color="black" />
               </div>
             </div>
           </div>
