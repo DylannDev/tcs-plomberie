@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "../components/layout/navbar";
 import { Footer } from "../components/layout/footer";
+import faqSchema from "../lib/schema/faqSchema";
 
 export const metadata: Metadata = {
   title:
     "TCS Plomberie | Dépannage plomberie, chauffage et climatisation à Montpellier",
   description:
-    "Plombier-chauffagiste à Montpellier. Intervention rapide 7j/7 pour dépannage plomberie, chauffage et climatisation. Devis gratuit et immédiat.",
+    "Plombier chauffagiste à Montpellier. Intervention rapide 7j/7 pour dépannage plomberie, chauffage et climatisation. Devis gratuit et immédiat.",
   keywords:
     "plombier montpellier, dépannage plomberie, chauffagiste, climatisation, urgence plomberie",
   openGraph: {
@@ -31,10 +32,14 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
       </head>
       <body className="antialiased relative">
         <Navbar />
-        <div className="flex flex-col mx-auto max-w-[1440px] min-h-screen px-4 sm:px-6 lg:px-8 w-full">
+        <div className="flex flex-col min-h-screen w-full">
           <div className="flex-grow">{children}</div>
           <Footer />
         </div>
