@@ -1,67 +1,68 @@
-"use client";
+/* eslint-disable @next/next/no-img-element */
+import React from "react";
+import { Marquee } from "../magicui/marquee";
+import { Button } from "../ui/button";
+import { reviewLink, reviews } from "@/src/data";
+import { ReviewCard } from "./testimonial-card";
+import { Badge } from "../ui/badge";
+import { Typography } from "../ui/typography";
+import { FcGoogle } from "react-icons/fc";
 
-import { motion } from "framer-motion";
-import { Star } from "lucide-react";
+const firstRow = reviews.slice(0, reviews.length / 2);
+const secondRow = reviews.slice(reviews.length / 2);
 
-const testimonials = [
-  {
-    text: "Service impeccable, intervention dans l'heure. Merci !",
-    author: "Claire M.",
-    rating: 5,
-  },
-  {
-    text: "Plombier très pro et sympa. Je recommande.",
-    author: "Jean P.",
-    rating: 5,
-  },
-  {
-    text: "Pose de clim parfaite, travail propre et rapide.",
-    author: "Sarah L.",
-    rating: 5,
-  },
-];
-
-export function Testimonials() {
+const Testimonials = () => {
   return (
-    <section id="temoignages" className="py-20">
-      <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-3xl font-bold mb-4">Témoignages clients</h2>
-          <p className="text-muted-foreground">
-            Ce que nos clients disent de nos services
-          </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={testimonial.author}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-card rounded-lg p-6 shadow-sm"
-            >
-              <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-5 h-5 text-yellow-400 fill-yellow-400"
-                  />
-                ))}
-              </div>
-              <p className="text-muted-foreground mb-4">{testimonial.text}</p>
-              <p className="font-semibold">{testimonial.author}</p>
-            </motion.div>
-          ))}
+    <section className="relative py-20" id="testimonials">
+      <div className="">
+        <div className="flex justify-between items-end mb-6 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div>
+            <Badge>Avis Clients</Badge>
+            <Typography as="h2" variant="4xl" weight="bold">
+              Ce que nos clients <br /> pensent de nos services
+            </Typography>
+          </div>
+          <div className="w-fit">
+            <Button>
+              <a
+                className="flex items-center gap-1"
+                href={reviewLink}
+                target="_blank"
+              >
+                Laisser un avis
+                <div className="p-2 bg-white rounded-full ml-2">
+                  <FcGoogle className="text-xl" />
+                </div>
+              </a>
+            </Button>
+          </div>
+        </div>
+        <div className="">
+          <div className="relative hidden sm:flex w-full flex-col items-center justify-center overflow-hidden">
+            <Marquee pauseOnHover className="[--duration:200s]">
+              {firstRow.map((review) => (
+                <ReviewCard key={review.name} {...review} />
+              ))}
+            </Marquee>
+            <Marquee reverse pauseOnHover className="[--duration:200s]">
+              {secondRow.map((review) => (
+                <ReviewCard key={review.name} {...review} />
+              ))}
+            </Marquee>
+          </div>
+        </div>
+        <div className="relative flex sm:hidden h-[600px] w-full flex-col items-center justify-center overflow-hidden">
+          <Marquee vertical pauseOnHover className="[--duration:400s]">
+            {reviews.map((review) => (
+              <ReviewCard key={review.name} {...review} />
+            ))}
+          </Marquee>
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/5 bg-gradient-to-t from-white to-white/0"></div>
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-1/5 bg-gradient-to-b from-white to-white/0"></div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Testimonials;
