@@ -1,25 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin } from "lucide-react";
 import { CoverageTabs } from "./coverage-tabs";
 import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
 import { ButtonCall } from "../ui/button-call";
-import Image from "next/image";
-
-const cities = [
-  "Montpellier",
-  "Lattes",
-  "Castelnau-le-Lez",
-  "Mauguio",
-  "Juvignac",
-  "Grabels",
-  "Saint-Jean-de-Védas",
-  "Pérols",
-  "Villeneuve-lès-Maguelone",
-  "Saint-Gély-du-Fesc",
-];
 
 export function Coverage() {
   return (
