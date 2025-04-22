@@ -1,10 +1,16 @@
+import {
+  RiFacebookCircleFill,
+  RiInstagramFill,
+  RiWhatsappFill,
+} from "react-icons/ri";
+
 // Navigation links data
 export const navigationLinks = [
   { href: "/plomberie", label: "Plomberie" },
   { href: "/climatisation", label: "Climatisation" },
   { href: "/chauffage", label: "Chauffage" },
-  { href: "/tarifs", label: "Tarifs" },
-  { href: "/realisations", label: "Réalisations" },
+  { href: "/blog", label: "Blog" },
+  { href: "/contact", label: "Contact" },
 ];
 
 // Contact information
@@ -13,6 +19,24 @@ export const contactInfo = {
   displayPhone: "06 99 09 69 25",
   email: "contact@tcsplomberie.fr",
 };
+
+export const socialLinks = [
+  {
+    platform: "Whatsapp",
+    href: "https://wa.me/699096925",
+    icon: <RiWhatsappFill />,
+  },
+  {
+    platform: "Instagram",
+    href: "https://instagram.com/tcsplomberie",
+    icon: <RiInstagramFill />,
+  },
+  {
+    platform: "Facebook",
+    href: "https://www.facebook.com/tcsplomberie",
+    icon: <RiFacebookCircleFill />,
+  },
+];
 
 // Add Review link
 export const reviewLink =
@@ -196,7 +220,7 @@ export const faqData = [
     id: "item-2",
     question: "Intervenez-vous en dehors de Montpellier ?",
     answer:
-      "Oui, nous nous déplaçons dans toute la métropole de Montpellier, notamment à : Castelnau-le-Lez, Lattes, Pérols, Mauguio, Clapiers, Jacou, Grabels, Juvignac, Le Crès, Saint-Jean-de-Védas, Saint-Gély-du-Fesc, Teyran, Prades-le-Lez, Fabrègues, Castries et Sète. N'hésitez pas à nous contacter pour vérifier si nous couvrons votre commune.",
+      "Oui, nous nous déplaçons dans toute la métropole de Montpellier, notamment à : Castelnau-le-Lez, Lattes, Pérols, Mauguio, Clapiers, Jacou, Grabels, Juvignac, Le Crès, Saint-Jean-de-Védas, Saint-Gély-du-Fesc, Teyran, Prades-le-Lez, Fabrègues, Castries, Sète, etc. N'hésitez pas à nous contacter pour vérifier si nous couvrons votre commune.",
   },
   {
     id: "item-3",
@@ -243,12 +267,12 @@ export const cities = [
   "Juvignac",
   "Le Crès",
   "Prades-le-Lez",
-  "Saint-Gély-du-Fesc",
-  "Saint-Jean-de-Védas",
-  "Villeneuve-lès-Maguelone",
   "Teyran",
   "Castries",
   "Sète",
+  "Saint-Gély-du-Fesc",
+  "Saint-Jean-de-Védas",
+  "Villeneuve-lès-Maguelone",
   "La Grande-Motte",
   "Grau-du-Roi",
   "Aigues-Mortes",
