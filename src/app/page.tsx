@@ -5,6 +5,8 @@ import Testimonials from "../components/sections/testimonials";
 import { Coverage } from "../components/sections/coverage";
 import { Section } from "../components/ui/section";
 import Faq from "../components/sections/faq";
+import { PreFooter } from "../components/sections/pre-footer";
+import { Footer } from "../components/layout/footer";
 
 export default function Home() {
   return (
@@ -17,9 +19,12 @@ export default function Home() {
         <WhyUs />
       </Section>
       <Testimonials />
+
+      <Faq />
+
       <Section>
-        <Faq />
         <Coverage />
+        <PreFooter />
       </Section>
     </main>
   );
