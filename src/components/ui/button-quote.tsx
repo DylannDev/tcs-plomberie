@@ -3,7 +3,7 @@ import { RiArrowRightLine } from "react-icons/ri";
 import { cn } from "@/src/lib/utils";
 
 interface ButtonQuoteProps {
-  color?: "default" | "black";
+  color?: "default" | "black" | "outline";
 }
 
 export function ButtonQuote({ color = "default" }: ButtonQuoteProps) {

@@ -11,6 +11,8 @@ const buttonVariants = cva(
       variant: {
         default: "bg-yellow text-black hover:translate-y-[-2px]",
         black: "bg-black text-white hover:translate-y-[-2px]",
+        outline:
+          "bg-transparent text-black border border-black hover:translate-y-[-2px]",
       },
       size: {
         default: "px-6 py-[18px]",
