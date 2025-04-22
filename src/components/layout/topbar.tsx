@@ -1,5 +1,6 @@
 import { contactInfo } from "@/src/data";
 import { TbMail, TbPhone } from "react-icons/tb";
+import { IconLink } from "../ui/icon-link";
 
 export function Topbar() {
   return (
@@ -7,24 +8,20 @@ export function Topbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between text-base text-white font-semibold">
         <p className="whitespace-nowrap">Intervention rapide 7j/7 24h/24</p>
         <div className="container flex justify-end gap-6 items-center max-w-7xl transition-all duration-150 ease-in-out">
-          <a
+          <IconLink
             href={`mailto:${contactInfo.email}`}
-            className="flex items-center gap-2 hover:text-light-blue"
+            icon={<TbMail className="text-lg text-white" />}
+            className="hover:text-light-blue"
           >
-            <span className="p-2 rounded-full bg-yellow">
-              <TbMail className="text-lg text-white" />
-            </span>
             {contactInfo.email}
-          </a>
-          <a
+          </IconLink>
+          <IconLink
             href={`tel:${contactInfo.phone}`}
-            className="flex items-center gap-2 hover:text-light-blue"
+            icon={<TbPhone className="text-lg text-white" />}
+            className="hover:text-light-blue"
           >
-            <span className="p-2 rounded-full bg-yellow">
-              <TbPhone className="text-lg text-white" />
-            </span>
             {contactInfo.displayPhone}
-          </a>
+          </IconLink>
         </div>
       </div>
     </div>
