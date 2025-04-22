@@ -18,7 +18,7 @@ export function Navbar() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-8">
           <div className="flex items-center gap-2">
-            <Logo size="220" />
+            <Logo size={220} />
           </div>
 
           <nav className="hidden md:flex items-center gap-6 text-xl font-semibold">

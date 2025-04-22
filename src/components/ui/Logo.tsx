@@ -2,34 +2,27 @@ import Image from "next/image";
 import Link from "next/link";
 
 type LogoProps = {
-  color?: "white" | "black" | "rose"; // Couleurs supportées
-  size?: string; // Taille personnalisée en pixels
+  color?: "white" | "blue"; // Couleurs supportées
+  size: number; // Taille personnalisée en pixels
 };
 
-const Logo = ({ color = "black", size }: LogoProps) => {
-  // let logoSrc = "/logo.svg";
-  // switch (color) {
-  //   case "white":
-  //     logoSrc = "/logo_white.svg";
-  //     break;
-  //   case "rose":
-  //     logoSrc = "/logo_rose.svg";
-  //     break;
-  //   default:
-  //     logoSrc = "/logo.svg";
-  // }
+const Logo = ({ color = "blue", size }: LogoProps) => {
+  let logoSrc = "/logo.svg";
+  switch (color) {
+    case "white":
+      logoSrc = "/logo-white.svg";
+      break;
+    default:
+      logoSrc = "/logo.svg";
+  }
 
   return (
     <Link href={"/"}>
-      <div
-        className={`relative ${
-          size ? `w-[${size}px]` : "w-[150px] sm:w-[200px]"
-        }`}
-      >
+      <div className={`relative w-full`}>
         <Image
-          src={"/logo.svg"}
+          src={logoSrc}
           alt={`Logo TCS Plomberie`}
-          width={220}
+          width={size}
           height={40}
           className="object-cover"
         />
