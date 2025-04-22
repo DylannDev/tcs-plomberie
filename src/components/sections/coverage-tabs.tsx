@@ -2,15 +2,11 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/src/lib/utils";
+import { cn, formatCityUrl } from "@/src/lib/utils";
 import { cities, services } from "@/src/data";
 
 export function CoverageTabs() {
   const [activeTab, setActiveTab] = useState(services[0].id);
-
-  const formatCityUrl = (city: string) => {
-    return city.toLowerCase().replace(/\s+/g, "-");
-  };
 
   return (
     <motion.div
