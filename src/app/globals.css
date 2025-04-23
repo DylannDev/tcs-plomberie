@@ -32,6 +32,16 @@ body {
   color: var(--color-black);
 }
 
+.rich-text {
+  p {
+    margin-bottom: 0.75rem;
+  }
+  ul {
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+  }
+}
+
 @theme inline {
   --animate-marquee: marquee var(--duration) infinite linear;
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
