@@ -3,6 +3,8 @@ import "./globals.css";
 import { Navbar } from "../components/layout/navbar";
 import { Footer } from "../components/layout/footer";
 import faqSchema from "../lib/schema/faqSchema";
+import { Section } from "../components/ui/section";
+import { PreFooter } from "../components/sections/pre-footer";
 
 export const metadata: Metadata = {
   title:
@@ -41,6 +43,9 @@ export default function RootLayout({
         <Navbar />
         <div className="flex flex-col min-h-screen w-full">
           <div className="flex-grow">{children}</div>
+          <Section size="large">
+            <PreFooter />
+          </Section>
           <Footer />
         </div>
       </body>
