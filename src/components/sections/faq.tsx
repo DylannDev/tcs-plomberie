@@ -12,7 +12,7 @@ import Image from "next/image";
 const Faq = () => {
   return (
     <section className="relative">
-      <div className="absolute top-0 left-0 w-full aspect-video -z-10 overflow-hidden">
+      <div className="absolute top-0 md:-top-0 lg:-top-10 xl:top-[40%] left-0 w-full aspect-video -z-10 overflow-hidden">
         <Image
           src="/shape-2.svg"
           alt="Plombier Montpellier TCS Plomberie"
