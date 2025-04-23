@@ -2,7 +2,10 @@
 
 import { ButtonCall } from "../ui/button-call";
 import { ButtonQuote } from "../ui/button-quote";
+import { FlipWords } from "../ui/flip-words";
 import { Typography } from "../ui/typography";
+
+const words = ["Plombier", "Chauffagiste", "Climatiseur"];
 
 export function PreFooter() {
   return (
@@ -15,10 +18,15 @@ export function PreFooter() {
             weight="bold"
             className="text-black"
           >
-            Besoin d'un expert ?
+            Besoin d'un <FlipWords words={words} />?
+            <span className="sr-only">
+              Plomberie, Plombier, Chauffagiste, Climaticien, Climatiseur
+            </span>
           </Typography>
           <Typography as="p" variant="xl" className="text-black mt-2">
-            Nous intervenons rapidement sur Montpellier et ses alentours
+            Contactez-nous au{" "}
+            <span className="font-semibold">+33 6 99 09 69 25</span> ou demandez
+            votre devis dès maintenant.
           </Typography>
         </div>
 
