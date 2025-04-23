@@ -14,7 +14,7 @@ export function Section({
   return (
     <div
       className={cn(
-        "mx-auto px-4 sm:px-6 lg:px-8",
+        "mx-auto px-4 sm:px-6 lg:px-8 w-full",
         size === "default" ? "max-w-7xl" : "max-w-[1440px]",
         className
       )}
