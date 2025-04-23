@@ -290,3 +290,78 @@ export const cities = [
   "Lansargues",
   "Valergues",
 ];
+
+export const sectionsPlomberie = [
+  {
+    title: (city: string) => `Dépannage plomberie en urgence à ${city}`,
+    content: (city: string) => `
+      <p>Une fuite d’eau ? Une canalisation bouchée en plein week-end ? <strong>TCS Plomberie</strong> intervient <strong>en urgence 7j/7 à ${city}</strong> pour tous vos problèmes de plomberie.</p>
+      <p>Nous traitons rapidement :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Les fuites d’eau, visibles ou encastrées</li>
+        <li>Les toilettes bouchées ou qui débordent</li>
+        <li>Les chasses d’eau défectueuses</li>
+        <li>Les canalisations obstruées</li>
+      </ul>
+      <p>Grâce à nos équipements professionnels, nous réalisons des <strong>inspections par caméra</strong> pour localiser précisément les anomalies. Notre priorité : résoudre le problème dès la première visite, sans mauvaise surprise.</p>
+    `,
+    image: "/plombier-1.jpg",
+  },
+  {
+    title: (city: string) =>
+      `Installation de sanitaires et robinetterie à ${city}`,
+    content: (city: string) => `
+      <p>Vous rénovez une salle de bain ou une cuisine à ${city} ? Nous installons tous vos équipements sanitaires avec soin :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Lavabos, éviers, robinetterie design</li>
+        <li>Colonnes de douche, baignoires et WC suspendus</li>
+        <li>Systèmes de filtration ou traitement d’eau</li>
+      </ul>
+      <p>Nous assurons aussi les <strong>raccordements</strong>, les <strong>réseaux d’évacuation</strong>, et vous conseillons sur des <strong>solutions éco-responsables</strong> comme les systèmes de récupération d’eau de pluie.</p>
+    `,
+    image: "/plombier-2.jpg",
+  },
+  {
+    title: (city: string) =>
+      `Entretien et remplacement de chauffe-eau à ${city}`,
+    content: (city: string) => `
+      <p>Un ballon d’eau chaude qui faiblit ? Une panne soudaine ? À ${city}, nous intervenons rapidement pour :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>L’entretien de chauffe-eau (gaz, électrique, thermodynamique)</li>
+        <li>Le détartrage et la vérification des raccords</li>
+        <li>Le remplacement complet de l’appareil</li>
+      </ul>
+      <p>Un <strong>entretien régulier</strong> permet de faire des <strong>économies d’énergie</strong> et d’éviter les pannes coûteuses. Nous vous guidons aussi sur le modèle le plus adapté à votre logement.</p>
+    `,
+    image: "/plombier-3.jpg",
+  },
+  {
+    title: (city: string) =>
+      `Travaux de plomberie sur mesure et rénovation à ${city}`,
+    content: (city: string) => `
+      <p>Vous rénovez un bien ou réalisez une extension à ${city} ? Nous créons ou modernisons tout votre réseau de plomberie :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Pose de nouveaux tuyaux et remplacement des anciens</li>
+        <li>Création de circuits d’alimentation ou d’évacuation</li>
+        <li>Installation de pompes de relevage ou systèmes d’épuration</li>
+        <li>Gestion des eaux usées et drainage extérieur</li>
+      </ul>
+      <p>Chaque chantier est mené avec rigueur et respect des normes. <strong>Nous vous accompagnons de A à Z</strong> pour une installation fiable, pérenne et discrète.</p>
+    `,
+    image: "/plombier-4.jpg",
+  },
+  {
+    title: (city: string) => `Pourquoi faire appel à TCS Plomberie à ${city} ?`,
+    content: (city: string) => `
+      <p>Faire appel à <strong>TCS Plomberie</strong>, c’est choisir un artisan local fiable à ${city}, reconnu pour son professionnalisme et sa disponibilité.</p>
+      <p>Nous nous engageons sur :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>La réactivité</strong> – intervention possible dans la journée</li>
+        <li><strong>La transparence</strong> – devis clair, pas de frais cachés</li>
+        <li><strong>La qualité</strong> – matériel pro, finitions propres, délais respectés</li>
+      </ul>
+      <p>Nos clients à ${city} nous recommandent pour notre sérieux, notre ponctualité et notre accompagnement de bout en bout.</p>
+    `,
+    image: "/plombier-5.jpg",
+  },
+];
