@@ -16,7 +16,7 @@ interface ServiceCardProps {
 
 export function ServiceCard({ service, index }: ServiceCardProps) {
   return (
-    <Link href={`/${service.title}`}>
+    <Link href={`/${service.title}/montpellier`}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
             src={service.imgCard}
             alt={service.title}
             fill
-            className="object-cover transition-transform duration-300 group-hover:scale-110"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
 

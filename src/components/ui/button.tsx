@@ -11,12 +11,16 @@ const buttonVariants = cva(
       variant: {
         default: "bg-yellow text-black hover:translate-y-[-2px]",
         black: "bg-black text-white hover:translate-y-[-2px]",
+        black_blog: "bg-black text-white border border-black",
+        sky_blue: "bg-sky-blue text-white hover:bg-yellow",
         outline:
           "bg-transparent text-black border border-black hover:translate-y-[-2px]",
+        outline_blog:
+          "bg-light-blue text-black border border-black hover:bg-yellow hover:border-transparent transition-all duration-500 ease-in-out",
       },
       size: {
         default: "px-6 py-[18px]",
-        // sm: "h-8 rounded-md px-3 text-xs",
+        sm: "px-4 py-3 text-base",
         // lg: "h-10 rounded-md px-8",
         icon: "h-9 w-9",
       },

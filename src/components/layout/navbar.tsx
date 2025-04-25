@@ -16,7 +16,7 @@ export function Navbar() {
       <Topbar />
 
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-8">
+        <div className="flex items-center justify-between py-6">
           <div className="flex items-center gap-2">
             <Logo size={220} />
           </div>

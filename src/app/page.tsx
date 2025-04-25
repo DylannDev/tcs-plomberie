@@ -4,7 +4,8 @@ import { WhyUs } from "../components/sections/why-us";
 import Testimonials from "../components/sections/testimonials";
 import { Coverage } from "../components/sections/coverage";
 import { Section } from "../components/ui/section";
-import Faq from "../components/sections/faq";
+import { Faq } from "../components/sections/faq";
+import { faqHomepage } from "../data";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       </Section>
       <Testimonials />
 
-      <Faq />
+      <Faq data={faqHomepage} />
 
       <Section>
         <Coverage />

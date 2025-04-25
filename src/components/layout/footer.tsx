@@ -7,6 +7,7 @@ import { Typography } from "../ui/typography";
 import { PiEnvelope } from "react-icons/pi";
 import { TbMail, TbPhone } from "react-icons/tb";
 import Image from "next/image";
+import { Section } from "../ui/section";
 
 export function Footer() {
   return (
@@ -33,122 +34,124 @@ export function Footer() {
           priority
         />
       </div>
-      <div className="relative z-10 pt-10 flex flex-col gap-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Colonne 1 - Branding & Contact */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
-          <div className="flex flex-col gap-4 w-full">
-            <Logo size={300} color="white" />
-            <Typography as="p" className="text-lg">
-              Intervention rapide 7j/7 24h/24
-            </Typography>
-          </div>
-
-          <div className="flex flex-col justify-center items-center w-full">
-            <div className="flex flex-col">
-              <Typography
-                as="h3"
-                className="text-xl text-yellow font-bold mb-8 uppercase"
-              >
-                Menu
+      <Section size="large">
+        <div className="relative z-10 px-12 pt-10 flex flex-col gap-8 w-full">
+          {/* Colonne 1 - Branding & Contact */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+            <div className="flex flex-col gap-4 w-full">
+              <Logo size={300} color="white" />
+              <Typography as="p" className="text-lg">
+                Intervention rapide 7j/7 24h/24
               </Typography>
-              <div className="space-y-2">
-                {navigationLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block text-xl hover:text-yellow transition-colors duration-150"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+            </div>
+
+            <div className="flex flex-col justify-center items-center w-full">
+              <div className="flex flex-col">
+                <Typography
+                  as="h3"
+                  className="text-xl text-yellow font-bold mb-8 uppercase"
+                >
+                  Menu
+                </Typography>
+                <div className="space-y-2">
+                  {navigationLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="block text-xl hover:text-yellow transition-colors duration-150"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex flex-col w-full items-center">
-            <div className="flex flex-col gap-8">
-              <Typography
-                as="h3"
-                className="text-xl text-yellow font-bold uppercase"
-              >
-                Contact
-              </Typography>
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-1">
-                  <IconLink
-                    href={`mailto:${contactInfo.email}`}
-                    className="hover:text-yellow transition-colors duration-150 text-xl"
-                    icon={<TbMail />}
-                    iconClassName="text-yellow text-2xl"
-                  >
-                    {contactInfo.email}
-                  </IconLink>
-                </div>
-                <div className="flex flex-col gap-1">
-                  <div className="flex items-center gap-2">
+            <div className="flex flex-col w-full items-center">
+              <div className="flex flex-col gap-8">
+                <Typography
+                  as="h3"
+                  className="text-xl text-yellow font-bold uppercase"
+                >
+                  Contact
+                </Typography>
+                <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-1">
                     <IconLink
-                      href={`tel:${contactInfo.phone}`}
+                      href={`mailto:${contactInfo.email}`}
                       className="hover:text-yellow transition-colors duration-150 text-xl"
-                      icon={<TbPhone />}
+                      icon={<TbMail />}
                       iconClassName="text-yellow text-2xl"
                     >
-                      {contactInfo.displayPhone}
+                      {contactInfo.email}
                     </IconLink>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <div className="flex items-center gap-2">
+                      <IconLink
+                        href={`tel:${contactInfo.phone}`}
+                        className="hover:text-yellow transition-colors duration-150 text-xl"
+                        icon={<TbPhone />}
+                        iconClassName="text-yellow text-2xl"
+                      >
+                        {contactInfo.displayPhone}
+                      </IconLink>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex flex-col w-full items-end">
-            <div className="flex flex-col gap-8">
-              <Typography
-                as="h3"
-                className="text-xl text-yellow font-bold whitespace-nowrap uppercase"
-              >
-                Suivez-nous
-              </Typography>
-              <div className="flex gap-2">
-                {socialLinks.map((link) => (
-                  <IconLink
-                    key={link.href}
-                    href={link.href}
-                    icon={link.icon}
-                    className="p-1"
-                    iconClassName="text-white hover:text-yellow text-4xl transition-all duration-300"
-                  />
-                ))}
+            <div className="flex flex-col w-full items-end">
+              <div className="flex flex-col gap-8">
+                <Typography
+                  as="h3"
+                  className="text-xl text-yellow font-bold whitespace-nowrap uppercase"
+                >
+                  Suivez-nous
+                </Typography>
+                <div className="flex gap-2">
+                  {socialLinks.map((link) => (
+                    <IconLink
+                      key={link.href}
+                      href={link.href}
+                      icon={link.icon}
+                      className="p-1"
+                      iconClassName="text-white hover:text-yellow text-4xl transition-all duration-300"
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <hr className="border-white my-8" />
+          <hr className="border-white my-8" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {/* Colonnes 3-5 - SEO Local */}
-          <SeoColumn service="plomberie" />
-          <SeoColumn service="chauffage" />
-          <SeoColumn service="climatisation" />
-        </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {/* Colonnes 3-5 - SEO Local */}
+            <SeoColumn service="plomberie" />
+            <SeoColumn service="chauffage" />
+            <SeoColumn service="climatisation" />
+          </div>
 
-        <div className="flex justify-between mt-12 pt-8 border-t text-lg">
-          <p>
-            © {new Date().getFullYear()} TCS Plomberie. Tous droits réservés.
-          </p>
-          <p>
-            Développé par{" "}
-            <a
-              href="https://vizionweb.fr/"
-              target="blank"
-              className="underline underline-offset-8 text-yellow hover:text-white transition-colors duration-150"
-            >
-              Vizion Web
-            </a>{" "}
-            💫
-          </p>
+          <div className="flex justify-between mt-12 pt-8 border-t text-lg">
+            <p>
+              © {new Date().getFullYear()} TCS Plomberie. Tous droits réservés.
+            </p>
+            <p>
+              Développé par{" "}
+              <a
+                href="https://vizionweb.fr/"
+                target="blank"
+                className="underline underline-offset-8 text-yellow hover:text-white transition-colors duration-150"
+              >
+                Vizion Web
+              </a>{" "}
+              💫
+            </p>
+          </div>
         </div>
-      </div>
+      </Section>
     </footer>
   );
 }
