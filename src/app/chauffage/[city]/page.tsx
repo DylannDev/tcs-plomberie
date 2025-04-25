@@ -1,6 +1,7 @@
 import { getDisplayCityFromSlug } from "@/src/lib/utils";
 import type { Metadata } from "next";
-import PlomberieSeoPage from "@/src/components/pages/PlomberieSeoPage";
+import ChauffageSeoPage from "@/src/components/pages/ChauffageSeoPage";
+
 interface CityPageProps {
   params: {
     city: string;
@@ -13,10 +14,10 @@ export async function generateMetadata({
   const { city } = await params;
   const capitalizedCity = getDisplayCityFromSlug(city);
 
-  const title = `Plombier à ${capitalizedCity} - Dépannage plomberie 7j/7 | TCS Plomberie`;
-  const description = `Besoin d'un plombier à ${capitalizedCity} ? Intervention rapide, devis gratuit. TCS Plomberie intervient 7j/7 pour tous vos besoins en plomberie, chauffage et climatisation.`;
-  const url = `https://tcs-plomberie-montpellier.fr/plombier/${city}`;
-  const image = `https://tcs-plomberie-montpellier.fr/plombier-2.jpg`;
+  const title = `Chauffage à ${capitalizedCity} - Installation et dépannage chauffage | TCS Plomberie`;
+  const description = `Besoin d'un chauffagiste à ${capitalizedCity} ? Intervention rapide, devis gratuit. TCS Plomberie intervient 7j/7 pour tous vos besoins en chauffage, installation et entretien.`;
+  const url = `https://tcs-plomberie-montpellier.fr/chauffage/${city}`;
+  const image = `https://tcs-plomberie-montpellier.fr/chauffage-1.jpg`;
 
   return {
     title,
@@ -40,7 +41,7 @@ export async function generateMetadata({
           url: image,
           width: 1512,
           height: 1006,
-          alt: `Plombier à ${capitalizedCity} - TCS Plomberie`,
+          alt: `Chauffage à ${capitalizedCity} - TCS Plomberie`,
         },
       ],
     },
@@ -53,8 +54,8 @@ export async function generateMetadata({
   };
 }
 
-export default async function PlomberieParVillePage({ params }: CityPageProps) {
+export default async function PageWrapper({ params }: CityPageProps) {
   const { city } = await params;
 
-  return <PlomberieSeoPage city={city} />;
+  return <ChauffageSeoPage city={city} />;
 }
