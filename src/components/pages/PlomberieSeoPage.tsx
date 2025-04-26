@@ -9,11 +9,7 @@ import { Faq } from "@/src/components/sections/faq";
 import { Coverage } from "@/src/components/sections/coverage";
 import { motion } from "framer-motion";
 
-interface CityPageProps {
-  city: string;
-}
-
-export default function PlomberieSeoPage({ city }: CityPageProps) {
+export default function PlomberieSeoPage({ city }: SeoPageProps) {
   const capitalizedCity = getDisplayCityFromSlug(city);
 
   return (

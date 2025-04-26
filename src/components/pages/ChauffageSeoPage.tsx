@@ -9,11 +9,7 @@ import { Coverage } from "@/src/components/sections/coverage";
 import { VscFlame } from "react-icons/vsc";
 import { motion } from "framer-motion";
 
-interface CityPageProps {
-  city: string;
-}
-
-export default function ChauffageSeoPage({ city }: CityPageProps) {
+export default function ChauffageSeoPage({ city }: SeoPageProps) {
   const capitalizedCity = getDisplayCityFromSlug(city);
 
   return (
