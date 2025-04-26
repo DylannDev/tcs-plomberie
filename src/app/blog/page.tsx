@@ -6,67 +6,59 @@ import { Button } from "@/src/components/ui/button";
 import { AnimatePresence } from "framer-motion";
 import { BlogCard } from "@/src/components/ui/blog-card";
 import Image from "next/image";
-
-// Types
-interface BlogPost {
-  title: string;
-  description: string;
-  category: "plomberie" | "chauffage" | "climatisation";
-  image: string;
-  slug: string;
-}
+import { blogPosts } from "@/src/data/blogPosts";
 
 // Data
-const blogPosts: BlogPost[] = [
-  {
-    title: "Pourquoi entretenir sa chaudière chaque année ?",
-    description:
-      "Découvrez pourquoi l'entretien annuel est obligatoire et comment il vous protège à long terme.",
-    category: "chauffage",
-    image: "/plombier-1.jpg",
-    slug: "pourquoi-entretenir-sa-chaudiere",
-  },
-  {
-    title: "Comment choisir sa climatisation réversible ?",
-    description:
-      "Guide complet pour sélectionner le système de climatisation adapté à votre logement.",
-    category: "climatisation",
-    image: "/plombier-2.jpg",
-    slug: "choisir-climatisation-reversible",
-  },
-  {
-    title: "Les signes d'une fuite d'eau cachée",
-    description:
-      "Apprenez à détecter les fuites d'eau invisibles et comment les réparer efficacement.",
-    category: "plomberie",
-    image: "/plombier-3.jpg",
-    slug: "signes-fuite-eau-cachee",
-  },
-  {
-    title: "Optimiser sa consommation d'eau chaude",
-    description:
-      "Conseils pratiques pour réduire votre facture d'eau chaude sans sacrifier le confort.",
-    category: "plomberie",
-    image: "/plombier-4.jpg",
-    slug: "optimiser-consommation-eau-chaude",
-  },
-  {
-    title: "Les avantages de la pompe à chaleur",
-    description:
-      "Découvrez pourquoi la pompe à chaleur est une solution écologique et économique.",
-    category: "chauffage",
-    image: "/plombier-5.jpg",
-    slug: "avantages-pompe-chaleur",
-  },
-  {
-    title: "Nettoyer sa climatisation soi-même",
-    description:
-      "Guide étape par étape pour l'entretien de votre climatisation entre les visites du professionnel.",
-    category: "climatisation",
-    image: "/plombier-6.jpg",
-    slug: "nettoyer-climatisation-soi-meme",
-  },
-];
+// const blogPosts: BlogPost[] = [
+//   {
+//     title: "Pourquoi entretenir sa chaudière chaque année ?",
+//     description:
+//       "Découvrez pourquoi l'entretien annuel est obligatoire et comment il vous protège à long terme.",
+//     category: "chauffage",
+//     image: "/plombier-1.jpg",
+//     slug: "pourquoi-entretenir-sa-chaudiere",
+//   },
+//   {
+//     title: "Comment choisir sa climatisation réversible ?",
+//     description:
+//       "Guide complet pour sélectionner le système de climatisation adapté à votre logement.",
+//     category: "climatisation",
+//     image: "/plombier-2.jpg",
+//     slug: "choisir-climatisation-reversible",
+//   },
+//   {
+//     title: "Les signes d'une fuite d'eau cachée",
+//     description:
+//       "Apprenez à détecter les fuites d'eau invisibles et comment les réparer efficacement.",
+//     category: "plomberie",
+//     image: "/plombier-3.jpg",
+//     slug: "signes-fuite-eau-cachee",
+//   },
+//   {
+//     title: "Optimiser sa consommation d'eau chaude",
+//     description:
+//       "Conseils pratiques pour réduire votre facture d'eau chaude sans sacrifier le confort.",
+//     category: "plomberie",
+//     image: "/plombier-4.jpg",
+//     slug: "optimiser-consommation-eau-chaude",
+//   },
+//   {
+//     title: "Les avantages de la pompe à chaleur",
+//     description:
+//       "Découvrez pourquoi la pompe à chaleur est une solution écologique et économique.",
+//     category: "chauffage",
+//     image: "/plombier-5.jpg",
+//     slug: "avantages-pompe-chaleur",
+//   },
+//   {
+//     title: "Nettoyer sa climatisation soi-même",
+//     description:
+//       "Guide étape par étape pour l'entretien de votre climatisation entre les visites du professionnel.",
+//     category: "climatisation",
+//     image: "/plombier-6.jpg",
+//     slug: "nettoyer-climatisation-soi-meme",
+//   },
+// ];
 
 // Filter categories
 const categories = [
