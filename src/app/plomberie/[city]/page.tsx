@@ -1,11 +1,6 @@
 import { getDisplayCityFromSlug } from "@/src/lib/utils";
 import type { Metadata } from "next";
 import PlomberieSeoPage from "@/src/components/pages/PlomberieSeoPage";
-interface CityPageProps {
-  params: {
-    city: string;
-  };
-}
 
 export async function generateMetadata({
   params,

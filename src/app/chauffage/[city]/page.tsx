@@ -2,12 +2,6 @@ import { getDisplayCityFromSlug } from "@/src/lib/utils";
 import type { Metadata } from "next";
 import ChauffageSeoPage from "@/src/components/pages/ChauffageSeoPage";
 
-interface CityPageProps {
-  params: {
-    city: string;
-  };
-}
-
 export async function generateMetadata({
   params,
 }: CityPageProps): Promise<Metadata> {
