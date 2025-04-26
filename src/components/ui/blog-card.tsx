@@ -34,13 +34,13 @@ export function BlogCard({ post }: BlogCardProps) {
             className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
-        <div className="px-8 py-10">
+        <div className="flex flex-col gap-2 px-8 py-10">
           <Badge className="mb-3 capitalize text-sm">{post.category}</Badge>
           <Typography
             as="h2"
             variant="2xl"
             weight="bold"
-            className="text-black mb-2 group-hover:text-yellow transition-colors duration-300"
+            className="text-black mb-2 group-hover:text-yellow transition-colors duration-300 line-clamp-3"
           >
             {post.title}
           </Typography>
