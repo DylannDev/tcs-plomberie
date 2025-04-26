@@ -33,13 +33,25 @@ body {
 }
 
 .rich-text {
+  h2 {
+    @apply text-5xl font-bold text-black my-8;
+  }
+  h3 {
+    @apply text-3xl font-bold text-black mb-4 mt-8;
+  }
+  h4 {
+    @apply text-2xl font-bold text-black mb-2 mt-6;
+  }
   p {
     margin-bottom: 0.75rem;
   }
   ul {
     margin-bottom: 0.75rem;
     padding-left: 1rem;
+    @apply list-disc list-inside space-y-1;
   }
+
+  @apply text-lg text-dark-gray leading-relaxed font-medium;
 }
 
 @theme inline {
