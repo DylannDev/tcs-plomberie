@@ -1,6 +1,13 @@
-import { getDisplayCityFromSlug } from "@/src/lib/utils";
+import { formatCityUrl, getDisplayCityFromSlug } from "@/src/lib/utils";
 import type { Metadata } from "next";
 import PlomberieSeoPage from "@/src/components/pages/PlomberieSeoPage";
+import { cities } from "@/src/data";
+
+export async function generateStaticParams() {
+  return cities.map((city) => ({
+    city: formatCityUrl(city),
+  }));
+}
 
 export async function generateMetadata({
   params,
@@ -48,7 +55,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function PlomberieParVillePage({ params }: CityPageProps) {
+export default async function PageWrapper({ params }: CityPageProps) {
   const { city } = await params;
 
   return <PlomberieSeoPage city={city} />;

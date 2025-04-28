@@ -1,6 +1,13 @@
-import { getDisplayCityFromSlug } from "@/src/lib/utils";
+import { formatCityUrl, getDisplayCityFromSlug } from "@/src/lib/utils";
 import type { Metadata } from "next";
 import ClimatisationSeoPage from "@/src/components/pages/ClimatisationSeoPage";
+import { cities } from "@/src/data";
+
+export async function generateStaticParams() {
+  return cities.map((city) => ({
+    city: formatCityUrl(city),
+  }));
+}
 
 export async function generateMetadata({
   params,
