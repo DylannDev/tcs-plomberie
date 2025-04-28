@@ -4,12 +4,16 @@ import { cn } from "@/src/lib/utils";
 
 interface ButtonQuoteProps {
   color?: "default" | "black" | "outline";
+  label?: string;
 }
 
-export function ButtonQuote({ color = "default" }: ButtonQuoteProps) {
+export function ButtonQuote({
+  color = "default",
+  label = "Demander un devis",
+}: ButtonQuoteProps) {
   return (
     <Button variant={color} className="group flex items-center gap-2">
-      Demander un devis
+      {label}
       <RiArrowRightLine className="text-xl group-hover:translate-x-1 transition-all duration-300" />
     </Button>
   );

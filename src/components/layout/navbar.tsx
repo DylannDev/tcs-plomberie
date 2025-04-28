@@ -34,7 +34,7 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <ButtonQuote />
+            <ButtonQuote label="Contactez-nous" />
             {/* <button
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}

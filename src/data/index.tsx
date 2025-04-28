@@ -9,8 +9,8 @@ export const navigationLinks = [
   { href: "/plomberie/montpellier", label: "Plomberie" },
   { href: "/climatisation/montpellier", label: "Climatisation" },
   { href: "/chauffage/montpellier", label: "Chauffage" },
+  { href: "/tarifs", label: "Tarifs" },
   { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
 ];
 
 // Contact information

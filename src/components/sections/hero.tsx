@@ -44,7 +44,7 @@ export function Hero() {
                 as="h1"
                 variant="6xl"
                 weight="extrabold"
-                className="text-dark-blue"
+                className="text-black"
               >
                 Votre plombier à Montpellier
               </Typography>
@@ -53,7 +53,7 @@ export function Hero() {
                 variant="5xl"
                 weight="extrabold"
                 lineHeight="tight"
-                className="text-dark-blue mb-6"
+                className="text-black mb-6"
               >
                 Plomberie - Climatisation - Chauffage
               </Typography>
