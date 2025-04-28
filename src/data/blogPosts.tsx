@@ -11,7 +11,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: "5 signes qui montrent qu’il est temps de rénover votre plomberie",
     description:
-      "Votre installation de plomberie est-elle encore fiable ? Découvrez les signes qui doivent vous alerter pour éviter de graves dégâts.",
+      "Comment savoir si votre plomberie doit être rénovée ? Découvrez les signes d’alerte et protégez votre habitation efficacement.",
     category: "plomberie",
     image: "/plombier-4.jpg",
     slug: "5-signes-renover-plomberie",
@@ -63,9 +63,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     title:
-      "Débouchage de canalisation : méthodes efficaces à connaître avant d'appeler un plombier",
+      "Débouchage de canalisation : méthodes efficaces avant d'appeler un plombier",
     description:
-      "Avant de contacter un professionnel, voici les méthodes efficaces pour déboucher vous-même vos canalisations.",
+      "Canalisation bouchée ? Découvrez les meilleures méthodes pour déboucher vos tuyaux efficacement sans risquer d’aggraver la situation.",
     category: "plomberie",
     image: "/plombier-3.jpg",
     slug: "debouchage-canalisation-methodes",
@@ -130,5 +130,248 @@ export const blogPosts: BlogPost[] = [
       <p>👉 <strong>Besoin d'un plombier pour un débouchage rapide à Montpellier et ses alentours ? Contactez TCS Plomberie sans attendre !</strong></p>
     `,
   },
-  // ... autres articles ...
+  {
+    title:
+      "Comment choisir le meilleur système de chauffage pour votre maison ?",
+    description:
+      "Vous construisez ou rénovez ? Découvrez comment choisir entre chaudière, pompe à chaleur, chauffage électrique ou au sol selon vos besoins.",
+    category: "chauffage",
+    image: "/chauffagiste-6.jpg",
+    slug: "choisir-meilleur-chauffage-maison",
+    content: `
+      <h2>Pourquoi bien choisir son chauffage est crucial</h2>
+      <p>Le chauffage représente jusqu'à 70 % de la consommation énergétique d'un foyer. Un choix judicieux permet donc non seulement d'assurer un confort optimal, mais aussi de réaliser des économies importantes sur le long terme. Adapter son système de chauffage à ses besoins et aux caractéristiques de son habitation est essentiel pour garantir efficacité et durabilité.</p>
+  
+      <h3>Les critères essentiels à prendre en compte</h3>
+      <p>Avant de choisir un système de chauffage, il est important de se poser les bonnes questions :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Le climat de votre région :</strong> besoin important en hiver ou chauffage d’appoint suffisant ?</li>
+        <li><strong>L’isolation de votre logement :</strong> une bonne isolation permet d'opter pour des systèmes moins puissants.</li>
+        <li><strong>La surface à chauffer :</strong> appartement, maison individuelle, grande demeure ?</li>
+        <li><strong>Votre budget :</strong> coût d’installation et coût d’usage annuel.</li>
+        <li><strong>Votre souhait écologique :</strong> privilégier les énergies renouvelables ou traditionnelles ?</li>
+      </ul>
+  
+      <h3>Comparatif des principaux systèmes de chauffage</h3>
+  
+      <h4>Chaudière gaz ou condensation</h4>
+      <p>Solution classique et éprouvée, idéale pour les logements bien isolés. La chaudière à condensation permet une meilleure récupération de chaleur et jusqu'à 30 % d'économies par rapport à une chaudière traditionnelle.</p>
+  
+      <h4>Pompe à chaleur (PAC)</h4>
+      <p>Très en vogue, la pompe à chaleur utilise les calories présentes dans l’air ou le sol pour chauffer votre logement. Elle est particulièrement rentable dans les régions aux hivers doux et peut être couplée à un chauffage au sol pour encore plus d'efficacité.</p>
+  
+      <h4>Chauffage électrique</h4>
+      <p>Facile à installer, modulable pièce par pièce, le chauffage électrique convient aux petits espaces ou en complément d’une installation principale. Attention cependant au coût élevé de l’électricité en usage intensif.</p>
+  
+      <h4>Chauffage au sol</h4>
+      <p>Confort thermique incomparable grâce à une chaleur douce et homogène. Idéal en neuf ou en rénovation lourde. Peut fonctionner à l’eau chaude (plus économique) ou à l’électricité.</p>
+  
+      <h3>Quelle solution pour quel profil ?</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Petite surface bien isolée :</strong> radiateurs électriques performants ou PAC air/air.</li>
+        <li><strong>Maison ancienne rénovée :</strong> chaudière à condensation ou pompe à chaleur air/eau.</li>
+        <li><strong>Projet neuf basse consommation :</strong> chauffage au sol avec PAC ou chaudière gaz dernière génération.</li>
+      </ul>
+  
+      <h3>Opter pour un chauffage éco-énergétique</h3>
+      <p>Investir dans un équipement performant permet de réduire votre empreinte carbone et de bénéficier d’aides financières (MaPrimeRénov’, certificats d’économie d’énergie, TVA réduite).</p>
+      <p>En faisant appel à un professionnel certifié, vous bénéficiez d’un accompagnement pour optimiser votre installation et accéder aux meilleures aides disponibles.</p>
+  
+      <h3>Conclusion : le bon choix pour un confort durable</h3>
+      <p>Chaque habitation est unique. Choisir son chauffage dépend de nombreux paramètres qu’il est essentiel d’analyser avec soin. N’hésitez pas à faire appel à un professionnel pour obtenir un conseil personnalisé, adapté à votre situation et à vos objectifs d’économies.</p>
+  
+      <p>👉 <strong>Besoin d'un professionnel pour installer votre système de chauffage à Montpellier et ses alentours ? Faites confiance à TCS Plomberie pour un devis gratuit et un accompagnement sur-mesure !</strong></p>
+    `,
+  },
+  {
+    title:
+      "Pourquoi l'entretien annuel de votre chaudière est obligatoire et essentiel ?",
+    description:
+      "L’entretien de votre chaudière n'est pas seulement une obligation légale : il protège votre sécurité et votre confort tout en prolongeant la durée de vie de votre appareil.",
+    category: "chauffage",
+    image: "/chauffagiste-2.jpg",
+    slug: "entretien-annuel-chaudiere-obligation-essentielle",
+    content: `
+      <h2>Pourquoi entretenir sa chaudière chaque année ?</h2>
+      <p>Votre chaudière fonctionne en silence pour chauffer votre logement, mais sans entretien régulier, elle peut devenir une source de risques pour votre sécurité et votre budget. L'entretien annuel est à la fois une obligation légale et une nécessité technique pour garantir votre confort et la performance de votre installation.</p>
+  
+      <h3>Une obligation légale pour votre sécurité</h3>
+      <p>En France, l'entretien annuel est obligatoire pour toutes les chaudières dont la puissance est comprise entre 4 et 400 kW, qu’elles soient au gaz, au fioul, au bois ou multicombustible. Cette obligation est fixée par le décret n°2009-649 du 9 juin 2009. L’objectif est clair : protéger les occupants des risques d’incendie, de fuites de gaz ou d’intoxication au monoxyde de carbone.</p>
+  
+      <h3>Les risques d'une chaudière mal entretenue</h3>
+      <p>Ne pas entretenir votre chaudière peut entraîner :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Des risques d’intoxication :</strong> le monoxyde de carbone est un gaz inodore, mortel en quelques minutes en cas de fuite.</li>
+        <li><strong>Une surconsommation d'énergie :</strong> une chaudière encrassée peut consommer jusqu’à 10 à 15 % d’énergie en plus.</li>
+        <li><strong>Des pannes fréquentes :</strong> l’accumulation de résidus augmente l’usure prématurée des composants.</li>
+        <li><strong>La perte de votre couverture d’assurance :</strong> en cas de sinistre, l'absence d'attestation d'entretien peut empêcher l’indemnisation.</li>
+      </ul>
+  
+      <h3>Que comprend un entretien annuel de chaudière ?</h3>
+      <p>L’entretien par un professionnel qualifié ne se limite pas à un simple contrôle visuel. Il comprend :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>La vérification complète du corps de chauffe, du brûleur et de l’échangeur</li>
+        <li>Le nettoyage des éléments encrassés</li>
+        <li>Le contrôle des dispositifs de sécurité (ventilation, détection de fumées)</li>
+        <li>La mesure du rendement énergétique et des émissions polluantes</li>
+        <li>La remise d’un certificat d’entretien valable 1 an</li>
+      </ul>
+      <p>Ce certificat est exigé par votre assurance en cas de problème lié à votre installation.</p>
+  
+      <h3>Quand réaliser l'entretien de votre chaudière ?</h3>
+      <p>Idéalement, l’entretien doit être effectué une fois par an, de préférence à la fin de l'été ou au début de l'automne. Cela garantit une chaudière opérationnelle et performante dès les premières baisses de température, tout en permettant d'anticiper d’éventuelles réparations nécessaires.</p>
+  
+      <h3>Pourquoi choisir un professionnel certifié ?</h3>
+      <p>Faire appel à un plombier chauffagiste certifié présente de nombreux avantages :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Intervention conforme aux normes légales en vigueur</li>
+        <li>Conseils personnalisés pour optimiser votre installation</li>
+        <li>Garantie sur l'entretien et sur les éventuelles réparations</li>
+        <li>Accès aux aides éventuelles pour la rénovation énergétique</li>
+      </ul>
+      <p>Seul un professionnel habilité peut délivrer le certificat reconnu par les compagnies d’assurance.</p>
+  
+      <h3>Quels sont les avantages d’un contrat d’entretien ?</h3>
+      <p>Opter pour un contrat d'entretien annuel présente plusieurs bénéfices :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Intervention planifiée automatiquement chaque année</li>
+        <li>Tarif avantageux par rapport à des interventions ponctuelles</li>
+        <li>Priorité en cas de panne ou d'urgence en hiver</li>
+        <li>Prolongation de la durée de vie de votre chaudière</li>
+      </ul>
+      <p>C’est la solution idéale pour éviter les oublis et rester serein toute l’année.</p>
+  
+      <h2>Conclusion : l'entretien, un geste simple pour de grandes économies</h2>
+      <p>Faire entretenir votre chaudière chaque année est un investissement rentable pour votre sécurité, votre confort thermique et votre portefeuille. Ne prenez pas de risques inutiles : un simple contrôle annuel peut prévenir des accidents graves et vous faire économiser sur vos factures d’énergie.</p>
+  
+      <p>👉 <strong>Besoin d’un professionnel certifié pour l'entretien de votre chaudière à Montpellier et ses alentours ? Contactez TCS Plomberie pour prendre rendez-vous dès aujourd'hui !</strong></p>
+    `,
+  },
+  {
+    title:
+      "Comment bien choisir sa climatisation réversible pour un confort toute l'année ?",
+    description:
+      "Découvrez les critères essentiels pour choisir la climatisation réversible idéale selon votre logement, vos besoins de confort et vos objectifs d'économies d'énergie.",
+    category: "climatisation",
+    image: "/climatisation-2.jpg",
+    slug: "choisir-climatisation-reversible",
+    content: `
+      <h2>Pourquoi choisir une climatisation réversible ?</h2>
+      <p>La climatisation réversible est devenue incontournable pour assurer un confort thermique optimal été comme hiver. En plus de rafraîchir votre logement pendant les fortes chaleurs, elle fonctionne comme un chauffage efficace et économique durant l’hiver. Grâce à une pompe à chaleur intégrée, elle permet de réduire considérablement la consommation énergétique par rapport à un chauffage électrique classique.</p>
+  
+      <h3>Les critères essentiels pour choisir sa climatisation</h3>
+      <p>Pour bien choisir votre climatisation réversible, plusieurs éléments doivent être étudiés :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>La surface à climatiser :</strong> chaque appareil a une puissance adaptée au volume d’air à traiter. Une sous-dimension entraîne une surconsommation, une surdimension nuit au confort.</li>
+        <li><strong>La qualité d’isolation du logement :</strong> plus votre maison est bien isolée, moins vous aurez besoin de puissance pour chauffer ou rafraîchir.</li>
+        <li><strong>La zone géographique :</strong> climat doux ou rude ? Certaines PAC air/air sont plus performantes à basse température que d'autres.</li>
+        <li><strong>Le niveau sonore :</strong> privilégiez les modèles silencieux pour un confort maximal, notamment pour les chambres.</li>
+        <li><strong>Votre budget :</strong> il faut tenir compte du coût d'installation, de l'entretien, mais aussi de la consommation annuelle estimée.</li>
+      </ul>
+  
+      <h3>Monosplit ou multisplit : quelle configuration choisir ?</h3>
+  
+      <h4>La climatisation monosplit</h4>
+      <p>Elle est composée d'une unité extérieure reliée à une seule unité intérieure. Idéale pour climatiser une pièce principale ou un petit appartement. Elle est simple d'installation et plus économique à l’achat.</p>
+  
+      <h4>La climatisation multisplit</h4>
+      <p>Elle permet de connecter plusieurs unités intérieures (chambres, salon, bureau) à une seule unité extérieure. C’est la solution parfaite pour climatiser toute une maison de manière indépendante pièce par pièce. Un peu plus coûteuse, mais offrant un confort sur-mesure.</p>
+  
+      <h3>Les normes et labels à vérifier</h3>
+      <p>Pour s’assurer d'un investissement rentable et durable :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Classe énergétique :</strong> privilégiez les modèles classés A++ ou A+++.</li>
+        <li><strong>Label Eurovent :</strong> certification indépendante garantissant la performance réelle des appareils.</li>
+        <li><strong>Conformité RT 2020 :</strong> pour les constructions neuves ou les rénovations importantes afin de respecter les nouvelles normes d'efficacité énergétique.</li>
+      </ul>
+  
+      <h3>Conseils pour une installation réussie</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Faire réaliser un bilan thermique avant toute installation</li>
+        <li>Choisir un installateur certifié RGE (Reconnu Garant de l’Environnement)</li>
+        <li>Bien positionner les unités intérieures pour un flux d’air optimal</li>
+        <li>Opter pour une maintenance annuelle pour conserver les performances et la garantie constructeur</li>
+      </ul>
+      <p>Un professionnel expérimenté saura vous conseiller sur le modèle et la configuration les mieux adaptés à votre logement et à votre mode de vie.</p>
+  
+      <h3>Les avantages d'une climatisation réversible</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Confort thermique toute l’année :</strong> rafraîchissement en été, chauffage économique en hiver</li>
+        <li><strong>Réduction de la facture énergétique :</strong> jusqu’à 30 % d’économies par rapport à un chauffage classique</li>
+        <li><strong>Respect de l’environnement :</strong> utilisation d’énergies renouvelables (calories de l'air)</li>
+        <li><strong>Valorisation de votre bien immobilier :</strong> un critère de plus en plus prisé par les acquéreurs</li>
+      </ul>
+  
+      <h2>Conclusion : choisissez la solution adaptée à votre mode de vie</h2>
+      <p>Investir dans une climatisation réversible est un choix stratégique pour votre confort et vos économies. En prenant en compte les caractéristiques de votre logement et en faisant appel à un professionnel qualifié, vous vous assurez une installation performante, durable et rentable.</p>
+  
+      <p>👉 <strong>Vous souhaitez installer une climatisation réversible performante à Montpellier et ses alentours ? Contactez TCS Plomberie pour un devis gratuit et des conseils personnalisés !</strong></p>
+    `,
+  },
+  {
+    title:
+      "Pourquoi entretenir régulièrement sa climatisation est indispensable ?",
+    description:
+      "Entretenir votre climatisation garantit non seulement votre confort, mais aussi la longévité de votre installation et la qualité de l'air que vous respirez.",
+    category: "climatisation",
+    image: "/climatisation-6.jpg",
+    slug: "entretien-climatisation-indispensable",
+    content: `
+      <h2>Pourquoi entretenir sa climatisation est-il crucial ?</h2>
+      <p>La climatisation joue un rôle clé dans votre confort thermique. Cependant, sans entretien régulier, elle peut devenir inefficace, énergivore, voire source de problèmes sanitaires. Un entretien annuel ou biannuel est indispensable pour assurer un fonctionnement optimal, préserver la qualité de l'air intérieur, et prolonger la durée de vie de votre équipement.</p>
+  
+      <h3>Les risques d’une climatisation mal entretenue</h3>
+      <p>Une climatisation négligée peut engendrer plusieurs problèmes majeurs :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Dégradation de la qualité de l'air :</strong> prolifération de bactéries, de moisissures et d'allergènes dans l'air ambiant.</li>
+        <li><strong>Augmentation de la consommation électrique :</strong> des filtres encrassés et un système sale forcent la climatisation à fonctionner plus intensément.</li>
+        <li><strong>Risque de pannes et réparations coûteuses :</strong> une absence d’entretien favorise l'usure prématurée du compresseur et des composants clés.</li>
+        <li><strong>Réduction de la durée de vie de l'appareil :</strong> un entretien régulier peut doubler la durée de fonctionnement d'une climatisation.</li>
+      </ul>
+  
+      <h3>Que comprend l'entretien d'une climatisation ?</h3>
+      <p>L'entretien professionnel d'un système de climatisation consiste à :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Nettoyer ou remplacer les filtres à air</li>
+        <li>Dépoussiérer et désinfecter les unités intérieures</li>
+        <li>Vérifier l’étanchéité du circuit frigorifique</li>
+        <li>Contrôler la pression du fluide frigorigène</li>
+        <li>Inspecter les connexions électriques et les dispositifs de sécurité</li>
+        <li>Évaluer le rendement global du système</li>
+      </ul>
+      <p>Un entretien approfondi garantit non seulement la performance de l’appareil, mais aussi votre sécurité sanitaire et énergétique.</p>
+  
+      <h3>À quelle fréquence faut-il entretenir sa climatisation ?</h3>
+      <p>La fréquence dépend de l'usage :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Utilisation domestique modérée :</strong> un entretien annuel suffit.</li>
+        <li><strong>Utilisation intensive (professionnels, commerces, bureaux) :</strong> deux entretiens par an sont recommandés.</li>
+      </ul>
+      <p>Depuis 2020, pour les systèmes contenant plus de 2 kg de fluide frigorigène (environ 12 kW), un contrôle d'étanchéité annuel est également obligatoire.</p>
+  
+      <h3>Pourquoi prévoir une recharge de fluide frigorigène ?</h3>
+      <p>Le fluide frigorigène est le cœur du système. Une perte de fluide peut entraîner :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Une baisse importante des performances de chauffage et de climatisation</li>
+        <li>Un risque de surchauffe du compresseur</li>
+        <li>Un accroissement significatif de la consommation d’énergie</li>
+      </ul>
+      <p>Seul un professionnel agréé peut manipuler et recharger le fluide en respectant les normes environnementales en vigueur.</p>
+  
+      <h3>Quels sont les avantages d'un contrat d'entretien ?</h3>
+      <p>Un contrat d'entretien climatisation vous assure :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Des visites programmées et anticipées</li>
+        <li>Un coût d'intervention réduit en cas de panne</li>
+        <li>Une priorité d'intervention en cas d'urgence</li>
+        <li>La prolongation de la garantie constructeur</li>
+      </ul>
+      <p>Le coût d'un contrat d'entretien est largement rentabilisé par les économies d’énergie réalisées et la pérennité de votre équipement.</p>
+  
+      <h2>Conclusion : entretenir votre climatisation, un réflexe gagnant</h2>
+      <p>Un entretien régulier est la clé pour bénéficier durablement d’un air pur, d’un confort optimal et d’une facture d’énergie maîtrisée. C’est aussi une démarche responsable vis-à-vis de l'environnement et de votre santé.</p>
+  
+      <p>👉 <strong>Besoin d'un entretien de climatisation réalisé par un professionnel à Montpellier et ses alentours ? Contactez TCS Plomberie pour un rendez-vous rapide et un service de qualité !</strong></p>
+    `,
+  },
 ];
