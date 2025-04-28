@@ -3,9 +3,56 @@ import { Typography } from "@/src/components/ui/typography";
 import { Badge } from "@/src/components/ui/badge";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/src/data/blogPosts";
+import { Metadata } from "next";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
+export async function generateMetadata({
+  params,
+}: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const article = blogPosts.find((post) => post.slug === slug);
+
+  if (!article) {
+    return {
+      title: "Blog - TCS Plomberie",
+      description:
+        "Conseils plomberie, chauffage et climatisation par TCS Plomberie. Découvrez nos meilleurs articles pour votre maison ou votre entreprise.",
+    };
+  }
+
+  return {
+    title: `${article.title} | Conseils plomberie, climatisation et chauffage`,
+    description: `${article.description} Consultez tous nos conseils pratiques sur le blog de TCS Plomberie.`,
+    openGraph: {
+      title: `${article.title} | TCS Plomberie`,
+      description: `${article.description}`,
+      url: `https://tcs-plomberie.fr/blog/${article.slug}`,
+      siteName: "TCS Plomberie",
+      type: "article",
+      images: [
+        {
+          url: `https://tcs-plomberie-montpellier.fr/${article.image}`,
+          width: 1200,
+          height: 630,
+          alt: "TCS Plomberie - Blog plomberie chauffage climatisation",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${article.title} | TCS Plomberie`,
+      description: `${article.description}`,
+    },
+  };
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
@@ -34,7 +81,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         />
 
         <div className="absolute inset-0 z-10 flex items-center justify-center">
-          <div className="text-center w-full max-w-2xl px-4">
+          <div className="text-center w-full max-w-3xl px-4">
             <Badge className="capitalize">{post.category}</Badge>
             <Typography
               as="h1"
