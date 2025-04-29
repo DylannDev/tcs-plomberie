@@ -25,8 +25,8 @@ export function CoverageTabs() {
             className={cn(
               "px-6 py-3 rounded-xl text-lg font-semibold transition-colors cursor-pointer",
               activeTab === service.id
-                ? "bg-yellow text-black"
-                : "bg-light-gray hover:bg-light-gray/80"
+                ? "bg-yellow border border-yellow text-black"
+                : "bg-white border border-black hover:bg-black hover:text-white transition-colors duration-300 ease-in-out"
             )}
           >
             {service.label}
@@ -36,7 +36,7 @@ export function CoverageTabs() {
 
       {/* Cities Grid */}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {cities.map(
           (city, index) =>
             index < 18 && (

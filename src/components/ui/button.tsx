@@ -14,7 +14,7 @@ const buttonVariants = cva(
         black_blog: "bg-black text-white border border-black",
         sky_blue: "bg-sky-blue text-white hover:bg-yellow",
         outline:
-          "bg-transparent text-black border border-black hover:translate-y-[-2px]",
+          "bg-transparent text-black border border-black hover:bg-black hover:text-white hover:translate-y-[-2px]",
         outline_blog:
           "bg-light-blue text-black border border-black hover:bg-yellow hover:border-transparent transition-all duration-500 ease-in-out",
       },

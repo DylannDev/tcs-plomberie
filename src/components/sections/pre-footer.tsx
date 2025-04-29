@@ -9,7 +9,7 @@ const words = ["Plombier", "Chauffagiste", "Climatiseur"];
 
 export function PreFooter() {
   return (
-    <section className="w-full bg-yellow py-12 rounded-4xl p-12 mb-4">
+    <section className="w-full bg-yellow py-12 rounded-4xl p-12 mt-20 mb-4">
       <div className="flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="text-center md:text-left">
           <Typography
