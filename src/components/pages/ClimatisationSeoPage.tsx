@@ -8,6 +8,7 @@ import { getDisplayCityFromSlug } from "@/src/lib/utils";
 import { Faq } from "@/src/components/sections/faq";
 import { Coverage } from "@/src/components/sections/coverage";
 import { motion } from "framer-motion";
+import { SimilarPosts } from "../sections/similar-posts";
 
 export default function ClimatisationSeoPage({ city }: SeoPageProps) {
   const capitalizedCity = getDisplayCityFromSlug(city);
@@ -100,6 +101,11 @@ export default function ClimatisationSeoPage({ city }: SeoPageProps) {
         />
 
         <Coverage />
+        <SimilarPosts
+          title="Consultez nos articles sur la climatisation"
+          category="climatisation"
+          columns={2}
+        />
       </motion.div>
     </main>
   );

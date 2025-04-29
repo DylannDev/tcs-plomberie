@@ -8,6 +8,7 @@ import { getDisplayCityFromSlug } from "@/src/lib/utils";
 import { Faq } from "@/src/components/sections/faq";
 import { Coverage } from "@/src/components/sections/coverage";
 import { motion } from "framer-motion";
+import { SimilarPosts } from "../sections/similar-posts";
 
 export default function PlomberieSeoPage({ city }: SeoPageProps) {
   const capitalizedCity = getDisplayCityFromSlug(city);
@@ -100,6 +101,11 @@ export default function PlomberieSeoPage({ city }: SeoPageProps) {
         />
 
         <Coverage />
+        <SimilarPosts
+          title="Consultez nos derniers articles sur la plomberie"
+          category="plomberie"
+          columns={2}
+        />
       </motion.div>
     </main>
   );

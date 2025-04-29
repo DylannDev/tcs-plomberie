@@ -8,6 +8,7 @@ import { Faq } from "@/src/components/sections/faq";
 import { Coverage } from "@/src/components/sections/coverage";
 import { VscFlame } from "react-icons/vsc";
 import { motion } from "framer-motion";
+import { SimilarPosts } from "../sections/similar-posts";
 
 export default function ChauffageSeoPage({ city }: SeoPageProps) {
   const capitalizedCity = getDisplayCityFromSlug(city);
@@ -100,6 +101,11 @@ export default function ChauffageSeoPage({ city }: SeoPageProps) {
         />
 
         <Coverage />
+        <SimilarPosts
+          title="Consultez nos articles sur le chauffage"
+          category="chauffage"
+          columns={2}
+        />
       </motion.div>
     </main>
   );
