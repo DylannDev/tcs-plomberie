@@ -15,22 +15,30 @@ interface SimilarPostsProps {
   posts?: BlogPost[];
   title?: string;
   showAllButton?: boolean;
+  category?: "plomberie" | "chauffage" | "climatisation";
+  columns?: 2 | 3;
 }
 
 export function SimilarPosts({
   posts,
   title = "Articles similaires",
   showAllButton = true,
+  category,
+  columns = 3,
 }: SimilarPostsProps) {
-  // Si aucun post n'est fourni, on sélectionne un post de chaque catégorie
+  // Si aucun post n'est fourni, on sélectionne des posts en fonction de la catégorie
   const displayPosts =
     posts ||
     (() => {
+      if (category) {
+        return blogPosts
+          .filter((post) => post.category === category)
+          .slice(0, columns);
+      }
+      // Si pas de catégorie spécifiée, on prend un post de chaque catégorie
       const categories = ["plomberie", "chauffage", "climatisation"] as const;
-      return categories.map((category) => {
-        const categoryPosts = blogPosts.filter(
-          (post) => post.category === category
-        );
+      return categories.map((cat) => {
+        const categoryPosts = blogPosts.filter((post) => post.category === cat);
         const randomIndex = Math.floor(Math.random() * categoryPosts.length);
         return categoryPosts[randomIndex];
       });
@@ -46,7 +54,7 @@ export function SimilarPosts({
           variant="5xl"
           weight="bold"
           lineHeight="tight"
-          className="text-black max-w-lg"
+          className="text-black max-w-xl"
         >
           {title}
         </Typography>
@@ -56,7 +64,9 @@ export function SimilarPosts({
           </Button>
         )}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div
+        className={`grid grid-cols-1 md:grid-cols-2 ${columns === 3 ? "lg:grid-cols-3" : "lg:grid-cols-2"} gap-8`}
+      >
         {displayPosts.map((post) => (
           <BlogCard key={post.slug} post={post} />
         ))}
