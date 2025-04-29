@@ -8,15 +8,16 @@ import { PreFooter } from "../components/sections/pre-footer";
 
 export const metadata: Metadata = {
   title:
-    "TCS Plomberie | Dépannage plomberie, chauffage et climatisation à Montpellier",
+    "Plombier à Montpellier - Dépannage plomberie, chauffage et climatisation 7j/7 | TCS Plomberie",
   description:
-    "Plombier chauffagiste à Montpellier. Intervention rapide 7j/7 pour dépannage plomberie, chauffage et climatisation. Devis gratuit et immédiat.",
+    "Besoin d'un plombier, chauffagiste ou climaticien à Montpellier ? TCS Plomberie intervient rapidement 7j/7 pour tout dépannage urgent, installation ou entretien. Devis gratuit immédiat et intervention professionnelle.",
   keywords:
-    "plombier montpellier, dépannage plomberie, chauffagiste, climatisation, urgence plomberie",
+    "plombier Montpellier, dépannage plomberie Montpellier, chauffagiste Montpellier, climatisation Montpellier, urgence plombier Montpellier, installation plomberie, entretien chaudière, dépannage climatisation",
   openGraph: {
-    title: "TCS Plomberie | Dépannage plomberie et chauffage à Montpellier",
+    title:
+      "TCS Plomberie | Plombier, chauffagiste et climaticien à Montpellier - Dépannage 7j/7",
     description:
-      "Plombier-chauffagiste à Montpellier. Intervention rapide 7j/7 pour dépannage plomberie, chauffage et climatisation. Devis gratuit et immédiat.",
+      "Intervention rapide pour vos besoins en plomberie, chauffage et climatisation à Montpellier et alentours. Devis gratuit immédiat avec TCS Plomberie, artisan de confiance 7j/7.",
     type: "website",
     locale: "fr_FR",
   },
