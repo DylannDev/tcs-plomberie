@@ -6,6 +6,7 @@ import { Coverage } from "../components/sections/coverage";
 import { Section } from "../components/ui/section";
 import { Faq } from "../components/sections/faq";
 import { faqHomepage } from "../data";
+import { SimilarPosts } from "../components/sections/similar-posts";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
 
       <Section>
         <Coverage />
+        <SimilarPosts title="Consultez nos derniers articles de blog" />
       </Section>
     </main>
   );

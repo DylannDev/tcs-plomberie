@@ -4,6 +4,7 @@ import { Badge } from "@/src/components/ui/badge";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/src/data/blogPosts";
 import { Metadata } from "next";
+import { SimilarPosts } from "@/src/components/sections/similar-posts";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -63,13 +64,26 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
-  // Trouver les articles similaires (même catégorie, excluant l'article actuel)
-  // const similarPosts = blogPosts
-  //   .filter((p) => p.category === post.category && p.slug !== post.slug)
-  //   .slice(0, 3);
+  // Trouver les articles similaires (un post de chaque catégorie, excluant l'article actuel)
+  const similarPosts = blogPosts
+    .filter((p) => p.slug !== post.slug) // Exclure l'article actuel
+    .reduce((acc, currentPost) => {
+      // Si nous n'avons pas encore de post pour cette catégorie
+      if (!acc.find((p) => p.category === currentPost.category)) {
+        // Sélectionner aléatoirement entre les posts de cette catégorie
+        const categoryPosts = blogPosts.filter(
+          (p) => p.category === currentPost.category && p.slug !== post.slug
+        );
+        if (categoryPosts.length > 0) {
+          const randomIndex = Math.floor(Math.random() * categoryPosts.length);
+          acc.push(categoryPosts[randomIndex]);
+        }
+      }
+      return acc;
+    }, [] as typeof blogPosts);
 
   return (
-    <main className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-20">
+    <main className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="relative w-full aspect-video max-h-[500px] rounded-3xl overflow-hidden mb-16">
         <Image
@@ -102,24 +116,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
 
+      <hr className="my-32 text-light-gray" />
+
       {/* Similar posts */}
-      {/* {similarPosts.length > 0 && (
-        <div>
-          <Typography
-            as="h2"
-            variant="3xl"
-            weight="bold"
-            className="text-black mb-8"
-          >
-            Articles similaires
-          </Typography>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {similarPosts.map((post) => (
-              <BlogCard key={post.slug} post={post} />
-            ))}
-          </div>
-        </div>
-      )} */}
+      <SimilarPosts posts={similarPosts} />
     </main>
   );
 }

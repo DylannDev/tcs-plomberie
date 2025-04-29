@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Typography } from "@/src/components/ui/typography";
 import { Badge } from "@/src/components/ui/badge";
-import { motion } from "framer-motion";
 
 interface BlogPost {
   title: string;
@@ -16,22 +15,16 @@ interface BlogCardProps {
   post: BlogPost;
 }
 
-export function BlogCard({ post }: BlogCardProps) {
+export const BlogCard = ({ post }: BlogCardProps) => {
   return (
-    <Link href={`/blog/${post.slug}`}>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.3 }}
-        className="group cursor-pointer rounded-3xl shadow-md transition-all duration-300 h-full flex flex-col hover:shadow-lg"
-      >
+    <div className="group cursor-pointer rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+      <Link href={`/blog/${post.slug}`}>
         <div className="relative w-full h-[300px] overflow-hidden rounded-tl-3xl rounded-tr-3xl">
           <Image
             src={post.image}
             alt={post.title}
             fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
           />
         </div>
         <div className="flex flex-col gap-2 px-8 py-10">
@@ -48,7 +41,7 @@ export function BlogCard({ post }: BlogCardProps) {
             {post.description}
           </Typography>
         </div>
-      </motion.div>
-    </Link>
+      </Link>
+    </div>
   );
-}
+};
