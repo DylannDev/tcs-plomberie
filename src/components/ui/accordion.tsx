@@ -4,7 +4,7 @@ import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 
 import { cn } from "@/src/lib/utils";
-import { PiArrowDown, PiArrowDownBold } from "react-icons/pi";
+import { PiArrowDownBold } from "react-icons/pi";
 
 const Accordion = AccordionPrimitive.Root;
 

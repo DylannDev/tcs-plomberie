@@ -12,7 +12,12 @@ export function ButtonQuote({
   label = "Demander un devis",
 }: ButtonQuoteProps) {
   return (
-    <Button variant={color} className="group flex items-center gap-2">
+    <Button
+      as="link"
+      href="/contact"
+      variant={color}
+      className="group flex items-center gap-2"
+    >
       {label}
       <RiArrowRightLine className="text-xl group-hover:translate-x-1 transition-all duration-300" />
     </Button>
