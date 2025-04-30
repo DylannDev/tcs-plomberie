@@ -83,7 +83,7 @@ export default function ClimatisationSeoPage({ city }: SeoPageProps) {
               <div className="w-full md:w-1/2 relative aspect-square max-h-[300px] md:aspect-square md:max-h-[500px]">
                 <Image
                   src={section.image}
-                  alt={`${section.title} à ${capitalizedCity}`}
+                  alt={`Installation et entretien de climatisation à ${capitalizedCity} - TCS Plomberie`}
                   fill
                   className="object-cover object-right rounded-3xl"
                   priority={index === 0}

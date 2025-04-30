@@ -83,7 +83,7 @@ export default function PlomberieSeoPage({ city }: SeoPageProps) {
               <div className="w-full md:w-1/2 relative aspect-square max-h-[300px] md:aspect-square md:max-h-[500px]">
                 <Image
                   src={section.image}
-                  alt={`${section.title} à ${capitalizedCity}`}
+                  alt={`Installation et dépannage de plomberie à ${capitalizedCity} - TCS Plomberie`}
                   fill
                   className="object-cover object-right rounded-3xl"
                   priority={index === 0}
