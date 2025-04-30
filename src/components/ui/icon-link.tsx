@@ -23,6 +23,7 @@ export function IconLink({
         "flex items-center gap-2 hover:text-light-gray transition-colors",
         className
       )}
+      target="_blank"
     >
       {icon && <span className={iconClassName}>{icon}</span>}
       {children}
