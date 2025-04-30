@@ -15,25 +15,25 @@ export const navigationLinks = [
 
 // Contact information
 export const contactInfo = {
-  phone: "+33699096925",
-  displayPhone: "06 99 09 69 25",
-  email: "contact@tcsplomberie.fr",
+  phone: "+33775715252",
+  displayPhone: "07 75 71 52 52",
+  email: "thermoclimsanitaire@gmail.com",
 };
 
 export const socialLinks = [
   {
     platform: "Whatsapp",
-    href: "https://wa.me/699096925",
+    href: "https://wa.me/775715252",
     icon: <RiWhatsappFill />,
   },
   {
     platform: "Instagram",
-    href: "https://instagram.com/tcsplomberie",
+    href: "https://instagram.com/thermoclimsanitairemontpellier",
     icon: <RiInstagramFill />,
   },
   {
     platform: "Facebook",
-    href: "https://www.facebook.com/tcsplomberie",
+    href: "https://www.facebook.com/thermoclimsanitairemontpellier",
     icon: <RiFacebookCircleFill />,
   },
 ];
@@ -331,36 +331,36 @@ export const faqChauffage = (city: string) => [
     id: "services-chauffage",
     question: `Quels services de chauffage proposez-vous à ${city} ?`,
     answer: `
-      À ${city}, nous proposons des solutions complètes pour tous vos besoins en chauffage, qu'il s'agisse d'un logement ou de locaux professionnels :
+      À ${city}, <strong>TCS Plomberie</strong> vous accompagne dans l’installation, l’entretien et le dépannage de vos systèmes de chauffage. Nos prestations incluent :
       <ul class="list-disc list-inside mt-2 space-y-1">
-        <li>Installation de chaudières (gaz, fioul, électrique)</li>
-        <li>Pose de pompes à chaleur (air/eau, géothermie)</li>
-        <li>Entretien annuel et maintenance préventive</li>
-        <li>Dépannage en cas de panne ou dysfonctionnement</li>
-        <li>Optimisation de la performance énergétique</li>
+        <li>Installation de pompes à chaleur air-eau et air-air</li>
+        <li>Pose de radiateurs électriques à inertie ou à basse consommation</li>
+        <li>Maintenance préventive des installations existantes</li>
+        <li>Dépannage en cas de panne ou de dysfonctionnement</li>
+        <li>Optimisation de la régulation et des réglages</li>
       </ul>
-      Chaque installation est personnalisée en fonction de la surface, de l'usage et des contraintes techniques de votre bien à ${city}.
+      Chaque solution est étudiée pour s’adapter à votre logement, vos habitudes de vie et vos objectifs d’économie d’énergie à ${city}.
     `,
   },
   {
     id: "intervention-urgence",
     question: `Intervenez-vous rapidement en cas de panne de chauffage à ${city} ?`,
     answer: `
-      Oui. Notre équipe se déplace à ${city} et ses environs pour toute urgence liée à votre système de chauffage : panne de chaudière, fuite, problème de pression ou de thermostat. Nous intervenons 7j/7 avec le matériel nécessaire pour un diagnostic rapide et une réparation efficace.
+      Oui. En cas de panne de votre système de chauffage à ${city}, notre équipe intervient en urgence <strong>7j/7</strong> pour rétablir votre confort thermique. Que ce soit une pompe à chaleur défectueuse, un radiateur qui ne chauffe plus ou un problème de régulation, nous établissons un diagnostic rapide et intervenons avec le matériel adapté.
     `,
   },
   {
     id: "devis-gratuit-chauffage",
-    question: `Est-ce que le devis est gratuit pour une installation de chauffage à ${city} ?`,
+    question: `Proposez-vous un devis gratuit pour une installation de chauffage à ${city} ?`,
     answer: `
-      Tout à fait. Que ce soit pour une nouvelle installation, un remplacement ou un contrat d'entretien, nous réalisons un devis 100 % gratuit à ${city}. Le devis est détaillé, sans frais cachés, et vous permet de choisir la solution la plus adaptée à votre budget.
+      Bien sûr. Toutes nos installations de chauffage à ${city} font l’objet d’un <strong>devis gratuit, clair et sans engagement</strong>. Nous étudions vos besoins et les contraintes de votre logement pour vous proposer la solution la plus économique et efficace.
     `,
   },
   {
     id: "frequence-entretien",
-    question: `À quelle fréquence faut-il entretenir sa chaudière à ${city} ?`,
+    question: `Faut-il entretenir régulièrement son système de chauffage à ${city} ?`,
     answer: `
-      Il est obligatoire de faire entretenir votre chaudière au moins une fois par an. Cet entretien comprend le nettoyage, la vérification des performances, et le contrôle des émissions. Cela permet d'éviter les pannes, de prolonger la durée de vie de l'appareil, et de réduire votre consommation énergétique à ${city}.
+      Oui, un entretien régulier est indispensable pour garantir la performance de votre système de chauffage à ${city}. Nous vous recommandons une <strong>vérification annuelle</strong> de votre pompe à chaleur, de vos radiateurs et de vos dispositifs de régulation. Cela permet d’éviter les pannes, de réduire votre consommation énergétique et de prolonger la durée de vie de votre installation.
     `,
   },
 ];
@@ -563,43 +563,44 @@ export const sectionsChauffage = [
   {
     title: (city: string) => `Installation de chauffage à ${city}`,
     content: (city: string) => `
-      <p>Vous construisez ou rénovez votre logement à ${city} ? <strong>TCS Plomberie</strong> vous accompagne dans l'installation de votre système de chauffage, du choix de l'appareil à la mise en service.</p>
+      <p>Vous construisez ou rénovez votre logement à ${city} ? <strong>TCS Plomberie</strong> vous accompagne dans l'installation de systèmes de chauffage modernes et performants.</p>
       <ul class="list-disc list-inside space-y-1">
-        <li>Chaudière à gaz ou à condensation</li>
-        <li>Pompe à chaleur air/eau (PAC)</li>
-        <li>Radiateurs basse température ou à inertie</li>
+        <li>Pompe à chaleur (PAC air/eau ou air/air)</li>
+        <li>Radiateurs électriques à inertie ou basse consommation</li>
         <li>Systèmes de chauffage connectés (thermostats intelligents)</li>
+        <li>Solutions sur-mesure pour maisons et appartements</li>
       </ul>
-      <p>Nous vous conseillons la solution la plus performante selon votre logement, vos habitudes et votre budget à ${city}.</p>
+      <p>Nous vous conseillons la solution la plus adaptée selon votre logement, vos habitudes de vie et votre budget à ${city}.</p>
     `,
     image: "/chauffagiste-1.jpg",
   },
   {
     title: (city: string) =>
-      `Dépannage chauffage à ${city} – intervention rapide`,
+      `Dépannage chauffage à ${city} – Intervention rapide`,
     content: (city: string) => `
-      <p>Une panne de chauffage en hiver ? Une chaudière qui ne s’allume plus ? À ${city}, nous intervenons <strong>en urgence 7j/7</strong> pour tous types de dépannages :</p>
+      <p>Une panne de chauffage en hiver ? À ${city}, nous intervenons <strong>en urgence 7j/7</strong> pour assurer votre confort thermique :</p>
       <ul class="list-disc list-inside space-y-1">
-        <li>Diagnostic de panne sur chaudière ou PAC</li>
-        <li>Remplacement de pièces défectueuses (circulateur, sonde, etc.)</li>
-        <li>Problèmes de radiateurs froids ou fuites sur le circuit</li>
-        <li>Redémarrage et purge complète du système</li>
+        <li>Diagnostic de panne sur pompe à chaleur ou radiateurs électriques</li>
+        <li>Remplacement de pièces défectueuses (circulateur, sonde, thermostat)</li>
+        <li>Problèmes de radiateurs froids ou dysfonctionnements système</li>
+        <li>Redémarrage et réglage complet de votre installation</li>
       </ul>
-      <p>Notre équipe se déplace rapidement à ${city} pour rétablir votre confort thermique sans délai.</p>
+      <p>Notre équipe se déplace rapidement à ${city} pour rétablir la chaleur dans votre habitation.</p>
     `,
     image: "/chauffagiste-2.jpg",
   },
   {
-    title: (city: string) => `Entretien et contrôle de chaudière à ${city}`,
+    title: (city: string) =>
+      `Entretien et contrôle de votre chauffage à ${city}`,
     content: (city: string) => `
-      <p>L’entretien annuel de votre chaudière est obligatoire, mais c’est aussi le meilleur moyen d’<strong>éviter les pannes et les surconsommations</strong>. Nous proposons des entretiens complets à ${city} :</p>
+      <p>Un entretien régulier de votre système de chauffage est essentiel pour garantir son efficacité et prolonger sa durée de vie. Nous proposons des prestations complètes à ${city} :</p>
       <ul class="list-disc list-inside space-y-1">
-        <li>Vérification des organes de sécurité et de combustion</li>
-        <li>Nettoyage du corps de chauffe et du brûleur</li>
-        <li>Réglage et optimisation du rendement</li>
-        <li>Remise d’un certificat de conformité</li>
+        <li>Nettoyage et vérification de votre pompe à chaleur</li>
+        <li>Contrôle des radiateurs et des dispositifs de régulation</li>
+        <li>Optimisation des réglages pour réduire votre consommation</li>
+        <li>Inspection préventive avant l’hiver</li>
       </ul>
-      <p>Vous pouvez opter pour un <strong>contrat d’entretien</strong> incluant intervention en cas de panne et suivi annuel automatique à ${city}.</p>
+      <p>Nous vous accompagnons pour maintenir des performances optimales et prévenir les pannes à ${city}.</p>
     `,
     image: "/chauffagiste-3.jpg",
   },
@@ -607,14 +608,14 @@ export const sectionsChauffage = [
     title: (city: string) =>
       `Solutions de chauffage éco-performantes à ${city}`,
     content: (city: string) => `
-      <p>Réduisez vos factures tout en respectant l’environnement grâce à nos systèmes de chauffage nouvelle génération à ${city} :</p>
+      <p>Réduisez vos factures tout en respectant l’environnement grâce à nos équipements de chauffage haute performance à ${city} :</p>
       <ul class="list-disc list-inside space-y-1">
-        <li>Pompes à chaleur haute performance</li>
-        <li>Chaudières à condensation faible consommation</li>
-        <li>Systèmes intelligents avec pilotage à distance</li>
-        <li>Optimisation des réglages pour un confort sur-mesure</li>
+        <li>Pompes à chaleur nouvelle génération</li>
+        <li>Radiateurs électriques basse consommation</li>
+        <li>Thermostats connectés pour pilotage à distance</li>
+        <li>Optimisation énergétique personnalisée</li>
       </ul>
-      <p>Nous vous conseillons la solution la plus performante selon votre logement et vos habitudes.</p>
+      <p>Nous étudions vos besoins et vous orientons vers les solutions les plus adaptées pour votre confort à ${city}.</p>
     `,
     image: "/plombier-6.jpg",
   },
@@ -622,14 +623,14 @@ export const sectionsChauffage = [
     title: (city: string) =>
       `Pourquoi choisir TCS Plomberie pour votre chauffage à ${city} ?`,
     content: (city: string) => `
-      <p>En confiant votre chauffage à <strong>TCS Plomberie</strong>, vous bénéficiez de l’expertise d’un artisan local reconnu à ${city}, à l’écoute de vos besoins.</p>
+      <p>En confiant votre installation ou dépannage de chauffage à <strong>TCS Plomberie</strong>, vous bénéficiez d’un service fiable et personnalisé à ${city} :</p>
       <ul class="list-disc list-inside space-y-1">
-        <li><strong>Réactivité</strong> : interventions rapides, même en période hivernale</li>
-        <li><strong>Fiabilité</strong> : conseils personnalisés, matériel professionnel</li>
-        <li><strong>Transparence</strong> : devis gratuit, pas de mauvaise surprise</li>
-        <li><strong>Suivi client</strong> : contrat d’entretien, dépannage prioritaire</li>
+        <li><strong>Réactivité</strong> : interventions rapides même en plein hiver</li>
+        <li><strong>Conseils personnalisés</strong> : solutions sur-mesure adaptées à votre logement</li>
+        <li><strong>Transparence</strong> : devis gratuit et sans mauvaise surprise</li>
+        <li><strong>Suivi client</strong> : accompagnement avant et après intervention</li>
       </ul>
-      <p>Nos clients à ${city} apprécient notre sérieux, notre ponctualité et la qualité de nos installations.</p>
+      <p>Nos clients à ${city} nous font confiance pour notre professionnalisme et notre engagement qualité.</p>
     `,
     image: "/chauffagiste-5.jpg",
   },
