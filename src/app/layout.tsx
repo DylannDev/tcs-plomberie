@@ -40,7 +40,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </head>
-      <body className="antialiased relative">
+      <body className="antialiased relative overflow-x-hidden">
         <Navbar />
         <div className="flex flex-col min-h-screen w-full">
           <div className="flex-grow">{children}</div>

@@ -3,10 +3,12 @@
 import { useState } from "react";
 import { Typography } from "@/src/components/ui/typography";
 import { Button } from "@/src/components/ui/button";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { BlogCard } from "@/src/components/ui/blog-card";
 import Image from "next/image";
 import { blogPosts } from "@/src/data/blogPosts";
+import { AnimatedHeader } from "@/src/components/ui/animated-header";
+import { AnimatedCard } from "@/src/components/ui/animated-card";
 
 // Filter categories
 const categories = [
@@ -26,7 +28,10 @@ export default function BlogPage() {
   return (
     <main className="px-4 sm:px-6 lg:px-8">
       {/* Header */}
-      <div className="relative max-w-[1440px] mx-auto text-center bg-light-blue rounded-4xl p-20 overflow-hidden">
+      <AnimatedHeader
+        useViewport={false}
+        className="relative max-w-[1440px] mx-auto text-center bg-light-blue rounded-3xl sm:rounded-4xl px-5 py-10 sm:p-20 overflow-hidden"
+      >
         <div className="absolute w-full h-full inset-0 z-0">
           <Image
             src="/shape-1.svg"
@@ -75,13 +80,15 @@ export default function BlogPage() {
             ))}
           </div>
         </div>
-      </div>
+      </AnimatedHeader>
 
       {/* Blog grid */}
-      <div className="max-w-7xl mx-auto pt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <AnimatePresence mode="wait">
-          {filteredPosts.map((post) => (
-            <BlogCard key={post.slug} post={post} />
+      <div className="max-w-7xl mx-auto pt-12 sm:pt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <AnimatePresence>
+          {filteredPosts.map((post, index) => (
+            <AnimatedCard key={post.title} index={index}>
+              <BlogCard post={post} />
+            </AnimatedCard>
           ))}
         </AnimatePresence>
       </div>

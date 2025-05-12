@@ -7,13 +7,14 @@ import { Section } from "../components/ui/section";
 import { Faq } from "../components/sections/faq";
 import { faqHomepage } from "../data";
 import { SimilarPosts } from "../components/sections/similar-posts";
+import { HeroMobile } from "../components/sections/hero-mobile";
 
 export default function Home() {
   return (
     <main className="w-full">
-      <Section size="large">
-        <Hero />
-      </Section>
+      <Hero />
+      <HeroMobile />
+
       <Section>
         <Services />
         <WhyUs />
