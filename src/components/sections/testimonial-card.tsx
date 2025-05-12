@@ -43,7 +43,7 @@ export const ReviewCard = ({
         </div>
       </div>
 
-      <blockquote className="font-semibold text-lg line-clamp-4">
+      <blockquote className="font-semibold text-lg sm:line-clamp-4">
         {capitalizeFirstLetter(message)}
       </blockquote>
     </figure>

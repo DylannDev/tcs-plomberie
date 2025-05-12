@@ -25,12 +25,18 @@ export function Coverage() {
             lineHeight="tight"
             className="mb-4"
           >
-            Nos zones d’intervention <br /> autour de Montpellier
+            Nos zones d’intervention{" "}
+            <br className="hidden sm:block text-balance" /> autour de
+            Montpellier
           </Typography>
-          <Typography as="p" variant="lg" className="text-dark-gray">
+          <Typography
+            as="p"
+            variant="lg"
+            className="text-dark-gray text-balance"
+          >
             Basés à Montpellier, nous intervenons dans toute la métropole et les
-            villes voisines <br /> de l'Hérault pour vos besoins en plomberie,
-            chauffage et climatisation.
+            villes voisines <br className="hidden sm:block" /> de l'Hérault pour
+            vos besoins en plomberie, chauffage et climatisation.
           </Typography>
         </motion.div>
 

@@ -34,8 +34,8 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
         </div>
 
         {/* Icon centré */}
-        <div className="flex justify-center -mt-10 z-10">
-          <div className="text-black text-4xl rounded-full bg-yellow border-4 border-white p-4">
+        <div className="flex justify-center -mt-9 sm:-mt-10 z-10">
+          <div className="text-black text-3xl sm:text-4xl rounded-full bg-yellow border-4 border-white p-4">
             {service.icon}
           </div>
         </div>
@@ -45,11 +45,16 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
           <div>
             <Typography
               as="h3"
-              className="text-2xl font-semibold mb-4 capitalize text-center transition-colors duration-300 group-hover:text-yellow"
+              weight="semibold"
+              className="text-2xl mb-4 capitalize text-center transition-colors duration-300 group-hover:text-yellow"
             >
               {service.title}
             </Typography>
-            <Typography as="p" className="text-dark-gray text-lg min-h-[80px]">
+            <Typography
+              as="p"
+              variant="lg"
+              className="text-dark-gray min-h-[80px]"
+            >
               {service.description}
             </Typography>
           </div>

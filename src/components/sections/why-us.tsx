@@ -33,17 +33,17 @@ const reasons = [
 
 export function WhyUs() {
   return (
-    <section className="pb-20 flex items-center gap-10">
-      <div className="w-1/2">
+    <section className="pb-20 flex flex-col lg:flex-row items-center gap-10">
+      <div className="w-full lg:w-1/2">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className=""
+          className="text-center lg:text-left"
         >
           <Badge>Nos Atouts</Badge>
-          <Typography as="h2" className="text-4xl font-bold mb-4">
+          <Typography as="h2" variant="3xl" weight="bold" className="mb-4">
             Pourquoi nous choisir ?
           </Typography>
           <hr className="text-light-gray my-6" />
@@ -60,14 +60,21 @@ export function WhyUs() {
               className=""
             >
               <div className="flex items-start gap-4">
-                <div className="bg-yellow rounded-full p-3 text-black text-2xl">
+                <div className="bg-yellow rounded-full p-2 sm:p-3 text-black text-xl sm:text-2xl">
                   {reason.icon}
                 </div>
                 <div>
-                  <h3 className="text-2xl font-semibold mb-2">
+                  <Typography
+                    as="h3"
+                    variant="2xl"
+                    weight="semibold"
+                    className="mb-2"
+                  >
                     {reason.title}
-                  </h3>
-                  <p className="text-dark-gray text-lg">{reason.description}</p>
+                  </Typography>
+                  <Typography as="p" variant="lg" className="text-dark-gray">
+                    {reason.description}
+                  </Typography>
                 </div>
               </div>
               {index !== reasons.length - 1 && (
@@ -80,12 +87,12 @@ export function WhyUs() {
           <ButtonCall />
         </div>
       </div>
-      <div className="relative w-1/2 h-[700px] aspect-square overflow-hidden rounded-3xl">
+      <div className="relative w-full lg:w-1/2 lg:h-[700px] min-h-[300px] aspect-video lg:aspect-square overflow-hidden rounded-3xl">
         <Image
           src="/plombier-7.jpg"
           alt="Plombier - TCS Plomberie"
           fill
-          className="object-cover transition-transform duration-300 group-hover:scale-110"
+          className="object-cover object-top lg:object-center transition-transform duration-300 group-hover:scale-110"
         />
       </div>
     </section>

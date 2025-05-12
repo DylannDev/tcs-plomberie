@@ -4,11 +4,10 @@ import { motion } from "framer-motion";
 import { ServiceCard } from "./service-card";
 import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
-import { Button } from "../ui/button";
-import { RiArrowRightLine } from "react-icons/ri";
 import { PiPipe, PiSnowflake } from "react-icons/pi";
 import { VscFlame } from "react-icons/vsc";
 import { ButtonQuote } from "../ui/button-quote";
+import { cn } from "@/src/lib/utils";
 
 const services = [
   {
@@ -45,8 +44,13 @@ export function Services() {
         className="text-center mb-12"
       >
         <Badge>Nos Services</Badge>
-        <Typography as="h2" className="text-4xl font-bold mb-4">
-          Services de plomberie, chauffage et <br />
+        <Typography
+          as="h2"
+          weight="bold"
+          lineHeight="tight"
+          className="text-2xl sm:text-4xl mb-4 text-balance"
+        >
+          Services de plomberie, chauffage <br className="hidden lg:block" /> et
           climatisation à Montpellier
         </Typography>
         <Typography as="p" variant="lg" className="text-dark-gray">
@@ -55,12 +59,21 @@ export function Services() {
         </Typography>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} service={service} index={index} />
+          <div
+            key={service.title}
+            className={cn(
+              "w-full",
+              index === 2 &&
+                "md:col-span-2 lg:col-span-1 md:max-w-[calc(50%-16px)] md:mx-auto lg:max-w-none"
+            )}
+          >
+            <ServiceCard service={service} index={index} />
+          </div>
         ))}
       </div>
-      <div className="pt-20 flex justify-center">
+      <div className="pt-10 sm:pt-20 flex justify-center">
         <ButtonQuote />
       </div>
     </section>

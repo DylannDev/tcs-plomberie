@@ -5,10 +5,12 @@ import { Typography } from "../ui/typography";
 import Image from "next/image";
 import { ButtonCall } from "../ui/button-call";
 import { ButtonQuote } from "../ui/button-quote";
+import { FlipWords } from "../ui/flip-words";
+import { seoWords } from "@/src/data";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden flex justify-center w-full">
+    <section className="relative overflow-hidden max-h-[800px] hidden md:flex justify-center w-full mx-auto px-0 md:px-6 lg:px-8 max-w-[1440px]">
       <div className="relative w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,51 +25,44 @@ export function Hero() {
               width={600}
               height={600}
               quality={100}
-              className="absolute -top-28 -right-36 z-49 overflow-hidden"
+              className="absolute -top-28 -left-36 scale-x-[-1] z-49 overflow-hidden"
             />
-            <div className="absolute top-0 bottom-0 bg-linear-to-l from-light-blue via-light-blue via-55% to-light-blue/0 w-full h-full z-40 rounded-4xl overflow-hidden"></div>
-            <div className="relative w-1/2 aspect-video overflow-hidden">
+            <div className="absolute top-0 bottom-0 bg-linear-to-r from-white via-white/70 to-white/0 w-full h-full z-40 rounded-4xl overflow-hidden"></div>
+            <div className="relative w-full max-h-[800px] aspect-square md:aspect-video rounded-4xl overflow-hidden">
               <Image
-                src={"/plombier-6.jpg"}
+                src={"/plombier-5.jpg"}
                 alt="Plombier Montpellier TCS Plomberie"
                 fill
                 sizes="100vw"
                 quality={100}
-                className="object-cover object-left brightness-90 rounded-tl-4xl rounded-bl-4xl"
+                className="object-cover object-center"
                 priority
               />
             </div>
           </div>
           <div className="absolute top-0 w-full h-full z-50 flex items-center justify-center">
-            <div className="max-w-4xl">
+            <div className="max-w-3xl px-4">
               <Typography
                 as="h1"
-                variant="6xl"
-                weight="extrabold"
-                className="text-black"
+                weight="bold"
+                className="text-5xl lg:text-6xl leading-tight text-black relative flex flex-wrap items-center justify-center gap-x-2 md:gap-x-3 mb-6"
               >
-                Votre plombier à Montpellier
-              </Typography>
-              <Typography
-                as="h2"
-                variant="5xl"
-                weight="extrabold"
-                lineHeight="tight"
-                className="text-black mb-6"
-              >
-                Plomberie - Climatisation - Chauffage
+                <span className="whitespace-nowrap">Besoin d'un</span>{" "}
+                <FlipWords words={seoWords} />
+                <span className="sr-only">
+                  Plomberie, Plombier, Chauffagiste, Climaticien, Climatiseur
+                </span>
+                <span>à Montpellier ?</span>
               </Typography>
               <Typography
                 as="p"
-                variant="2xl"
                 weight="medium"
-                className="mb-4 text-dark-gray"
+                className="mb-10 text-dark-gray text-base sm:text-2xl text-balance"
               >
-                Besoin d'un dépannage en urgence, installation ou entretien à
-                Montpellier ? <br /> TCS Plomberie intervient 7j/7 pour la
-                plomberie, le chauffage et la climatisation.
+                TCS Plomberie intervient 7j/7 pour la plomberie, le chauffage et
+                la climatisation à Montpellier et ses alentours.
               </Typography>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row sm:gap-4 gap-3 justify-center">
                 <ButtonCall />
                 <ButtonQuote color="black" />
               </div>
@@ -75,7 +70,6 @@ export function Hero() {
           </div>
         </motion.div>
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background" />
     </section>
   );
 }

@@ -10,6 +10,7 @@ import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { cn } from "@/src/lib/utils";
 
 interface FaqItem {
   id: string;
@@ -47,7 +48,12 @@ export function Faq({
           />
         </div>
       )}
-      <div className="flex flex-col gap-10 py-10 md:py-20 w-full max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        className={cn(
+          "flex flex-col gap-10 py-10 md:py-20 w-full max-w-[1000px] mx-auto",
+          !isRichText && "px-4 sm:px-6 lg:px-8"
+        )}
+      >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +62,11 @@ export function Faq({
           className="text-center"
         >
           <Badge>{badge}</Badge>
-          <Typography as="h2" variant="4xl" weight="bold">
+          <Typography
+            as="h2"
+            weight="bold"
+            className="text-2xl sm:text-4xl text-balance"
+          >
             {title}
           </Typography>
         </motion.div>
