@@ -1,6 +1,16 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { cities } from "../data";
+import { blogPosts } from "../data/blogPosts";
+
+interface BlogPost {
+  slug: string;
+  date: string;
+}
+
+interface City {
+  slug: string;
+}
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -28,4 +38,16 @@ export const capitalizeCity = (city: string): string => {
 export function getDisplayCityFromSlug(slug: string): string {
   const match = cities.find((city) => formatCityUrl(city) === slug);
   return match || slug;
+}
+
+export function getBlogSlugs() {
+  return (blogPosts as unknown as BlogPost[]).map((post) => ({
+    slug: post.slug,
+  }));
+}
+
+export function getCitySlugs() {
+  return (cities as unknown as City[]).map((city) => ({
+    slug: city.slug,
+  }));
 }
