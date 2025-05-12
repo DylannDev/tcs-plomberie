@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { blogPosts } from "@/src/data/blogPosts";
 import { Metadata } from "next";
 import { SimilarPosts } from "@/src/components/sections/similar-posts";
+import { AnimatedHeader } from "@/src/components/ui/animated-header";
+import { AnimatedCard } from "@/src/components/ui/animated-card";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -67,25 +69,30 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   // Trouver les articles similaires (un post de chaque catégorie, excluant l'article actuel)
   const similarPosts = blogPosts
     .filter((p) => p.slug !== post.slug) // Exclure l'article actuel
-    .reduce((acc, currentPost) => {
-      // Si nous n'avons pas encore de post pour cette catégorie
-      if (!acc.find((p) => p.category === currentPost.category)) {
-        // Sélectionner aléatoirement entre les posts de cette catégorie
-        const categoryPosts = blogPosts.filter(
-          (p) => p.category === currentPost.category && p.slug !== post.slug
-        );
-        if (categoryPosts.length > 0) {
-          const randomIndex = Math.floor(Math.random() * categoryPosts.length);
-          acc.push(categoryPosts[randomIndex]);
+    .reduce(
+      (acc, currentPost) => {
+        // Si nous n'avons pas encore de post pour cette catégorie
+        if (!acc.find((p) => p.category === currentPost.category)) {
+          // Sélectionner aléatoirement entre les posts de cette catégorie
+          const categoryPosts = blogPosts.filter(
+            (p) => p.category === currentPost.category && p.slug !== post.slug
+          );
+          if (categoryPosts.length > 0) {
+            const randomIndex = Math.floor(
+              Math.random() * categoryPosts.length
+            );
+            acc.push(categoryPosts[randomIndex]);
+          }
         }
-      }
-      return acc;
-    }, [] as typeof blogPosts);
+        return acc;
+      },
+      [] as typeof blogPosts
+    );
 
   return (
     <main className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Header */}
-      <div className="relative w-full aspect-video max-h-[500px] rounded-3xl overflow-hidden mb-16">
+      <AnimatedHeader className="relative w-full aspect-square sm:aspect-video max-h-[500px] rounded-3xl overflow-hidden mb-16">
         <Image
           src={post.image}
           alt={post.title}
@@ -99,24 +106,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <Badge className="capitalize">{post.category}</Badge>
             <Typography
               as="h1"
-              variant="5xl"
               weight="bold"
-              className="text-white mt-8"
+              className="text-white mt-8 text-3xl sm:text-5xl"
               lineHeight="tight"
             >
               {post.title}
             </Typography>
           </div>
         </div>
-      </div>
+      </AnimatedHeader>
 
       {/* Content */}
-      <div
-        className="rich-text max-w-4xl mx-auto"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
+      <AnimatedCard>
+        <div
+          className="rich-text max-w-4xl mx-auto"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
+      </AnimatedCard>
 
-      <hr className="my-32 text-light-gray" />
+      <hr className="my-16 sm:my-32 text-light-gray" />
 
       {/* Similar posts */}
       <SimilarPosts posts={similarPosts} />
