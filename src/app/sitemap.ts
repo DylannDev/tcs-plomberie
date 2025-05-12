@@ -43,19 +43,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // Pages dynamiques pour les villes (plomberie, chauffage, climatisation)
-  const cityPages = cities.flatMap((city: CitySlug) => [
+  const plomberiePages = cities.flatMap((city: CitySlug) => [
     {
       url: `${baseUrl}/plomberie/${city.slug}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 1,
     },
+  ]);
+
+  const chauffagePages = cities.flatMap((city: CitySlug) => [
     {
       url: `${baseUrl}/chauffage/${city.slug}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 1,
     },
+  ]);
+
+  const climatisationPages = cities.flatMap((city: CitySlug) => [
     {
       url: `${baseUrl}/climatisation/${city.slug}`,
       lastModified: new Date(),
@@ -72,5 +78,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...cityPages, ...blogPages];
+  return [
+    ...staticPages,
+    ...plomberiePages,
+    ...chauffagePages,
+    ...climatisationPages,
+    ...blogPages,
+  ];
 }

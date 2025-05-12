@@ -5,7 +5,6 @@ import { blogPosts } from "../data/blogPosts";
 
 interface BlogPost {
   slug: string;
-  date: string;
 }
 
 interface City {
@@ -47,7 +46,7 @@ export function getBlogSlugs() {
 }
 
 export function getCitySlugs() {
-  return (cities as unknown as City[]).map((city) => ({
-    slug: city.slug,
+  return cities.map((city) => ({
+    slug: formatCityUrl(city),
   }));
 }
