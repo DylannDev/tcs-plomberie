@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { cn, formatCityUrl } from "@/src/lib/utils";
+import { formatCityUrl } from "@/src/lib/utils";
 import { cities, services } from "@/src/data";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 export function CoverageTabs() {
   const [activeTab, setActiveTab] = useState(services[0].id);
@@ -19,18 +21,15 @@ export function CoverageTabs() {
       {/* Tabs */}
       <div className="flex flex-wrap justify-center gap-4">
         {services.map((service) => (
-          <button
+          <Button
             key={service.id}
+            variant={activeTab === service.id ? "default" : "outline"}
+            size="sm"
             onClick={() => setActiveTab(service.id)}
-            className={cn(
-              "px-6 py-3 rounded-xl text-lg font-semibold transition-colors cursor-pointer",
-              activeTab === service.id
-                ? "bg-yellow border border-yellow text-black"
-                : "bg-white border border-black hover:bg-black hover:text-white transition-colors duration-300 ease-in-out"
-            )}
+            className="min-w-[135px]"
           >
             {service.label}
-          </button>
+          </Button>
         ))}
       </div>
 
@@ -40,17 +39,17 @@ export function CoverageTabs() {
         {cities.map(
           (city, index) =>
             index < 18 && (
-              <a
+              <Link
                 key={city}
                 href={`/${activeTab}/${formatCityUrl(city)}`}
-                className="group p-4 rounded-xl bg-light-blue text-sky-blue transition-all"
+                className="group p-4 rounded-xl bg-light-blue active:bg-sky-blue text-sky-blue transition-all duration-500 ease-in-out cursor-pointer"
               >
-                <div className="flex justify-center items-center gap-2 text-center h-full">
-                  <span className="font-medium group-hover:text-dark-blue transition-colors">
+                <div className="flex justify-center items-center gap-2 text-center h-full ">
+                  <span className="font-medium group-hover:text-dark-blue group-active:text-white transition-colors">
                     {city}
                   </span>
                 </div>
-              </a>
+              </Link>
             )
         )}
       </div>

@@ -4,24 +4,28 @@ import { IconLink } from "../ui/icon-link";
 
 export function Topbar() {
   return (
-    <div className="w-full bg-sky-blue py-2 text-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between text-base text-white font-semibold">
-        <p className="whitespace-nowrap">Intervention rapide 7j/7 24h/24</p>
-        <div className="container flex justify-end gap-6 items-center max-w-7xl transition-all duration-150 ease-in-out">
-          <IconLink
-            href={`mailto:${contactInfo.email}`}
-            icon={<TbMail className="text-lg text-white" />}
-            className="hover:text-light-blue"
-          >
-            {contactInfo.email}
-          </IconLink>
-          <IconLink
-            href={`tel:${contactInfo.phone}`}
-            icon={<TbPhone className="text-lg text-white" />}
-            className="hover:text-light-blue"
-          >
-            {contactInfo.displayPhone}
-          </IconLink>
+    <div className="relative z-[95] w-full bg-sky-blue py-2 text-white overflow-hidden">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between w-full gap-2">
+          <p className="hidden md:flex text-base font-semibold whitespace-nowrap">
+            Intervention rapide 7j/7 24h/24
+          </p>
+          <div className="text-xs sm:text-base font-semibold flex justify-between md:justify-end w-full items-center gap-4 sm:gap-6">
+            <IconLink
+              href={`mailto:${contactInfo.email}`}
+              icon={<TbMail className="text-sm sm:text-lg text-white" />}
+              className="hover:text-light-blue transition-colors duration-150"
+            >
+              {contactInfo.email}
+            </IconLink>
+            <IconLink
+              href={`tel:${contactInfo.phone}`}
+              icon={<TbPhone className="text-sm sm:text-lg text-white" />}
+              className="hover:text-light-blue transition-colors duration-150 whitespace-nowrap"
+            >
+              {contactInfo.displayPhone}
+            </IconLink>
+          </div>
         </div>
       </div>
     </div>
