@@ -16,7 +16,7 @@ const AccordionItem = React.forwardRef<
     ref={ref}
     className={cn(
       className,
-      "flex flex-col text-lg sm:text-2xl font-semibold p-8 bg-light-gray-2 text-left rounded-3xl cursor-pointer"
+      "flex flex-col text-lg sm:text-2xl font-semibold p-6 sm:p-8 bg-light-gray-2 text-left rounded-2xl sm:rounded-3xl cursor-pointer"
     )}
     {...props}
   />
@@ -37,8 +37,8 @@ const AccordionTrigger = React.forwardRef<
       {...props}
     >
       {children}
-      <div className="bg-dark-blue rounded-full p-3 transition-transform duration-300 ml-10">
-        <PiArrowDownBold className="text-3xl text-white" />
+      <div className="bg-dark-blue rounded-full p-2 sm:p-3 transition-transform duration-300 ml-4 sm:ml-10">
+        <PiArrowDownBold className="text-xl sm:text-3xl text-white" />
       </div>
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>

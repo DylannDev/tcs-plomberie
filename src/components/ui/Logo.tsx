@@ -1,34 +1,39 @@
 import Image from "next/image";
 import Link from "next/link";
+import { cn } from "@/src/lib/utils";
 
-type LogoProps = {
-  color?: "white" | "blue"; // Couleurs supportées
-  size: number; // Taille personnalisée en pixels
-};
+interface LogoProps {
+  size?: number;
+  mobileSize?: number;
+  className?: string;
+  color?: "white" | "default";
+}
 
-const Logo = ({ color = "blue", size }: LogoProps) => {
-  let logoSrc = "/logo.svg";
-  switch (color) {
-    case "white":
-      logoSrc = "/logo-white.svg";
-      break;
-    default:
-      logoSrc = "/logo.svg";
-  }
+export default function Logo({
+  size = 220,
+  mobileSize = 160,
+  className,
+  color = "default",
+}: LogoProps) {
+  const getWidthClass = () => {
+    if (size && mobileSize) {
+      return `w-[${mobileSize}px] sm:w-[${size}px]`;
+    }
+    return "w-[160px] sm:w-[220px]";
+  };
 
   return (
-    <Link href={"/"}>
-      <div className={`relative w-full`}>
-        <Image
-          src={logoSrc}
-          alt={`Logo TCS Plomberie`}
-          width={size}
-          height={40}
-          className="object-cover"
-        />
-      </div>
+    <Link
+      href="/"
+      className={cn("relative block aspect-[5/1]", getWidthClass(), className)}
+    >
+      <Image
+        src={color === "white" ? "/logo-white.svg" : "/logo.svg"}
+        alt="TCS Plomberie"
+        fill
+        className="object-contain"
+        priority
+      />
     </Link>
   );
-};
-
-export default Logo;
+}

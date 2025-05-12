@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { services, cities } from "@/src/data";
 import { formatCityUrl } from "@/src/lib/utils";
+import { Typography } from "./typography";
 
 interface SeoColumnProps {
   service: "plomberie" | "chauffage" | "climatisation";
@@ -16,9 +17,12 @@ export function SeoColumn({ service }: SeoColumnProps) {
 
   return (
     <div>
-      <h3 className="text-xl text-yellow font-bold mb-8 uppercase">
+      <Typography
+        as="h3"
+        className="text-xl text-yellow font-bold mb-6 uppercase"
+      >
         {currentService?.label}
-      </h3>
+      </Typography>
       <div className="space-y-2">
         {cities.map((city) => (
           <Link

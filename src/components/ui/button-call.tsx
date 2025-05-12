@@ -9,7 +9,10 @@ interface ButtonCallProps {
 export function ButtonCall({ color = "default" }: ButtonCallProps) {
   return (
     <Button variant={color}>
-      <a href={`tel:${contactInfo.phone}`} className="flex items-center gap-1">
+      <a
+        href={`tel:${contactInfo.phone}`}
+        className="flex items-center justify-center gap-1 w-full"
+      >
         Appeler maintenant
       </a>
     </Button>

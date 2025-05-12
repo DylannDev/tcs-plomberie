@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/src/lib/utils";
 import Link from "next/link";
@@ -19,7 +18,7 @@ const buttonVariants = cva(
           "bg-light-blue text-black border border-black hover:bg-yellow hover:border-transparent transition-all duration-500 ease-in-out",
       },
       size: {
-        default: "px-6 py-[18px]",
+        default: "px-4 sm:px-6 py-[14px] sm:py-[18px]",
         sm: "px-4 py-3 text-base",
         // lg: "h-10 rounded-md px-8",
         icon: "h-9 w-9",
@@ -35,6 +34,7 @@ const buttonVariants = cva(
 type BaseProps = VariantProps<typeof buttonVariants> & {
   className?: string;
   children: React.ReactNode;
+  fullWidthOnMobile?: boolean;
 };
 
 type ButtonProps = BaseProps & {
@@ -49,8 +49,19 @@ type LinkProps = BaseProps & {
 type Props = ButtonProps | LinkProps;
 
 const Button = React.forwardRef<HTMLButtonElement, Props>((props, ref) => {
-  const { className, variant, size, as = "button", ...rest } = props;
-  const classNameValue = cn(buttonVariants({ variant, size, className }));
+  const {
+    className,
+    variant,
+    size,
+    as = "button",
+    fullWidthOnMobile = true,
+    ...rest
+  } = props;
+
+  const classNameValue = cn(
+    buttonVariants({ variant, size, className }),
+    fullWidthOnMobile && "w-full sm:w-auto"
+  );
 
   if (as === "link") {
     const { href, ...linkProps } = rest as LinkProps;

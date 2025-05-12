@@ -13,7 +13,7 @@ export function Badge({ children, className, variant = "light" }: BadgeProps) {
       <Typography
         as="span"
         className={cn(
-          `rounded-lg text-base font-semibold px-4 py-3 w-fit ${
+          `rounded-lg text-sm sm:text-base font-semibold px-4 py-3 w-fit ${
             variant === "light"
               ? "text-sky-blue bg-light-blue"
               : "text-white bg-sky-blue"
