@@ -9,6 +9,100 @@ interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    title:
+      "Comment déboucher un évier ? Méthodes efficaces avant d'appeler un plombier",
+    description:
+      "Évier bouché ? Découvrez toutes les méthodes simples et efficaces pour déboucher votre évier vous-même, avec ou sans matériel professionnel.",
+    category: "plomberie",
+    image: "/plombier-5.jpg",
+    slug: "comment-deboucher-un-evier",
+    content: `
+      <h2>Pourquoi un évier se bouche-t-il ?</h2>
+      <p>Un évier bouché est l’un des problèmes de plomberie les plus fréquents dans une maison. Il est généralement causé par l’accumulation progressive de graisses, de restes alimentaires, de savon ou de cheveux. Ces résidus s’accrochent aux parois des tuyaux et forment peu à peu un bouchon qui empêche l’eau de s’écouler correctement.</p>
+      <p>Heureusement, il existe plusieurs méthodes pour déboucher un évier, allant des solutions naturelles aux outils plus techniques. Voici un guide complet pour agir efficacement avant de faire appel à un professionnel.</p>
+  
+      <h3>Guide complet pour déboucher un évier :</h3>
+      <h4>1. Déboucher un évier avec de l’eau chaude</h4>
+      <p>C’est la méthode la plus simple à essayer en premier. Elle fonctionne particulièrement bien si le bouchon est principalement composé de graisses ou de savon figé.</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Faites chauffer 1,5 à 2 litres d’eau sans la porter à ébullition.</li>
+        <li>Ajoutez-y une demi-tasse de liquide vaisselle.</li>
+        <li>Versez lentement le mélange dans l’évier.</li>
+        <li>Laissez agir 20 à 30 minutes, puis rincez à l’eau chaude claire.</li>
+      </ul>
+      <p>⚠️ Si de l’eau stagne dans votre évier, cette méthode est moins efficace car elle ne pénètre pas jusqu’au bouchon.</p>
+  
+      <h4>2. Le bicarbonate de soude et le vinaigre blanc</h4>
+      <p>Cette technique naturelle et économique est redoutable contre les bouchons organiques (graisse, savon, calcaire).</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Versez une tasse de bicarbonate de soude directement dans la canalisation.</li>
+        <li>Ajoutez une tasse de vinaigre blanc.</li>
+        <li>Une réaction effervescente se produit : laissez agir 30 minutes.</li>
+        <li>Rincez avec de l’eau chaude en abondance.</li>
+      </ul>
+      <p>💡 Astuce : pour plus d’efficacité, enlevez d’abord l’eau stagnante et bouchez l’évacuation pendant l’action chimique pour créer de la pression.</p>
+  
+      <h4>3. Sel + bicarbonate + eau chaude</h4>
+      <p>Une autre méthode naturelle consiste à combiner le sel avec le bicarbonate de soude.</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Mélangez ½ tasse de bicarbonate + ½ tasse de sel de cuisine.</li>
+        <li>Versez le tout dans l’évacuation.</li>
+        <li>Laissez agir 20 à 30 minutes, puis rincez avec 2 litres d’eau très chaude.</li>
+      </ul>
+      <p>Cette technique agit par réaction chimique, idéale pour les bouchons gras ou savonneux situés près du siphon.</p>
+  
+      <h4>4. Utiliser une ventouse</h4>
+      <p>La ventouse est un outil simple mais redoutablement efficace contre les petits bouchons mécaniques.</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Bouchez le trop-plein de l’évier avec un chiffon humide.</li>
+        <li>Placez la ventouse sur la bonde et faites des mouvements de va-et-vient énergiques.</li>
+        <li>Répétez 10 à 15 fois jusqu’à ce que l’eau s’écoule.</li>
+      </ul>
+      <p>💡 Conseil : utilisez un peu d’eau pour couvrir la ventouse, cela améliorera l’étanchéité et l’efficacité du mouvement.</p>
+  
+      <h4>5. Le furet manuel : pour les bouchons plus profonds</h4>
+      <p>Si le bouchon est situé plus loin dans la canalisation, le furet est l’outil adapté. Il s’agit d’une longue tige flexible avec une tête métallique en spirale.</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Introduisez doucement le furet dans la canalisation.</li>
+        <li>Tournez la manivelle pour avancer progressivement.</li>
+        <li>Une fois le bouchon atteint, effectuez des mouvements de va-et-vient pour le désagréger ou l'accrocher.</li>
+      </ul>
+      <p>⚠️ Ne forcez jamais brusquement, au risque d’endommager vos tuyaux, surtout s’ils sont anciens.</p>
+  
+      <h4>6. Démonter le siphon</h4>
+      <p>Si toutes les méthodes précédentes échouent, le bouchon est probablement logé dans le siphon (juste sous l’évier). Il faudra alors intervenir manuellement.</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Placez un seau sous le siphon pour récupérer l’eau sale.</li>
+        <li>Dévissez le siphon à la main ou à l’aide d’une pince.</li>
+        <li>Videz et nettoyez-le soigneusement (résidus, cheveux, graisse).</li>
+        <li>Revissez et testez l’écoulement de l’eau.</li>
+      </ul>
+      <p>💡 Cette solution est très efficace mais nécessite un peu d’huile de coude.</p>
+  
+      <h4>7. Les erreurs à éviter absolument</h4>
+      <p>Certains réflexes peuvent aggraver la situation ou abîmer votre installation :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Ne jamais utiliser de produits chimiques agressifs (soude, déboucheurs industriels) : ils abîment les joints et sont toxiques pour vous et l’environnement.</li>
+        <li>Ne pas forcer avec des objets non adaptés (tige métallique, cintre mal formé) : vous risquez de percer ou fissurer la canalisation.</li>
+        <li>Évitez de répéter trop de méthodes différentes en peu de temps : cela peut déplacer le bouchon plus loin dans le réseau.</li>
+      </ul>
+  
+      <h3>Prévenir les futurs bouchons d’évier</h3>
+      <p>Voici quelques gestes simples pour éviter les canalisations bouchées :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Utilisez une grille de bonde pour filtrer les déchets solides.</li>
+        <li>Ne jetez jamais de graisses ou d’huiles usagées dans l’évier.</li>
+        <li>Versez de l’eau bouillante une fois par semaine pour entretenir les tuyaux.</li>
+        <li>Nettoyez régulièrement le siphon (tous les 2-3 mois).</li>
+      </ul>
+  
+      <h3>Quand faire appel à un plombier professionnel ?</h3>
+      <p>Si le bouchon résiste à toutes vos tentatives, ou si l’eau refoule dans d’autres canalisations (lave-vaisselle, douche), il est temps de contacter un professionnel. Un plombier dispose d’équipements spécialisés (furet électrique, inspection caméra, débouchage haute pression) pour résoudre le problème rapidement et en toute sécurité.</p>
+  
+      <p>👉 <strong>Évier bouché ? Contactez TCS Plomberie pour une intervention rapide à Montpellier et dans les alentours. Devis gratuit, intervention 7j/7.</strong></p>
+    `,
+  },
+  {
     title: "5 signes qui montrent qu’il est temps de rénover votre plomberie",
     description:
       "Comment savoir si votre plomberie doit être rénovée ? Découvrez les signes d’alerte et protégez votre habitation efficacement.",
@@ -128,100 +222,6 @@ export const blogPosts: BlogPost[] = [
       <p>Détecter et déboucher une canalisation bouchée rapidement vous épargne bien des tracas et préserve la santé de votre réseau d’évacuation. En cas de doute ou si le problème persiste, faites confiance à un plombier professionnel.</p>
   
       <p>👉 <strong>Besoin d'un plombier pour un débouchage rapide à Montpellier et ses alentours ? Contactez TCS Plomberie sans attendre !</strong></p>
-    `,
-  },
-  {
-    title:
-      "Comment déboucher un évier ? Méthodes efficaces avant d'appeler un plombier",
-    description:
-      "Évier bouché ? Découvrez toutes les méthodes simples et efficaces pour déboucher votre évier vous-même, avec ou sans matériel professionnel.",
-    category: "plomberie",
-    image: "/plombier-5.jpg",
-    slug: "comment-deboucher-un-evier",
-    content: `
-      <h2>Pourquoi un évier se bouche-t-il ?</h2>
-      <p>Un évier bouché est l’un des problèmes de plomberie les plus fréquents dans une maison. Il est généralement causé par l’accumulation progressive de graisses, de restes alimentaires, de savon ou de cheveux. Ces résidus s’accrochent aux parois des tuyaux et forment peu à peu un bouchon qui empêche l’eau de s’écouler correctement.</p>
-      <p>Heureusement, il existe plusieurs méthodes pour déboucher un évier, allant des solutions naturelles aux outils plus techniques. Voici un guide complet pour agir efficacement avant de faire appel à un professionnel.</p>
-  
-      <h3>Guide complet pour déboucher un évier :</h3>
-      <h4>1. Déboucher un évier avec de l’eau chaude</h4>
-      <p>C’est la méthode la plus simple à essayer en premier. Elle fonctionne particulièrement bien si le bouchon est principalement composé de graisses ou de savon figé.</p>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Faites chauffer 1,5 à 2 litres d’eau sans la porter à ébullition.</li>
-        <li>Ajoutez-y une demi-tasse de liquide vaisselle.</li>
-        <li>Versez lentement le mélange dans l’évier.</li>
-        <li>Laissez agir 20 à 30 minutes, puis rincez à l’eau chaude claire.</li>
-      </ul>
-      <p>⚠️ Si de l’eau stagne dans votre évier, cette méthode est moins efficace car elle ne pénètre pas jusqu’au bouchon.</p>
-  
-      <h4>2. Le bicarbonate de soude et le vinaigre blanc</h4>
-      <p>Cette technique naturelle et économique est redoutable contre les bouchons organiques (graisse, savon, calcaire).</p>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Versez une tasse de bicarbonate de soude directement dans la canalisation.</li>
-        <li>Ajoutez une tasse de vinaigre blanc.</li>
-        <li>Une réaction effervescente se produit : laissez agir 30 minutes.</li>
-        <li>Rincez avec de l’eau chaude en abondance.</li>
-      </ul>
-      <p>💡 Astuce : pour plus d’efficacité, enlevez d’abord l’eau stagnante et bouchez l’évacuation pendant l’action chimique pour créer de la pression.</p>
-  
-      <h4>3. Sel + bicarbonate + eau chaude</h4>
-      <p>Une autre méthode naturelle consiste à combiner le sel avec le bicarbonate de soude.</p>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Mélangez ½ tasse de bicarbonate + ½ tasse de sel de cuisine.</li>
-        <li>Versez le tout dans l’évacuation.</li>
-        <li>Laissez agir 20 à 30 minutes, puis rincez avec 2 litres d’eau très chaude.</li>
-      </ul>
-      <p>Cette technique agit par réaction chimique, idéale pour les bouchons gras ou savonneux situés près du siphon.</p>
-  
-      <h4>4. Utiliser une ventouse</h4>
-      <p>La ventouse est un outil simple mais redoutablement efficace contre les petits bouchons mécaniques.</p>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Bouchez le trop-plein de l’évier avec un chiffon humide.</li>
-        <li>Placez la ventouse sur la bonde et faites des mouvements de va-et-vient énergiques.</li>
-        <li>Répétez 10 à 15 fois jusqu’à ce que l’eau s’écoule.</li>
-      </ul>
-      <p>💡 Conseil : utilisez un peu d’eau pour couvrir la ventouse, cela améliorera l’étanchéité et l’efficacité du mouvement.</p>
-  
-      <h4>5. Le furet manuel : pour les bouchons plus profonds</h4>
-      <p>Si le bouchon est situé plus loin dans la canalisation, le furet est l’outil adapté. Il s’agit d’une longue tige flexible avec une tête métallique en spirale.</p>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Introduisez doucement le furet dans la canalisation.</li>
-        <li>Tournez la manivelle pour avancer progressivement.</li>
-        <li>Une fois le bouchon atteint, effectuez des mouvements de va-et-vient pour le désagréger ou l'accrocher.</li>
-      </ul>
-      <p>⚠️ Ne forcez jamais brusquement, au risque d’endommager vos tuyaux, surtout s’ils sont anciens.</p>
-  
-      <h4>6. Démonter le siphon</h4>
-      <p>Si toutes les méthodes précédentes échouent, le bouchon est probablement logé dans le siphon (juste sous l’évier). Il faudra alors intervenir manuellement.</p>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Placez un seau sous le siphon pour récupérer l’eau sale.</li>
-        <li>Dévissez le siphon à la main ou à l’aide d’une pince.</li>
-        <li>Videz et nettoyez-le soigneusement (résidus, cheveux, graisse).</li>
-        <li>Revissez et testez l’écoulement de l’eau.</li>
-      </ul>
-      <p>💡 Cette solution est très efficace mais nécessite un peu d’huile de coude.</p>
-  
-      <h4>7. Les erreurs à éviter absolument</h4>
-      <p>Certains réflexes peuvent aggraver la situation ou abîmer votre installation :</p>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Ne jamais utiliser de produits chimiques agressifs (soude, déboucheurs industriels) : ils abîment les joints et sont toxiques pour vous et l’environnement.</li>
-        <li>Ne pas forcer avec des objets non adaptés (tige métallique, cintre mal formé) : vous risquez de percer ou fissurer la canalisation.</li>
-        <li>Évitez de répéter trop de méthodes différentes en peu de temps : cela peut déplacer le bouchon plus loin dans le réseau.</li>
-      </ul>
-  
-      <h3>Prévenir les futurs bouchons d’évier</h3>
-      <p>Voici quelques gestes simples pour éviter les canalisations bouchées :</p>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Utilisez une grille de bonde pour filtrer les déchets solides.</li>
-        <li>Ne jetez jamais de graisses ou d’huiles usagées dans l’évier.</li>
-        <li>Versez de l’eau bouillante une fois par semaine pour entretenir les tuyaux.</li>
-        <li>Nettoyez régulièrement le siphon (tous les 2-3 mois).</li>
-      </ul>
-  
-      <h3>Quand faire appel à un plombier professionnel ?</h3>
-      <p>Si le bouchon résiste à toutes vos tentatives, ou si l’eau refoule dans d’autres canalisations (lave-vaisselle, douche), il est temps de contacter un professionnel. Un plombier dispose d’équipements spécialisés (furet électrique, inspection caméra, débouchage haute pression) pour résoudre le problème rapidement et en toute sécurité.</p>
-  
-      <p>👉 <strong>Évier bouché ? Contactez TCS Plomberie pour une intervention rapide à Montpellier et dans les alentours. Devis gratuit, intervention 7j/7.</strong></p>
     `,
   },
   {

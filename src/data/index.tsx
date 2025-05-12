@@ -20,6 +20,8 @@ export const contactInfo = {
   email: "thermoclimsanitaire@gmail.com",
 };
 
+export const seoWords = ["Plombier", "Chauffagiste", "Climatiseur"];
+
 export const socialLinks = [
   {
     platform: "Whatsapp",
@@ -236,9 +238,9 @@ export const faqHomepage = [
   },
   {
     id: "item-5",
-    question: "Entretenez-vous les chaudières et les climatisations ?",
+    question: "Entretenez-vous les chauffe-eau et les climatisations ?",
     answer:
-      "Oui, nous assurons l'entretien et le dépannage de chaudières gaz, électriques, et de systèmes de climatisation. Un entretien régulier garantit la sécurité et la longévité de vos équipements.",
+      "Oui, nous assurons l'entretien et le dépannage de chauffe-eau, et de systèmes de climatisation. Un entretien régulier garantit la sécurité et la longévité de vos équipements.",
   },
   {
     id: "item-6",
