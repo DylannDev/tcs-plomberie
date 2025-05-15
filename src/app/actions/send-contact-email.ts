@@ -11,8 +11,8 @@ export async function sendContactEmail(data: ContactFormData) {
   try {
     // Envoi de l'email de notification
     await resend.emails.send({
-      from: "TCS Plomberie <contact@vizionweb.fr>",
-      to: "contact@vizionweb.fr",
+      from: "TCS Plomberie <no-reply@tcs-plomberie-montpellier.fr>",
+      to: "thermoclimsanitaire@gmail.com",
       subject: "Nouveau message de contact",
       react: ContactNotificationEmail({
         firstName: data.firstName,
@@ -25,7 +25,7 @@ export async function sendContactEmail(data: ContactFormData) {
 
     // Envoi de l'email de confirmation
     await resend.emails.send({
-      from: "TCS Plomberie <contact@vizionweb.fr>",
+      from: "TCS Plomberie <no-reply@tcs-plomberie-montpellier.fr>",
       to: data.email,
       subject: "Merci pour votre message !",
       react: ContactConfirmationEmail({
