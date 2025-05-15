@@ -6,8 +6,6 @@ import { Typography } from "../ui/typography";
 import { LiaToolsSolid } from "react-icons/lia";
 import { PiLightning, PiNotepad } from "react-icons/pi";
 import Image from "next/image";
-import { Button } from "../ui/button";
-import { contactInfo } from "@/src/data";
 import { ButtonCall } from "../ui/button-call";
 
 const reasons = [
