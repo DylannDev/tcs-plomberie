@@ -1,7 +1,14 @@
+import { Metadata } from "next";
 import { Typography } from "@/src/components/ui/typography";
 import { ContactForm } from "@/src/components/forms/contact-form";
 import { AnimatedHeader } from "@/src/components/ui/animated-header";
 import ContactInfos from "@/src/components/forms/contact-infos";
+
+export const metadata: Metadata = {
+  title: "Contactez Thermo Clim Sanitaire Plomberie à Montpellier",
+  description:
+    "Besoin d’un dépannage urgent ou d’un devis gratuit ? Contactez Thermo Clim Sanitaire à Montpellier. Intervention rapide 7j/7 pour plomberie, chauffage et climatisation.",
+};
 
 export default function ContactPage() {
   return (

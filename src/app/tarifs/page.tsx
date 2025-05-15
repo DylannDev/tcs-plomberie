@@ -1,11 +1,16 @@
-"use client";
-
+import { Metadata } from "next";
 import Image from "next/image";
 import { Typography } from "@/src/components/ui/typography";
 import { tarifs } from "@/src/data/tarifs";
 import { TarifsCard } from "@/src/components/sections/tarifs-card";
 import { AnimatedHeader } from "@/src/components/ui/animated-header";
 import { AnimatedCard } from "@/src/components/ui/animated-card";
+
+export const metadata: Metadata = {
+  title: "Tarifs plomberie, chauffage et climatisation | Thermo Clim Sanitaire",
+  description:
+    "Consultez nos tarifs détaillés pour l'installation, l'entretien et le dépannage de plomberie, chauffage et climatisation à Montpellier. Devis gratuit, prix transparents.",
+};
 
 export default function TarifsPage() {
   return (
