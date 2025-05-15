@@ -49,7 +49,6 @@ export const tarifs: Tarifs[] = [
     description:
       "Recherche et réparation de fuites d'eau sur installations sanitaires",
     tarifs: [
-      { title: "Recherche de fuite visuelle", price: 150, from: true },
       {
         title: "Recherche de fuite acoustique et caméra thermique",
         price: 650,
