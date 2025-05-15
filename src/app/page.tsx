@@ -8,6 +8,7 @@ import { Faq } from "../components/sections/faq";
 import { faqHomepage } from "../data";
 import { SimilarPosts } from "../components/sections/similar-posts";
 import { HeroMobile } from "../components/sections/hero-mobile";
+import { Certificate } from "../components/sections/certificate-section";
 
 export default function Home() {
   return (
@@ -19,6 +20,11 @@ export default function Home() {
         <Services />
         <WhyUs />
       </Section>
+
+      <Section size="large">
+        <Certificate />
+      </Section>
+
       <Testimonials />
 
       <Faq data={faqHomepage} />
