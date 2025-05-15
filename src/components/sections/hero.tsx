@@ -52,12 +52,13 @@ export function Hero() {
                   <span>à Montpellier ?</span>
                 </Typography>
                 <Typography
-                  as="p"
+                  as="h2"
                   weight="medium"
                   className="mb-10 text-dark-gray text-base sm:text-2xl text-balance"
                 >
-                  TCS Plomberie intervient 7j/7 pour la plomberie, le chauffage
-                  et la climatisation à Montpellier et ses alentours.
+                  Thermo Clim Sanitaire Plomberie intervient 7j/7 pour la
+                  plomberie, le chauffage et la climatisation à Montpellier et
+                  ses alentours.
                 </Typography>
                 <div className="flex flex-col sm:flex-row sm:gap-4 gap-3 justify-center">
                   <ButtonCall />
