@@ -5,19 +5,20 @@ import { Footer } from "../components/layout/footer";
 import faqSchema from "../lib/schema/faqSchema";
 import { Section } from "../components/ui/section";
 import { PreFooter } from "../components/sections/pre-footer";
+import { LocalBusinessJsonLd } from "../components/seo/LocalBusinessJsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Plombier à Montpellier - Dépannage plomberie, chauffage et climatisation 7j/7 | TCS Plomberie",
+    "Plombier, chauffagiste & climatisation à Montpellier | Thermo Clim Sanitaire",
   description:
-    "Besoin d'un plombier, chauffagiste ou climaticien à Montpellier ? TCS Plomberie intervient rapidement 7j/7 pour tout dépannage urgent, installation ou entretien. Devis gratuit immédiat et intervention professionnelle.",
+    "Besoin d’un plombier, chauffagiste ou climaticien à Montpellier ? Thermo Clim Sanitaire intervient 7j/7 pour tout dépannage, installation ou entretien.",
   keywords:
     "plombier Montpellier, dépannage plomberie Montpellier, chauffagiste Montpellier, climatisation Montpellier, urgence plombier Montpellier, installation plomberie, entretien chaudière, dépannage climatisation",
   openGraph: {
     title:
-      "TCS Plomberie | Plombier, chauffagiste et climaticien à Montpellier - Dépannage 7j/7",
+      "Plombier, chauffagiste & climatisation à Montpellier | Thermo Clim Sanitaire",
     description:
-      "Intervention rapide pour vos besoins en plomberie, chauffage et climatisation à Montpellier et alentours. Devis gratuit immédiat avec TCS Plomberie, artisan de confiance 7j/7.",
+      "Intervention rapide pour vos besoins en plomberie, chauffage et climatisation à Montpellier et alentours. Devis gratuit immédiat avec Thermo Clim Sanitaire Plomberie, artisan de confiance 7j/7.",
     type: "website",
     locale: "fr_FR",
   },
@@ -35,6 +36,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
+        <LocalBusinessJsonLd />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
