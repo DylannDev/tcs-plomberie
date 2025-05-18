@@ -7,6 +7,7 @@ interface LogoProps {
   mobileSize?: number;
   className?: string;
   color?: "white" | "default";
+  lazyLoading?: boolean;
 }
 
 export default function Logo({
@@ -14,6 +15,7 @@ export default function Logo({
   mobileSize = 160,
   className,
   color = "default",
+  lazyLoading = false,
 }: LogoProps) {
   const getWidthClass = () => {
     if (size && mobileSize) {
@@ -32,7 +34,7 @@ export default function Logo({
         alt="TCS Plomberie"
         fill
         className="object-contain"
-        priority
+        {...(lazyLoading ? { loading: "lazy" } : { priority: true })}
       />
     </Link>
   );

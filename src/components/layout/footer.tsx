@@ -12,7 +12,7 @@ import { AnimatedHeader } from "../ui/animated-header";
 function FooterBranding() {
   return (
     <div className="flex flex-col items-center md:items-start gap-2 w-full">
-      <Logo color="white" className="w-[250px]" />
+      <Logo color="white" className="w-[250px]" lazyLoading={true} />
       <Typography as="p" className="text-lg whitespace-nowrap">
         Intervention rapide 7j/7 24h/24
       </Typography>
@@ -146,7 +146,7 @@ export function Footer() {
             height={700}
             quality={100}
             className="object-cover object-center"
-            priority
+            loading="lazy"
           />
         </div>
         <div className="absolute bottom-0 left-0 -rotate-15 w-full h-[600px] z-0">
@@ -157,7 +157,7 @@ export function Footer() {
             height={600}
             quality={100}
             className="object-cover object-center"
-            priority
+            loading="lazy"
           />
         </div>
         <Section size="large">

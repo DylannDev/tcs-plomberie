@@ -26,6 +26,7 @@ export function HeroMobile() {
               height={600}
               quality={100}
               className="absolute -top-28 -right-36 -z-10 overflow-hidden"
+              priority
             />
             <div className="max-w-3xl px-4">
               <Typography

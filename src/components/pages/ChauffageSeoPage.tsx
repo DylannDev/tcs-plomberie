@@ -85,7 +85,7 @@ export default function ChauffageSeoPage({ city }: SeoPageProps) {
                 alt={`Installation, entretien et dépannage de chauffage à ${capitalizedCity} - TCS Plomberie`}
                 fill
                 className="object-cover object-right rounded-3xl"
-                priority={index === 0}
+                {...(index === 0 ? { priority: true } : { loading: "lazy" })}
               />
             </div>
           </AnimatedCard>

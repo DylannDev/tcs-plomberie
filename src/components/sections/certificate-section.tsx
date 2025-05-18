@@ -40,7 +40,7 @@ export function Certificate() {
                   fill
                   className="absolute object-contain rounded-3xl"
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  priority={index === 0}
+                  loading="lazy"
                 />
               </div>
             </div>

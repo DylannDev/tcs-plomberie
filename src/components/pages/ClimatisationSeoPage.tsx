@@ -87,7 +87,7 @@ export default function ClimatisationSeoPage({ city }: SeoPageProps) {
                 alt={`Installation et entretien de climatisation à ${capitalizedCity} - TCS Plomberie`}
                 fill
                 className="object-cover object-right rounded-3xl"
-                priority={index === 0}
+                {...(index === 0 ? { priority: true } : { loading: "lazy" })}
               />
             </div>
           </AnimatedCard>

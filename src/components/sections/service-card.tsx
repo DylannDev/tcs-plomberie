@@ -30,6 +30,7 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
             alt={service.title}
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
           />
         </div>
 

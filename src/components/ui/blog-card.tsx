@@ -25,6 +25,7 @@ export const BlogCard = ({ post }: BlogCardProps) => {
             alt={post.title}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
           />
         </div>
         <div className="flex flex-col gap-2 px-8 py-10">

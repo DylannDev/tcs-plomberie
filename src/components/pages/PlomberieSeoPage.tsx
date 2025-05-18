@@ -85,7 +85,7 @@ export default function PlomberieSeoPage({ city }: SeoPageProps) {
                 alt={`Installation et dépannage de plomberie à ${capitalizedCity} - TCS Plomberie`}
                 fill
                 className="object-cover object-right rounded-3xl"
-                priority={index === 0}
+                {...(index === 0 ? { priority: true } : { loading: "lazy" })}
               />
             </div>
           </AnimatedCard>

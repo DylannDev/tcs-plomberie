@@ -22,6 +22,7 @@ export function Hero() {
                 height={600}
                 quality={100}
                 className="absolute -top-28 -left-36 scale-x-[-1] z-49 overflow-hidden"
+                priority
               />
               <div className="absolute top-0 bottom-0 bg-linear-to-r from-white via-white/70 to-white/0 w-full h-full z-40 rounded-4xl overflow-hidden"></div>
               <div className="relative w-full max-h-[800px] aspect-square md:aspect-video rounded-4xl overflow-hidden">
