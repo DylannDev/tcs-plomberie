@@ -9,12 +9,10 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
-  swcMinify: true,
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ["@heroicons/react", "framer-motion"],
   },
   webpack: (config, { dev, isServer }) => {
