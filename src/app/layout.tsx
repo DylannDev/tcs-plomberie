@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Outfit } from "next/font/google";
 import { Navbar } from "../components/layout/navbar";
 import { Footer } from "../components/layout/footer";
 import faqSchema from "../lib/schema/faqSchema";
@@ -24,22 +25,24 @@ export const metadata: Metadata = {
   },
 };
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // selon tes besoins
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr" className={outfit.className}>
       <head>
         <LocalBusinessJsonLd />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
         />
       </head>
       <body className="antialiased relative overflow-x-hidden">

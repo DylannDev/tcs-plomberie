@@ -97,8 +97,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           src={post.image}
           alt={post.title}
           fill
+          sizes="(max-width: 768px) 100vw, 1300px"
           className="object-cover brightness-50"
           priority
+          fetchPriority="high"
         />
 
         <div className="absolute inset-0 z-10 flex items-center justify-center">

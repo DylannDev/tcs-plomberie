@@ -62,10 +62,11 @@ export function HeroMobile() {
                 src={"/plombier-5.webp"}
                 alt="Plombier Montpellier TCS Plomberie"
                 fill
-                sizes="100vw"
-                quality={100}
+                sizes="(max-width: 768px) 100vw, 750px"
+                quality={80}
                 className="object-cover"
                 priority
+                fetchPriority="high"
               />
             </div>
           </div>

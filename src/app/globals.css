@@ -1,8 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 @theme {
   /* Disable all default colors */
   --color-*: initial;
@@ -30,7 +28,6 @@
 }
 
 body {
-  font-family: "Outfit", sans-serif;
   color: var(--color-black);
 }
 

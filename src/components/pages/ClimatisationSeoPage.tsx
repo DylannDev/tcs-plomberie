@@ -23,8 +23,10 @@ export default function ClimatisationSeoPage({ city }: SeoPageProps) {
             src="/climatisation-2.jpg"
             alt={`Climatisation à ${capitalizedCity}`}
             fill
+            sizes="(max-width: 768px) 100vw, 1300px"
             className="object-cover brightness-40 rounded-3xl"
             priority
+            fetchPriority="high"
           />
           <div className="absolute -bottom-12 left-0 right-0 flex justify-center z-20">
             <div className="bg-yellow rounded-full border-4 sm:border-5 border-white p-4">
@@ -86,6 +88,7 @@ export default function ClimatisationSeoPage({ city }: SeoPageProps) {
                 src={section.image}
                 alt={`Installation et entretien de climatisation à ${capitalizedCity} - TCS Plomberie`}
                 fill
+                sizes="(max-width: 768px) 100vw, 650px"
                 className="object-cover object-right rounded-3xl"
                 {...(index === 0 ? { priority: true } : { loading: "lazy" })}
               />

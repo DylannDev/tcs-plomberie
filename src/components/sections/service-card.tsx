@@ -29,6 +29,7 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
             src={service.imgCard}
             alt={service.title}
             fill
+            sizes="(max-width: 768px) 100vw, 400px"
             className="object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />

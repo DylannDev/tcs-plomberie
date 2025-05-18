@@ -39,7 +39,7 @@ export function Certificate() {
                   alt={section.title}
                   fill
                   className="absolute object-contain rounded-3xl"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 768px) 100vw, 650px"
                   loading="lazy"
                 />
               </div>

@@ -90,6 +90,7 @@ export function WhyUs() {
           src="/plombier-7.jpg"
           alt="Plombier - TCS Plomberie"
           fill
+          sizes="(max-width: 768px) 100vw, 600px"
           loading="lazy"
           className="object-cover object-top lg:object-center transition-transform duration-300 group-hover:scale-110"
         />

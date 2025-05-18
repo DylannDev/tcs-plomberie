@@ -20,7 +20,6 @@ export function Hero() {
                 alt="Plombier Montpellier TCS Plomberie"
                 width={600}
                 height={600}
-                quality={100}
                 className="absolute -top-28 -left-36 scale-x-[-1] z-49 overflow-hidden"
                 priority
               />
@@ -30,10 +29,10 @@ export function Hero() {
                   src={"/plombier-5.webp"}
                   alt="Plombier Montpellier TCS Plomberie"
                   fill
-                  sizes="100vw"
-                  quality={100}
+                  sizes="(min-width: 768px) 100vw, 768px"
                   className="object-cover object-center"
                   priority
+                  fetchPriority="high"
                 />
               </div>
             </div>
