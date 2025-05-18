@@ -16,7 +16,7 @@ export const LocalBusinessJsonLd = () => {
           alternateName: "TCS Plomberie",
           url: "https://tcs-plomberie-montpellier.fr",
           logo: "https://tcs-plomberie-montpellier.fr/logo.svg",
-          image: "https://tcs-plomberie-montpellier.fr/plombier-5.jpg",
+          image: "https://tcs-plomberie-montpellier.fr/plombier-5.webp",
           description:
             "Thermo Clim Sanitaire propose des services de plomberie, chauffage et climatisation à Montpellier et ses alentours. Intervention 24h/24 et 7j/7, devis gratuit.",
           address: {

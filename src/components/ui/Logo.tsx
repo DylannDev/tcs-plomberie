@@ -10,7 +10,7 @@ interface LogoProps {
 }
 
 export default function Logo({
-  size = 220,
+  size = 250,
   mobileSize = 160,
   className,
   color = "default",
@@ -19,7 +19,7 @@ export default function Logo({
     if (size && mobileSize) {
       return `w-[${mobileSize}px] sm:w-[${size}px]`;
     }
-    return "w-[160px] sm:w-[220px]";
+    return "w-[160px] sm:w-[250px]";
   };
 
   return (

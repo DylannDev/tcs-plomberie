@@ -79,7 +79,11 @@ export function Navbar() {
         >
           <div className="relative flex items-center justify-between py-4 sm:py-6">
             <div className="flex items-center gap-2">
-              <Logo size={220} mobileSize={160} className="sm:w-[220px]" />
+              <Logo
+                size={250}
+                mobileSize={160}
+                className="w-[180px] sm:w-[250px]"
+              />
             </div>
 
             <nav className="hidden min-[1200px]:flex items-center gap-6 text-lg xl:text-xl font-semibold">

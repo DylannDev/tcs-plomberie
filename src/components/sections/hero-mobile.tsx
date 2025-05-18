@@ -58,7 +58,7 @@ export function HeroMobile() {
             <div className="absolute inset-0 bg-linear-to-b from-white to-white/0 to-30% w-full h-full z-40" />
             <div className="relative w-full aspect-square overflow-hidden">
               <Image
-                src={"/plombier-5.jpg"}
+                src={"/plombier-5.webp"}
                 alt="Plombier Montpellier TCS Plomberie"
                 fill
                 sizes="100vw"

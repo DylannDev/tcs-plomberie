@@ -499,7 +499,7 @@ export const sectionsPlomberie = [
       </ul>
       <p>Nos clients à ${city} nous recommandent pour notre sérieux, notre ponctualité et notre accompagnement de bout en bout.</p>
     `,
-    image: "/plombier-5.jpg",
+    image: "/plombier-5.webp",
   },
 ];
 

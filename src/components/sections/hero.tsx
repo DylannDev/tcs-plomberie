@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Typography } from "../ui/typography";
 import Image from "next/image";
 import { ButtonCall } from "../ui/button-call";
@@ -27,7 +26,7 @@ export function Hero() {
               <div className="absolute top-0 bottom-0 bg-linear-to-r from-white via-white/70 to-white/0 w-full h-full z-40 rounded-4xl overflow-hidden"></div>
               <div className="relative w-full max-h-[800px] aspect-square md:aspect-video rounded-4xl overflow-hidden">
                 <Image
-                  src={"/plombier-5.jpg"}
+                  src={"/plombier-5.webp"}
                   alt="Plombier Montpellier TCS Plomberie"
                   fill
                   sizes="100vw"

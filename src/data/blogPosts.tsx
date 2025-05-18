@@ -14,7 +14,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "Évier bouché ? Découvrez toutes les méthodes simples et efficaces pour déboucher votre évier vous-même, avec ou sans matériel professionnel.",
     category: "plomberie",
-    image: "/plombier-5.jpg",
+    image: "/plombier-5.webp",
     slug: "comment-deboucher-un-evier",
     content: `
       <h2>Pourquoi un évier se bouche-t-il ?</h2>
