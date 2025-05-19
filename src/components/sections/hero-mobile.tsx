@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Typography } from "../ui/typography";
 import Image from "next/image";
 import { ButtonCall } from "../ui/button-call";
@@ -12,12 +11,7 @@ export function HeroMobile() {
   return (
     <section className="relative overflow-hidden flex md:hidden justify-center w-full">
       <div className="relative w-full">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative text-center flex flex-col h-[calc(100vh-120px)]"
-        >
+        <div className="relative text-center flex flex-col h-[calc(100vh-120px)]">
           <div className="relative top-0 w-full z-50 flex items-center justify-center bg-white pt-12">
             <Image
               src={"/shape-1.svg"}
@@ -70,7 +64,7 @@ export function HeroMobile() {
               />
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
