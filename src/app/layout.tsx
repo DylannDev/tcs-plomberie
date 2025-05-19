@@ -9,8 +9,7 @@ import { PreFooter } from "../components/sections/pre-footer";
 import { LocalBusinessJsonLd } from "../components/seo/LocalBusinessJsonLd";
 
 export const metadata: Metadata = {
-  title:
-    "Plombier, chauffagiste & climatisation à Montpellier | Thermo Clim Sanitaire",
+  title: "Plombier agréé à Montpellier – Chauffage & clim | TCS Plomberie",
   description:
     "Plombier agréé à Montpellier, TCS Plomberie intervient 7j/7 pour les fuites, WC bouchés, dépannage, installation ou entretien chauffage et climatisation.",
   keywords:

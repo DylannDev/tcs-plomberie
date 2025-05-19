@@ -28,7 +28,6 @@ export function HeroMobile() {
               >
                 <span className="whitespace-nowrap">Besoin d'un</span>{" "}
                 <FlipWords words={seoWords} />
-                {/* <span>Plombier</span> */}
                 <span className="sr-only">
                   Plomberie, Plombier, Chauffagiste, Climaticien, Climatiseur
                 </span>
