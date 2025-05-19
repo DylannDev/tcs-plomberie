@@ -7,6 +7,7 @@ interface IconLinkProps {
   icon?: ReactNode;
   className?: string;
   iconClassName?: string;
+  ariaLabel?: string;
 }
 
 export function IconLink({
@@ -15,6 +16,7 @@ export function IconLink({
   icon,
   className,
   iconClassName = "p-1 sm:p-2 rounded-full bg-yellow",
+  ariaLabel,
 }: IconLinkProps) {
   return (
     <a
@@ -24,6 +26,7 @@ export function IconLink({
         className
       )}
       target="_blank"
+      aria-label={ariaLabel}
     >
       {icon && <span className={iconClassName}>{icon}</span>}
       {children}

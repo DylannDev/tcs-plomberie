@@ -27,11 +27,13 @@ export const socialLinks = [
     platform: "Whatsapp",
     href: "https://wa.me/775715252",
     icon: <RiWhatsappFill />,
+    ariaLabel: "Contacter Thermo Clim Sanitaire sur WhatsApp",
   },
   {
     platform: "Instagram",
     href: "https://instagram.com/thermoclimsanitairemontpellier",
     icon: <RiInstagramFill />,
+    ariaLabel: "Contacter Thermo Clim Sanitaire sur Instagram",
   },
   {
     platform: "Facebook",

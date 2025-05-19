@@ -1,6 +1,5 @@
 import { Button } from "./button";
 import { contactInfo } from "@/src/data";
-import { cn } from "@/src/lib/utils";
 
 interface ButtonCallProps {
   color?: "default" | "black";
@@ -8,13 +7,13 @@ interface ButtonCallProps {
 
 export function ButtonCall({ color = "default" }: ButtonCallProps) {
   return (
-    <Button variant={color}>
-      <a
-        href={`tel:${contactInfo.phone}`}
-        className="flex items-center justify-center gap-1 w-full"
-      >
-        Appeler maintenant
-      </a>
+    <Button
+      as="link"
+      href={`tel:${contactInfo.phone}`}
+      variant={color}
+      aria-label="Appeler Thermo Clim Sanitaire"
+    >
+      Appeler maintenant
     </Button>
   );
 }

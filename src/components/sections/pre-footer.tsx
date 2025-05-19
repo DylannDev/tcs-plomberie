@@ -1,7 +1,6 @@
 "use client";
 
 import { contactInfo, seoWords } from "@/src/data";
-import { AnimatedHeader } from "../ui/animated-header";
 import { ButtonCall } from "../ui/button-call";
 import { ButtonQuote } from "../ui/button-quote";
 import { FlipWords } from "../ui/flip-words";

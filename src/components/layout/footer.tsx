@@ -101,6 +101,7 @@ function FooterSocial() {
               key={link.href}
               href={link.href}
               icon={link.icon}
+              ariaLabel={link.ariaLabel}
               className="p-1"
               iconClassName="text-white hover:text-yellow text-4xl transition-all duration-300"
             />
