@@ -2,6 +2,7 @@ import {
   RiFacebookCircleFill,
   RiInstagramFill,
   RiWhatsappFill,
+  RiYoutubeFill,
 } from "react-icons/ri";
 
 // Navigation links data
@@ -31,15 +32,21 @@ export const socialLinks = [
   },
   {
     platform: "Instagram",
-    href: "https://instagram.com/thermoclimsanitairemontpellier",
+    href: "https://instagram.com/tcsplomberiemontpellier",
     icon: <RiInstagramFill />,
     ariaLabel: "Contacter Thermo Clim Sanitaire sur Instagram",
   },
   {
     platform: "Facebook",
-    href: "https://www.facebook.com/thermoclimsanitairemontpellier",
+    href: "https://www.facebook.com/tcsplomberiemontpellier",
     icon: <RiFacebookCircleFill />,
     ariaLabel: "Contacter Thermo Clim Sanitaire sur Facebook",
+  },
+  {
+    platform: "Youtube",
+    href: "https://www.youtube.com/@tcsplomberiemontpellier",
+    icon: <RiYoutubeFill />,
+    ariaLabel: "Contacter Thermo Clim Sanitaire sur Youtube",
   },
 ];
 

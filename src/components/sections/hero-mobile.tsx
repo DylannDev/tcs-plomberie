@@ -1,9 +1,7 @@
-// import { motion } from "framer-motion";
 import { Typography } from "../ui/typography";
 import Image from "next/image";
 import { ButtonCall } from "../ui/button-call";
 import { ButtonQuote } from "../ui/button-quote";
-// import { AnimatedHeader } from "../ui/animated-header";
 import { FlipWords } from "../ui/flip-words";
 import { seoWords } from "@/src/data";
 
@@ -11,7 +9,6 @@ export function HeroMobile() {
   return (
     <section className="relative overflow-hidden flex md:hidden justify-center w-full">
       <div className="relative w-full">
-        {/* <AnimatedHeader duration={0.2}> */}
         <div className="relative text-center flex flex-col h-[calc(100vh-120px)]">
           <div className="relative top-0 w-full z-50 flex items-center justify-center bg-white pt-12">
             <Image
@@ -67,7 +64,6 @@ export function HeroMobile() {
             </div>
           </div>
         </div>
-        {/* </AnimatedHeader> */}
       </div>
     </section>
   );

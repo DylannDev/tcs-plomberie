@@ -91,7 +91,7 @@ function FooterSocial() {
       <div className="flex flex-col">
         <Typography
           as="h3"
-          className="text-xl text-yellow font-bold whitespace-nowrap uppercase mb-4 md:mb-6"
+          className="text-xl text-yellow font-bold whitespace-nowrap uppercase mb-4 md:mb-6 text-center md:text-left"
         >
           Suivez-nous
         </Typography>

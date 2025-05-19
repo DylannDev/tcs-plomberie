@@ -1,6 +1,5 @@
 import { Typography } from "../ui/typography";
 import Image from "next/image";
-// import { AnimatedHeader } from "../ui/animated-header";
 import { ButtonCall } from "../ui/button-call";
 import { ButtonQuote } from "../ui/button-quote";
 import { FlipWords } from "../ui/flip-words";
@@ -8,7 +7,6 @@ import { seoWords } from "@/src/data";
 
 export function Hero() {
   return (
-    // <AnimatedHeader duration={0.2}>
     <section className="relative overflow-hidden max-h-[800px] hidden md:flex justify-center w-full mx-auto px-0 md:px-6 lg:px-8 max-w-[1440px]">
       <div className="relative w-full">
         <div className="text-center">
@@ -67,6 +65,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-    // </AnimatedHeader>
   );
 }
