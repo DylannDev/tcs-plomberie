@@ -99,7 +99,7 @@ export const blogPosts: BlogPost[] = [
       <h3>Quand faire appel à un plombier professionnel ?</h3>
       <p>Si le bouchon résiste à toutes vos tentatives, ou si l’eau refoule dans d’autres canalisations (lave-vaisselle, douche), il est temps de contacter un professionnel. Un plombier dispose d’équipements spécialisés (furet électrique, inspection caméra, débouchage haute pression) pour résoudre le problème rapidement et en toute sécurité.</p>
   
-      <p>👉 <strong>Évier bouché ? Contactez TCS Plomberie pour une intervention rapide à Montpellier et dans les alentours. Devis gratuit, intervention 7j/7.</strong></p>
+      <p>👉 <strong>Évier bouché ? Contactez Thermo Clim Sanitaire Plomberie pour une intervention rapide à Montpellier et dans les alentours. Devis gratuit, intervention 7j/7.</strong></p>
     `,
   },
   {
@@ -221,7 +221,7 @@ export const blogPosts: BlogPost[] = [
       <h3>Conclusion : agir vite pour éviter les dégâts</h3>
       <p>Détecter et déboucher une canalisation bouchée rapidement vous épargne bien des tracas et préserve la santé de votre réseau d’évacuation. En cas de doute ou si le problème persiste, faites confiance à un plombier professionnel.</p>
   
-      <p>👉 <strong>Besoin d'un plombier pour un débouchage rapide à Montpellier et ses alentours ? Contactez TCS Plomberie sans attendre !</strong></p>
+      <p>👉 <strong>Besoin d'un plombier pour un débouchage rapide à Montpellier et ses alentours ? Contactez Thermo Clim Sanitaire Plomberie sans attendre !</strong></p>
     `,
   },
   {
@@ -399,7 +399,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Conclusion : choisissez la solution adaptée à votre mode de vie</h2>
       <p>Investir dans une climatisation réversible est un choix stratégique pour votre confort et vos économies. En prenant en compte les caractéristiques de votre logement et en faisant appel à un professionnel qualifié, vous vous assurez une installation performante, durable et rentable.</p>
   
-      <p>👉 <strong>Vous souhaitez installer une climatisation réversible performante à Montpellier et ses alentours ? Contactez TCS Plomberie pour un devis gratuit et des conseils personnalisés !</strong></p>
+      <p>👉 <strong>Vous souhaitez installer une climatisation réversible performante à Montpellier et ses alentours ? Contactez Thermo Clim Sanitaire Plomberie pour un devis gratuit et des conseils personnalisés !</strong></p>
     `,
   },
   {
@@ -465,7 +465,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Conclusion : entretenir votre climatisation, un réflexe gagnant</h2>
       <p>Un entretien régulier est la clé pour bénéficier durablement d’un air pur, d’un confort optimal et d’une facture d’énergie maîtrisée. C’est aussi une démarche responsable vis-à-vis de l'environnement et de votre santé.</p>
   
-      <p>👉 <strong>Besoin d'un entretien de climatisation réalisé par un professionnel à Montpellier et ses alentours ? Contactez TCS Plomberie pour un rendez-vous rapide et un service de qualité !</strong></p>
+      <p>👉 <strong>Besoin d'un entretien de climatisation réalisé par un professionnel à Montpellier et ses alentours ? Contactez Thermo Clim Sanitaire Plomberie pour un rendez-vous rapide et un service de qualité !</strong></p>
     `,
   },
 ];

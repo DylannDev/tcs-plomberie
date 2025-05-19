@@ -4,7 +4,7 @@ import { IconLink } from "../ui/icon-link";
 
 export function Topbar() {
   return (
-    <div className="relative z-[95] w-full bg-dark-blue py-2 text-white overflow-hidden">
+    <div className="relative z-[95] w-full bg-sky-blue py-2 text-white overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between w-full gap-2">
           <p className="hidden md:flex text-base font-semibold whitespace-nowrap">

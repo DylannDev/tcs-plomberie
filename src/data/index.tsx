@@ -273,7 +273,7 @@ export const faqPlomberie = (city: string) => [
     id: "urgence-fuite",
     question: `Intervenez-vous en urgence pour une fuite d'eau à ${city} ?`,
     answer: `
-      Oui, TCS Plomberie intervient 7j/7 pour tout dépannage en urgence à ${city}. En cas de fuite d'eau, de robinet cassé ou de canalisation bouchée, nous nous déplaçons rapidement avec tout le matériel nécessaire pour une réparation immédiate.
+      Oui, Thermo Clim Sanitaire Plomberie intervient 7j/7 pour tout dépannage en urgence à ${city}. En cas de fuite d'eau, de robinet cassé ou de canalisation bouchée, nous nous déplaçons rapidement avec tout le matériel nécessaire pour une réparation immédiate.
     `,
   },
   {
@@ -435,7 +435,7 @@ export const sectionsPlomberie = [
   {
     title: (city: string) => `Dépannage plomberie en urgence à ${city}`,
     content: (city: string) => `
-      <p>Une fuite d'eau ? Une canalisation bouchée en plein week-end ? <strong>TCS Plomberie</strong> intervient <strong>en urgence 7j/7 à ${city}</strong> pour tous vos problèmes de plomberie.</p>
+      <p>Une fuite d'eau ? Une canalisation bouchée en plein week-end ? <strong>Thermo Clim Sanitaire Plomberie</strong> intervient <strong>en urgence 7j/7 à ${city}</strong> pour tous vos problèmes de plomberie.</p>
       <p>Nous traitons rapidement :</p>
       <ul class="list-disc list-inside space-y-1">
         <li>Les fuites d'eau, visibles ou encastrées</li>
@@ -493,7 +493,7 @@ export const sectionsPlomberie = [
   {
     title: (city: string) => `Pourquoi faire appel à TCS Plomberie à ${city} ?`,
     content: (city: string) => `
-      <p>Faire appel à <strong>TCS Plomberie</strong>, c'est choisir un artisan local fiable à ${city}, reconnu pour son professionnalisme et sa disponibilité.</p>
+      <p>Faire appel à <strong>Thermo Clim Sanitaire Plomberie</strong>, c'est choisir un artisan local fiable à ${city}, reconnu pour son professionnalisme et sa disponibilité.</p>
       <p>Nous nous engageons sur :</p>
       <ul class="list-disc list-inside space-y-1">
         <li><strong>La réactivité</strong> – intervention possible dans la journée</li>
@@ -569,7 +569,7 @@ export const sectionsClimatisation = [
     title: (city: string) =>
       `Pourquoi choisir TCS Plomberie pour votre climatisation à ${city} ?`,
     content: (city: string) => `
-      <p>Faire appel à <strong>TCS Plomberie</strong>, c'est bénéficier d'un accompagnement de A à Z par un artisan local de confiance à ${city}.</p>
+      <p>Faire appel à <strong>Thermo Clim Sanitaire Plomberie</strong>, c'est bénéficier d'un accompagnement de A à Z par un artisan local de confiance à ${city}.</p>
       <ul class="list-disc list-inside space-y-1">
         <li><strong>Diagnostic précis</strong> et conseils personnalisés</li>
         <li><strong>Matériel fiable</strong> et installation dans les règles de l'art</li>
@@ -586,7 +586,7 @@ export const sectionsChauffage = [
   {
     title: (city: string) => `Installation de chauffage à ${city}`,
     content: (city: string) => `
-      <p>Vous construisez ou rénovez votre logement à ${city} ? <strong>TCS Plomberie</strong> vous accompagne dans l'installation de systèmes de chauffage modernes et performants.</p>
+      <p>Vous construisez ou rénovez votre logement à ${city} ? <strong>Thermo Clim Sanitaire Plomberie</strong> vous accompagne dans l'installation de systèmes de chauffage modernes et performants.</p>
       <ul class="list-disc list-inside space-y-1">
         <li>Pompe à chaleur (PAC air/eau ou air/air)</li>
         <li>Radiateurs électriques à inertie ou basse consommation</li>
@@ -646,7 +646,7 @@ export const sectionsChauffage = [
     title: (city: string) =>
       `Pourquoi choisir TCS Plomberie pour votre chauffage à ${city} ?`,
     content: (city: string) => `
-      <p>En confiant votre installation ou dépannage de chauffage à <strong>TCS Plomberie</strong>, vous bénéficiez d’un service fiable et personnalisé à ${city} :</p>
+      <p>En confiant votre installation ou dépannage de chauffage à <strong>Thermo Clim Sanitaire Plomberie</strong>, vous bénéficiez d’un service fiable et personnalisé à ${city} :</p>
       <ul class="list-disc list-inside space-y-1">
         <li><strong>Réactivité</strong> : interventions rapides même en plein hiver</li>
         <li><strong>Conseils personnalisés</strong> : solutions sur-mesure adaptées à votre logement</li>
