@@ -11,7 +11,7 @@ export function HeroMobile() {
   return (
     <section className="relative overflow-hidden flex md:hidden justify-center w-full">
       <div className="relative w-full">
-        <AnimatedHeader>
+        <AnimatedHeader duration={0.2}>
           <div className="relative text-center flex flex-col h-[calc(100vh-120px)]">
             <div className="relative top-0 w-full z-50 flex items-center justify-center bg-white pt-12">
               <Image

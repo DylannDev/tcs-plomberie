@@ -1,14 +1,14 @@
 import { Typography } from "../ui/typography";
 import Image from "next/image";
+import { AnimatedHeader } from "../ui/animated-header";
 import { ButtonCall } from "../ui/button-call";
 import { ButtonQuote } from "../ui/button-quote";
-import { FlipWords } from "../ui/flip-words";
-import { seoWords } from "@/src/data";
-import { AnimatedHeader } from "../ui/animated-header";
+// import { FlipWords } from "../ui/flip-words";
+// import { seoWords } from "@/src/data";
 
 export function Hero() {
   return (
-    <AnimatedHeader>
+    <AnimatedHeader duration={0.2}>
       <section className="relative overflow-hidden max-h-[800px] hidden md:flex justify-center w-full mx-auto px-0 md:px-6 lg:px-8 max-w-[1440px]">
         <div className="relative w-full">
           <div className="text-center">
@@ -42,7 +42,8 @@ export function Hero() {
                   className="text-5xl lg:text-6xl leading-tight text-black relative flex flex-wrap items-center justify-center gap-x-2 md:gap-x-3 mb-6"
                 >
                   <span className="whitespace-nowrap">Besoin d'un</span>{" "}
-                  <FlipWords words={seoWords} />
+                  {/* <FlipWords words={seoWords} /> */}
+                  <span>Plombier</span>
                   <span className="sr-only">
                     Plomberie, Plombier, Chauffagiste, Climaticien, Climatiseur
                   </span>
