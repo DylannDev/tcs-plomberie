@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title:
     "Plombier, chauffagiste & climatisation à Montpellier | Thermo Clim Sanitaire",
   description:
-    "Besoin d’un plombier, chauffagiste ou climaticien à Montpellier ? Thermo Clim Sanitaire intervient 7j/7 pour tout dépannage, installation ou entretien.",
+    "Plombier agréé à Montpellier, TCS Plomberie intervient 7j/7 pour les fuites, WC bouchés, dépannage, installation ou entretien chauffage et climatisation.",
   keywords:
     "plombier Montpellier, dépannage plomberie Montpellier, chauffagiste Montpellier, climatisation Montpellier, urgence plombier Montpellier, installation plomberie, entretien chaudière, dépannage climatisation",
   openGraph: {
