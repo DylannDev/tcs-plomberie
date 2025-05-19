@@ -4,8 +4,8 @@ import Image from "next/image";
 import { ButtonCall } from "../ui/button-call";
 import { ButtonQuote } from "../ui/button-quote";
 // import { AnimatedHeader } from "../ui/animated-header";
-// import { FlipWords } from "../ui/flip-words";
-// import { seoWords } from "@/src/data";
+import { FlipWords } from "../ui/flip-words";
+import { seoWords } from "@/src/data";
 
 export function HeroMobile() {
   return (
@@ -30,8 +30,8 @@ export function HeroMobile() {
                 className="text-black sm:leading-normal text-3xl min-[580px]:text-4xl sm:text-5xl relative flex flex-wrap items-center justify-center gap-x-2 md:gap-x-3 mb-6"
               >
                 <span className="whitespace-nowrap">Besoin d'un</span>{" "}
-                {/* <FlipWords words={seoWords} /> */}
-                <span>Plombier</span>
+                <FlipWords words={seoWords} />
+                {/* <span>Plombier</span> */}
                 <span className="sr-only">
                   Plomberie, Plombier, Chauffagiste, Climaticien, Climatiseur
                 </span>

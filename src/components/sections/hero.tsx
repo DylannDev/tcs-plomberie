@@ -1,10 +1,10 @@
 import { Typography } from "../ui/typography";
 import Image from "next/image";
-import { AnimatedHeader } from "../ui/animated-header";
+// import { AnimatedHeader } from "../ui/animated-header";
 import { ButtonCall } from "../ui/button-call";
 import { ButtonQuote } from "../ui/button-quote";
-// import { FlipWords } from "../ui/flip-words";
-// import { seoWords } from "@/src/data";
+import { FlipWords } from "../ui/flip-words";
+import { seoWords } from "@/src/data";
 
 export function Hero() {
   return (
@@ -42,8 +42,8 @@ export function Hero() {
                 className="text-5xl lg:text-6xl leading-tight text-black relative flex flex-wrap items-center justify-center gap-x-2 md:gap-x-3 mb-6"
               >
                 <span className="whitespace-nowrap">Besoin d'un</span>{" "}
-                {/* <FlipWords words={seoWords} /> */}
-                <span>Plombier</span>
+                <FlipWords words={seoWords} />
+                {/* <span>Plombier</span> */}
                 <span className="sr-only">
                   Plomberie, Plombier, Chauffagiste, Climaticien, Climatiseur
                 </span>
