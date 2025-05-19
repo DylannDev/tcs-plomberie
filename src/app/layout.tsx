@@ -27,8 +27,11 @@ export const metadata: Metadata = {
 
 const outfit = Outfit({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // selon tes besoins
+  weight: ["400", "500", "600", "700"], // Réduit aux poids les plus utilisés
   display: "swap",
+  preload: true,
+  fallback: ["system-ui", "arial"],
+  variable: "--font-outfit",
 });
 
 export default function RootLayout({
@@ -37,15 +40,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={outfit.className}>
+    <html lang="fr" className={outfit.variable}>
       <head>
         <LocalBusinessJsonLd />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
+        {/* Preload des ressources critiques */}
+        <link
+          rel="preload"
+          href="/fonts/outfit-var.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
       </head>
-      <body className="antialiased relative overflow-x-hidden">
+      <body
+        className={`antialiased relative overflow-x-hidden ${outfit.className}`}
+      >
         <Navbar />
         <div className="flex flex-col min-h-screen w-full">
           <div className="flex-grow">{children}</div>
