@@ -39,6 +39,7 @@ export const socialLinks = [
     platform: "Facebook",
     href: "https://www.facebook.com/thermoclimsanitairemontpellier",
     icon: <RiFacebookCircleFill />,
+    ariaLabel: "Contacter Thermo Clim Sanitaire sur Facebook",
   },
 ];
 
