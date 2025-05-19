@@ -1,5 +1,3 @@
-"use client";
-
 import { Typography } from "../ui/typography";
 import Image from "next/image";
 import { ButtonCall } from "../ui/button-call";
@@ -14,13 +12,13 @@ export function Hero() {
       <section className="relative overflow-hidden max-h-[800px] hidden md:flex justify-center w-full mx-auto px-0 md:px-6 lg:px-8 max-w-[1440px]">
         <div className="relative w-full">
           <div className="text-center">
-            <div className="relative min-h-[calc(100dvh-218px)] flex w-full rounded-4xl overflow-hidden">
+            <div className="relative h-auto min-h-[calc(100dvh-218px)] flex w-full rounded-4xl overflow-hidden">
               <Image
                 src={"/shape-1.svg"}
                 alt="Plombier Montpellier TCS Plomberie"
-                width={600}
-                height={600}
-                className="absolute -top-28 -left-36 scale-x-[-1] z-49 overflow-hidden"
+                width={400}
+                height={400}
+                className="absolute -top-35 -left-50 scale-x-[-1] z-49 overflow-hidden w-auto"
                 priority
               />
               <div className="absolute top-0 bottom-0 bg-linear-to-r from-white via-white/70 to-white/0 w-full h-full z-40 rounded-4xl overflow-hidden"></div>
@@ -31,7 +29,7 @@ export function Hero() {
                   fill
                   sizes="(min-width: 768px) 100vw, 768px"
                   className="object-cover object-center"
-                  priority
+                  priority={true}
                   fetchPriority="high"
                 />
               </div>

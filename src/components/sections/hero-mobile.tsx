@@ -1,7 +1,5 @@
-"use client";
-
-import { Typography } from "../ui/typography";
 import Image from "next/image";
+import { Typography } from "../ui/typography";
 import { ButtonCall } from "../ui/button-call";
 import { ButtonQuote } from "../ui/button-quote";
 import { FlipWords } from "../ui/flip-words";

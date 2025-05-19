@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { Typography } from "@/src/components/ui/typography";
 import { PiSnowflake } from "react-icons/pi";
