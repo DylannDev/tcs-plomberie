@@ -104,7 +104,9 @@ function FooterSocial() {
               ariaLabel={link.ariaLabel}
               className="p-1"
               iconClassName="text-white hover:text-yellow text-4xl transition-all duration-300"
-            />
+            >
+              <span className="sr-only">{link.ariaLabel}</span>
+            </IconLink>
           ))}
         </div>
       </div>
