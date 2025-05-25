@@ -44,8 +44,26 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id=GTM-PGRTSF25'+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PGRTSF25');`,
+          }}
+        />
       </head>
       <body className={`antialiased relative overflow-x-hidden`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PGRTSF25"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+
         <Navbar />
         <div className="flex flex-col min-h-screen w-full">
           <div className="flex-grow">{children}</div>
