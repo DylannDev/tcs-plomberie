@@ -23,6 +23,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${baseUrl}/plomberie`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/climatisation`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/chauffage`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
