@@ -28,10 +28,7 @@ export function HeroMobile() {
               >
                 <span className="whitespace-nowrap">Besoin d'un</span>{" "}
                 <FlipWords words={seoWords} />
-                <span className="sr-only">
-                  Plomberie, Plombier, Chauffagiste, Climaticien, Climatiseur
-                </span>
-                <span>à Montpellier ?</span>
+                <span> à Montpellier ?</span>
               </Typography>
               <Typography
                 as="p"

@@ -343,7 +343,7 @@ export const faqChauffage = (city: string) => [
     id: "services-chauffage",
     question: `Quels services de chauffage proposez-vous à ${city} ?`,
     answer: `
-      À ${city}, <strong>TCS Plomberie</strong> vous accompagne dans l’installation, l’entretien et le dépannage de vos systèmes de chauffage. Nos prestations incluent :
+      À ${city}, <strong>TCS Plomberie</strong> vous accompagne dans l'installation, l'entretien et le dépannage de vos systèmes de chauffage. Nos prestations incluent :
       <ul class="list-disc list-inside mt-2 space-y-1">
         <li>Installation de pompes à chaleur air-eau et air-air</li>
         <li>Pose de radiateurs électriques à inertie ou à basse consommation</li>
@@ -351,7 +351,7 @@ export const faqChauffage = (city: string) => [
         <li>Dépannage en cas de panne ou de dysfonctionnement</li>
         <li>Optimisation de la régulation et des réglages</li>
       </ul>
-      Chaque solution est étudiée pour s’adapter à votre logement, vos habitudes de vie et vos objectifs d’économie d’énergie à ${city}.
+      Chaque solution est étudiée pour s'adapter à votre logement, vos habitudes de vie et vos objectifs d'économie d'énergie à ${city}.
     `,
   },
   {
@@ -365,14 +365,14 @@ export const faqChauffage = (city: string) => [
     id: "devis-gratuit-chauffage",
     question: `Proposez-vous un devis gratuit pour une installation de chauffage à ${city} ?`,
     answer: `
-      Bien sûr. Toutes nos installations de chauffage à ${city} font l’objet d’un <strong>devis gratuit, clair et sans engagement</strong>. Nous étudions vos besoins et les contraintes de votre logement pour vous proposer la solution la plus économique et efficace.
+      Bien sûr. Toutes nos installations de chauffage à ${city} font l'objet d'un <strong>devis gratuit, clair et sans engagement</strong>. Nous étudions vos besoins et les contraintes de votre logement pour vous proposer la solution la plus économique et efficace.
     `,
   },
   {
     id: "frequence-entretien",
     question: `Faut-il entretenir régulièrement son système de chauffage à ${city} ?`,
     answer: `
-      Oui, un entretien régulier est indispensable pour garantir la performance de votre système de chauffage à ${city}. Nous vous recommandons une <strong>vérification annuelle</strong> de votre pompe à chaleur, de vos radiateurs et de vos dispositifs de régulation. Cela permet d’éviter les pannes, de réduire votre consommation énergétique et de prolonger la durée de vie de votre installation.
+      Oui, un entretien régulier est indispensable pour garantir la performance de votre système de chauffage à ${city}. Nous vous recommandons une <strong>vérification annuelle</strong> de votre pompe à chaleur, de vos radiateurs et de vos dispositifs de régulation. Cela permet d'éviter les pannes, de réduire votre consommation énergétique et de prolonger la durée de vie de votre installation.
     `,
   },
 ];
@@ -426,8 +426,6 @@ export const cities = [
   "Assas",
   "Saint-Clément-de-Rivière",
   "Les Matelles",
-  "Saint-Geniès-des-Mourgues",
-  "Saint-Vincent-de-Barbeyrargues",
   "Murles",
   "Claret",
   "Sussargues",
@@ -628,7 +626,7 @@ export const sectionsChauffage = [
         <li>Nettoyage et vérification de votre pompe à chaleur</li>
         <li>Contrôle des radiateurs et des dispositifs de régulation</li>
         <li>Optimisation des réglages pour réduire votre consommation</li>
-        <li>Inspection préventive avant l’hiver</li>
+        <li>Inspection préventive avant l'hiver</li>
       </ul>
       <p>Nous vous accompagnons pour maintenir des performances optimales et prévenir les pannes à ${city}.</p>
     `,
@@ -638,7 +636,7 @@ export const sectionsChauffage = [
     title: (city: string) =>
       `Solutions de chauffage éco-performantes à ${city}`,
     content: (city: string) => `
-      <p>Réduisez vos factures tout en respectant l’environnement grâce à nos équipements de chauffage haute performance à ${city} :</p>
+      <p>Réduisez vos factures tout en respectant l'environnement grâce à nos équipements de chauffage haute performance à ${city} :</p>
       <ul class="list-disc list-inside space-y-1">
         <li>Pompes à chaleur nouvelle génération</li>
         <li>Radiateurs électriques basse consommation</li>
@@ -653,7 +651,7 @@ export const sectionsChauffage = [
     title: (city: string) =>
       `Pourquoi choisir TCS Plomberie pour votre chauffage à ${city} ?`,
     content: (city: string) => `
-      <p>En confiant votre installation ou dépannage de chauffage à <strong>Thermo Clim Sanitaire Plomberie</strong>, vous bénéficiez d’un service fiable et personnalisé à ${city} :</p>
+      <p>En confiant votre installation ou dépannage de chauffage à <strong>Thermo Clim Sanitaire Plomberie</strong>, vous bénéficiez d'un service fiable et personnalisé à ${city} :</p>
       <ul class="list-disc list-inside space-y-1">
         <li><strong>Réactivité</strong> : interventions rapides même en plein hiver</li>
         <li><strong>Conseils personnalisés</strong> : solutions sur-mesure adaptées à votre logement</li>
@@ -663,5 +661,287 @@ export const sectionsChauffage = [
       <p>Nos clients à ${city} nous font confiance pour notre professionnalisme et notre engagement qualité.</p>
     `,
     image: "/chauffagiste-5.jpg",
+  },
+];
+
+export const sectionsPlomberieGenerale = [
+  {
+    title: () =>
+      "Dépannage et urgence plomberie à Montpellier et ses alentours",
+    content: () => `
+      <p>Une fuite d'eau en pleine nuit ? Une canalisation bouchée le dimanche ? <strong>TCS Plomberie</strong> intervient <strong>en urgence 7j/7 dans tout l'Hérault</strong> pour tous vos problèmes de plomberie.</p>
+      <p>Notre équipe de plombiers professionnels traite rapidement :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Les fuites d'eau, visibles ou encastrées dans les murs</li>
+        <li>Les toilettes bouchées ou qui débordent</li>
+        <li>Les chasses d'eau défectueuses et robinets qui fuient</li>
+        <li>Les canalisations obstruées et éviers qui se bouchent</li>
+        <li>Les problèmes de pression d'eau</li>
+      </ul>
+      <p>Équipés de matériel professionnel, nous réalisons des <strong>inspections par caméra</strong> pour localiser précisément les anomalies. Notre objectif : résoudre le problème dès la première visite, sans mauvaise surprise pour nos clients de l'Hérault.</p>
+    `,
+    image: "/plombier-2.jpg",
+  },
+  {
+    title: () => "Installation de sanitaires et rénovation de salle de bain",
+    content: () => `
+      <p>Vous rénovez une salle de bain ou une cuisine à Montpellier et ses alentours ? Notre équipe installe tous vos équipements sanitaires avec soin et professionnalisme :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Lavabos, éviers et robinetterie design moderne</li>
+        <li>Colonnes de douche, baignoires et WC suspendus</li>
+        <li>Systèmes de filtration et traitement d'eau</li>
+        <li>Installation de meubles de salle de bain</li>
+      </ul>
+      <p>Nous assurons également les <strong>raccordements</strong>, les <strong>réseaux d'évacuation</strong>, et vous conseillons sur des <strong>solutions éco-responsables</strong> comme les systèmes de récupération d'eau de pluie ou les robinets à économie d'eau.</p>
+    `,
+    image: "/plombier-7.jpg",
+  },
+  {
+    title: () => "Entretien préventif : robinets, chaudières, chauffe-eau",
+    content: () => `
+      <p>Un ballon d'eau chaude qui faiblit ? Une chaudière qui fait du bruit ? à Montpellier et ses alentours, nous intervenons rapidement pour l'entretien et le dépannage de vos équipements :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>L'entretien de chauffe-eau (gaz, électrique, thermodynamique)</li>
+        <li>Le détartrage et la vérification des raccords</li>
+        <li>Le remplacement complet de l'appareil si nécessaire</li>
+        <li>L'entretien des chaudières et systèmes de chauffage</li>
+      </ul>
+      <p>Un <strong>entretien régulier</strong> permet de faire des <strong>économies d'énergie</strong> et d'éviter les pannes coûteuses. Nous vous guidons aussi sur le modèle le plus adapté à votre logement et vos besoins.</p>
+    `,
+    image: "/plombier-1.jpg",
+  },
+];
+
+export const faqPlomberieGenerale = () => [
+  {
+    id: "services-plomberie-herault",
+    question:
+      "Quels sont les services de plomberie proposés à Montpellier et ses alentours ?",
+    answer: `
+      Nous proposons un large éventail de prestations à Montpellier et ses alentours, adaptées aux besoins des particuliers comme des professionnels :
+      <ul class="list-disc list-inside mt-2 space-y-1">
+        <li>Pose complète de réseaux de plomberie dans les habitations</li>
+        <li>Installation de systèmes sanitaires pour les locaux professionnels</li>
+        <li>Entretien, dépannage et remplacement de chauffe-eau</li>
+        <li>Débouchage de canalisations, recherche et réparation de fuites</li>
+        <li>Traitement des eaux usées, systèmes de récupération d'eau de pluie</li>
+      </ul>
+      Vous pouvez nous contacter pour un devis gratuit selon votre besoin à Montpellier et ses alentours.
+    `,
+  },
+  {
+    id: "urgence-fuite-herault",
+    question:
+      "Intervenez-vous en urgence pour une fuite d'eau à Montpellier et ses alentours ?",
+    answer: `
+      Oui, TCS Plomberie intervient 7j/7 pour tout dépannage en urgence à Montpellier et ses alentours. En cas de fuite d'eau, de robinet cassé ou de canalisation bouchée, nous nous déplaçons rapidement avec tout le matériel nécessaire pour une réparation immédiate.
+    `,
+  },
+  {
+    id: "devis-gratuit-herault",
+    question:
+      "Proposez-vous des devis gratuits pour des travaux de plomberie à Montpellier et ses alentours ?",
+    answer: `
+      Absolument. Nos devis sont 100 % gratuits et sans engagement. Que ce soit pour une petite intervention ou un projet complet, vous recevez un devis clair, détaillé et personnalisé en fonction de vos besoins à Montpellier et ses alentours.
+    `,
+  },
+  {
+    id: "chauffe-eau-herault",
+    question:
+      "Pouvez-vous remplacer mon chauffe-eau à Montpellier et ses alentours ?",
+    answer: `
+      Oui, nous assurons le remplacement de chauffe-eau électriques, à gaz ou thermodynamiques à Montpellier et ses alentours. Nous vous conseillons sur le modèle le plus adapté à votre logement, et nous nous chargeons de l'installation dans les règles de l'art.
+    `,
+  },
+  {
+    id: "zones-intervention",
+    question: "Dans quelles zones de l'Hérault intervenez-vous ?",
+    answer: `
+      Nous intervenons dans tout l'Hérault, notamment à Montpellier, Sète, Béziers, Agde, Lunel, Pézenas, Lodève, Clermont-l'Hérault, et toutes les communes environnantes. N'hésitez pas à nous contacter pour vérifier si nous couvrons votre commune.
+    `,
+  },
+];
+
+export const sectionsClimatisationGenerale = [
+  {
+    title: () => "Installation de climatisation à Montpellier et ses alentours",
+    content: () => `
+      <p>Vous cherchez à améliorer le confort thermique de votre logement ou de vos locaux professionnels à Montpellier et ses alentours ? <strong>TCS Plomberie</strong> vous accompagne dans l'installation de systèmes de climatisation sur-mesure.</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Climatisation réversible chaud/froid pour un usage toute l'année</li>
+        <li>Systèmes monosplit ou multisplit selon la surface à climatiser</li>
+        <li>Climatisation gainable pour une intégration discrète</li>
+        <li>Solutions adaptées aux particuliers comme aux professionnels</li>
+        <li>Installation de pompes à chaleur air-air dernière génération</li>
+      </ul>
+      <p>Nous étudions vos besoins et vous conseillons la solution la plus performante, économe et adaptée à votre environnement dans l'Hérault.</p>
+    `,
+    image: "/climatisation-2.jpg",
+  },
+  {
+    title: () =>
+      "Dépannage rapide et entretien de climatisation dans l'Hérault",
+    content: () => `
+      <p>Votre climatisation est en panne ou fonctionne mal à Montpellier et ses alentours ? <strong>Nous intervenons rapidement</strong> pour remettre votre système en service dans les meilleurs délais.</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Recherche de panne et diagnostic précis avec équipement professionnel</li>
+        <li>Réparation des unités intérieures et extérieures</li>
+        <li>Remplacement des pièces usées ou défectueuses</li>
+        <li>Nettoyage et entretien pour prolonger la durée de vie du système</li>
+        <li>Réparation des fuites de fluide frigorigène</li>
+      </ul>
+      <p>Nous assurons un service d'urgence 7j/7 dans l'Hérault, avec ou sans contrat d'entretien. Réactivité, transparence, efficacité.</p>
+    `,
+    image: "/climatisation-3.jpg",
+  },
+  {
+    title: () =>
+      "Maintenance préventive : la clé de la performance énergétique",
+    content: () => `
+      <p>Un entretien régulier est indispensable pour garantir la performance et la longévité de votre système de climatisation à Montpellier et ses alentours.</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Contrôles annuels et réglages techniques optimisés</li>
+        <li>Nettoyage des filtres et vérification des fluides frigorigènes</li>
+        <li>Détection précoce des pannes ou fuites potentielles</li>
+        <li>Optimisation de la consommation énergétique</li>
+        <li>Vérification de la performance et du rendement</li>
+      </ul>
+      <p>Nous proposons des <strong>contrats d'entretien adaptés</strong> à vos besoins. Un système bien entretenu, c'est moins de pannes et plus d'économies d'énergie.</p>
+    `,
+    image: "/climatisation-5.jpg",
+  },
+];
+
+export const sectionsChauffageGenerale = [
+  {
+    title: () => "Installation de chauffage à Montpellier et ses alentours",
+    content: () => `
+      <p>Vous construisez ou rénovez votre logement à Montpellier et ses alentours ? <strong>Thermo Clim Sanitaire Plomberie</strong> vous accompagne dans l'installation de systèmes de chauffage modernes et performants.</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Pompe à chaleur (PAC air/eau ou air/air) dernière génération</li>
+        <li>Radiateurs électriques à inertie ou basse consommation</li>
+        <li>Systèmes de chauffage hybrides et intelligents</li>
+        <li>Installation de chaudières à condensation performantes</li>
+        <li>Solutions de chauffage écologiques et économiques</li>
+      </ul>
+      <p>Chaque solution est étudiée pour s'adapter à votre logement, vos habitudes de vie et vos objectifs d'économie d'énergie dans l'Hérault.</p>
+    `,
+    image: "/chauffagiste-1.jpg",
+  },
+  {
+    title: () => "Dépannage et entretien de chauffage dans l'Hérault",
+    content: () => `
+      <p>Votre système de chauffage ne fonctionne plus correctement à Montpellier et ses alentours ? Notre équipe de chauffagistes intervient rapidement pour rétablir votre confort thermique.</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Diagnostic précis des pannes de chauffage</li>
+        <li>Réparation des pompes à chaleur et radiateurs</li>
+        <li>Dépannage des chaudières et systèmes de régulation</li>
+        <li>Remplacement des pièces défectueuses</li>
+        <li>Optimisation des réglages pour un meilleur rendement</li>
+      </ul>
+      <p>Nous intervenons en urgence 7j/7 dans l'Hérault pour tous vos problèmes de chauffage, avec un service réactif et professionnel.</p>
+    `,
+    image: "/chauffagiste-3.jpg",
+  },
+  {
+    title: () => "Solutions de chauffage éco-performantes et économiques",
+    content: () => `
+      <p>Réduisez vos factures tout en respectant l'environnement grâce à nos équipements de chauffage haute performance à Montpellier et ses alentours :</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Pompes à chaleur nouvelle génération à haut rendement</li>
+        <li>Systèmes de chauffage intelligents et connectés</li>
+        <li>Radiateurs à basse consommation et inertie</li>
+        <li>Solutions hybrides combinant plusieurs énergies</li>
+        <li>Optimisation énergétique de vos installations existantes</li>
+      </ul>
+      <p>Nous vous accompagnons pour choisir la solution la plus économique et écologique adaptée à votre logement dans l'Hérault.</p>
+    `,
+    image: "/chauffagiste-5.jpg",
+  },
+];
+
+export const faqClimatisationGenerale = () => [
+  {
+    id: "services-climatisation-herault",
+    question:
+      "Quels services de climatisation proposez-vous à Montpellier et ses alentours ?",
+    answer: `
+      À Montpellier et ses alentours, nous proposons des solutions complètes pour tous vos besoins en climatisation, qu'il s'agisse d'un logement ou de locaux professionnels :
+      <ul class="list-disc list-inside mt-2 space-y-1">
+        <li>Installation de climatisation réversible (chaud/froid)</li>
+        <li>Pose de climatiseurs monosplit, multisplit ou gainables</li>
+        <li>Entretien annuel et nettoyage des filtres</li>
+        <li>Dépannage en cas de panne, bruit anormal ou fuite</li>
+        <li>Optimisation de la performance et de la consommation énergétique</li>
+      </ul>
+      Chaque installation est personnalisée en fonction de la surface, de l'usage et des contraintes techniques de votre bien à Montpellier et ses alentours.
+    `,
+  },
+  {
+    id: "intervention-urgence-clim",
+    question:
+      "Intervenez-vous rapidement en cas de panne de climatisation à Montpellier et ses alentours ?",
+    answer: `
+      Oui. Notre équipe se déplace à Montpellier et ses environs pour toute urgence liée à votre climatisation : arrêt brutal, fuite de fluide frigorigène, problème de soufflerie ou bruit anormal. Nous intervenons 7j/7 avec le matériel nécessaire pour un diagnostic rapide et une réparation efficace.
+    `,
+  },
+  {
+    id: "devis-gratuit-clim-herault",
+    question:
+      "Est-ce que le devis est gratuit pour une climatisation à Montpellier et ses alentours ?",
+    answer: `
+      Tout à fait. Que ce soit pour une première installation, une mise à niveau ou un contrat d'entretien, nous réalisons un devis 100 % gratuit à Montpellier et ses alentours. Le devis est détaillé, sans frais cachés, et vous permet de choisir la solution la plus adaptée à votre budget.
+    `,
+  },
+  {
+    id: "frequence-entretien-clim",
+    question:
+      "À quelle fréquence faut-il entretenir sa climatisation à Montpellier et ses alentours ?",
+    answer: `
+      Il est recommandé de faire entretenir votre climatisation au moins une fois par an. Cet entretien comprend le nettoyage des filtres, la vérification des performances, et le contrôle du fluide frigorigène. Cela permet d'éviter les pannes, de prolonger la durée de vie de l'appareil, et de réduire votre consommation énergétique à Montpellier et ses alentours.
+    `,
+  },
+];
+
+export const faqChauffageGenerale = () => [
+  {
+    id: "services-chauffage-herault",
+    question:
+      "Quels services de chauffage proposez-vous à Montpellier et ses alentours ?",
+    answer: `
+      À Montpellier et ses alentours, <strong>TCS Plomberie</strong> vous accompagne dans l'installation, l'entretien et le dépannage de vos systèmes de chauffage. Nos prestations incluent :
+      <ul class="list-disc list-inside mt-2 space-y-1">
+        <li>Installation de pompes à chaleur air-eau et air-air</li>
+        <li>Pose de radiateurs électriques à inertie ou à basse consommation</li>
+        <li>Maintenance préventive des installations existantes</li>
+        <li>Dépannage en cas de panne ou de dysfonctionnement</li>
+        <li>Optimisation de la régulation et des réglages</li>
+      </ul>
+      Chaque solution est étudiée pour s'adapter à votre logement, vos habitudes de vie et vos objectifs d'économie d'énergie à Montpellier et ses alentours.
+    `,
+  },
+  {
+    id: "intervention-urgence-chauffage",
+    question:
+      "Intervenez-vous rapidement en cas de panne de chauffage à Montpellier et ses alentours ?",
+    answer: `
+      Oui. En cas de panne de votre système de chauffage à Montpellier et ses alentours, notre équipe intervient en urgence <strong>7j/7</strong> pour rétablir votre confort thermique. Que ce soit une pompe à chaleur défectueuse, un radiateur qui ne chauffe plus ou un problème de régulation, nous établissons un diagnostic rapide et intervenons avec le matériel adapté.
+    `,
+  },
+  {
+    id: "devis-gratuit-chauffage-herault",
+    question:
+      "Proposez-vous un devis gratuit pour une installation de chauffage à Montpellier et ses alentours ?",
+    answer: `
+      Bien sûr. Toutes nos installations de chauffage à Montpellier et ses alentours font l'objet d'un <strong>devis gratuit, clair et sans engagement</strong>. Nous étudions vos besoins et les contraintes de votre logement pour vous proposer la solution la plus économique et efficace.
+    `,
+  },
+  {
+    id: "frequence-entretien-chauffage",
+    question:
+      "Faut-il entretenir régulièrement son système de chauffage à Montpellier et ses alentours ?",
+    answer: `
+      Oui, un entretien régulier est indispensable pour garantir la performance de votre système de chauffage à Montpellier et ses alentours. Nous vous recommandons une <strong>vérification annuelle</strong> de votre pompe à chaleur, de vos radiateurs et de vos dispositifs de régulation. Cela permet d'éviter les pannes, de réduire votre consommation énergétique et de prolonger la durée de vie de votre installation.
+    `,
   },
 ];

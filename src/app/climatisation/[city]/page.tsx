@@ -15,7 +15,7 @@ export async function generateMetadata({
   const { city } = await params;
   const capitalizedCity = getDisplayCityFromSlug(city);
 
-  const title = `Climatisation à ${capitalizedCity} - Installation et dépannage climatisation | TCS Plomberie`;
+  const title = `Climatisation à ${capitalizedCity} - Installation, entretien`;
   const description = `Besoin d'une climatisation à ${capitalizedCity} ? Intervention rapide, devis gratuit. TCS Plomberie intervient 7j/7 pour tous vos besoins en climatisation, installation et entretien.`;
   const url = `https://tcs-plomberie-montpellier.fr/climatisation/${city}`;
   const image = `https://tcs-plomberie-montpellier.fr/climatisation-1.jpg`;

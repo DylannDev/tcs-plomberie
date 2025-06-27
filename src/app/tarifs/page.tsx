@@ -7,7 +7,7 @@ import { AnimatedHeader } from "@/src/components/ui/animated-header";
 import { AnimatedCard } from "@/src/components/ui/animated-card";
 
 export const metadata: Metadata = {
-  title: "Tarifs plomberie, chauffage et climatisation | Thermo Clim Sanitaire",
+  title: "Tarifs plomberie, chauffage et climatisation | TCS Plomberie",
   description:
     "Consultez nos tarifs détaillés pour l'installation, l'entretien et le dépannage de plomberie, chauffage et climatisation à Montpellier. Devis gratuit, prix transparents.",
 };

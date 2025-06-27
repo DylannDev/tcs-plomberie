@@ -7,10 +7,6 @@ interface BlogPost {
   slug: string;
 }
 
-interface City {
-  slug: string;
-}
-
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }

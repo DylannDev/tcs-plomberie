@@ -33,7 +33,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${article.title} | Conseils plomberie, climatisation et chauffage`,
+    title: `${article.title}`,
     description: `${article.description} Consultez tous nos conseils pratiques sur le blog de TCS Plomberie.`,
     openGraph: {
       title: `${article.title} | TCS Plomberie`,
