@@ -16,7 +16,7 @@ export async function generateMetadata({
   const capitalizedCity = getDisplayCityFromSlug(city);
 
   const title = `Chauffage à ${capitalizedCity} - Installation, dépannage`;
-  const description = `Besoin d'un chauffagiste à ${capitalizedCity} ? Intervention rapide, devis gratuit. TCS Plomberie intervient 7j/7 pour tous vos besoins en chauffage, installation et entretien.`;
+  const description = `Chauffagiste à ${capitalizedCity} : TCS Plomberie intervient 7j/7 pour l'installation, le dépannage, ou l'entretien du chauffage. Devis gratuit.`;
   const url = `https://tcs-plomberie-montpellier.fr/chauffage/${city}`;
   const image = `https://tcs-plomberie-montpellier.fr/chauffage-1.jpg`;
 

@@ -5,9 +5,9 @@ import { AnimatedHeader } from "@/src/components/ui/animated-header";
 import ContactInfos from "@/src/components/forms/contact-infos";
 
 export const metadata: Metadata = {
-  title: "Contactez Thermo Clim Sanitaire Plomberie à Montpellier",
+  title: "Contactez TCS Plomberie à Montpellier",
   description:
-    "Besoin d’un dépannage urgent ou d’un devis gratuit ? Contactez Thermo Clim Sanitaire à Montpellier. Intervention rapide 7j/7 pour plomberie, chauffage et climatisation.",
+    "Besoin d'un dépannage urgent ou devis gratuit ? Contactez TCS Plomberie à Montpellier. Intervention 7j/7 en plomberie, chauffage et climatisation.",
 };
 
 export default function ContactPage() {

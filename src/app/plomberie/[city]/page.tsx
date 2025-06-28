@@ -16,7 +16,7 @@ export async function generateMetadata({
   const capitalizedCity = getDisplayCityFromSlug(city);
 
   const title = `Plombier à ${capitalizedCity} - Urgence plomberie 7j/7`;
-  const description = `Besoin d'un plombier à ${capitalizedCity} ? Intervention rapide, devis gratuit. TCS Plomberie intervient 7j/7 pour tous vos besoins en plomberie, chauffage et climatisation.`;
+  const description = `Plombier à ${capitalizedCity} : installation, dépannage, urgence plomberie. TCS Plomberie intervient 7j/7. Intervention rapide, devis gratuit.`;
   const url = `https://tcs-plomberie-montpellier.fr/plomberie/${city}`;
   const image = `https://tcs-plomberie-montpellier.fr/plombier-2.jpg`;
 
