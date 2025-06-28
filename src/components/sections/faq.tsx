@@ -39,7 +39,7 @@ export function Faq({
         <div className="absolute top-0 md:-top-0 lg:-top-10 xl:top-[40%] left-0 w-full aspect-video -z-10 overflow-hidden">
           <Image
             src="/shape-2.svg"
-            alt="Plombier Montpellier TCS Plomberie"
+            alt=""
             width={3000}
             height={3000}
             quality={100}

@@ -13,7 +13,7 @@ export function HeroMobile() {
           <div className="relative top-0 w-full z-50 flex items-center justify-center bg-white pt-12">
             <Image
               src={"/shape-1.svg"}
-              alt="Plombier Montpellier TCS Plomberie"
+              alt=""
               width={600}
               height={600}
               quality={100}

@@ -23,7 +23,7 @@ export default function TarifsPage() {
         <div className="absolute w-full h-full inset-0 z-0">
           <Image
             src="/shape-1.svg"
-            alt="Plombier Montpellier TCS Plomberie"
+            alt=""
             width={500}
             height={500}
             className="absolute object-cover -left-40 -bottom-25 -rotate-10 scale-y-[-1] scale-x-[-1]"
@@ -31,7 +31,7 @@ export default function TarifsPage() {
           />
           <Image
             src="/wave-1.svg"
-            alt="Plombier Montpellier TCS Plomberie"
+            alt=""
             width={400}
             height={400}
             className="absolute object-cover -right-35 -top-30 -rotate-15"

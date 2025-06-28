@@ -13,7 +13,7 @@ export function Hero() {
           <div className="relative h-auto min-h-[calc(100dvh-218px)] flex w-full rounded-4xl overflow-hidden">
             <Image
               src={"/shape-1.svg"}
-              alt="Plombier Montpellier TCS Plomberie"
+              alt=""
               width={400}
               height={400}
               className="absolute -top-35 -left-50 scale-x-[-1] z-49 overflow-hidden w-auto"

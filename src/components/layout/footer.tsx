@@ -144,7 +144,7 @@ export function Footer() {
         <div className="absolute -top-80 right-0 -rotate-15 w-fit h-[700px] z-0">
           <Image
             src="/wave-1.svg"
-            alt="Plombier Montpellier TCS Plomberie"
+            alt=""
             width={700}
             height={700}
             quality={100}
@@ -155,7 +155,7 @@ export function Footer() {
         <div className="absolute bottom-0 left-0 -rotate-15 w-full h-[600px] z-0">
           <Image
             src="/wave-1.svg"
-            alt="Plombier Montpellier TCS Plomberie"
+            alt=""
             width={600}
             height={600}
             quality={100}

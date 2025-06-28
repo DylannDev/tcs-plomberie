@@ -35,7 +35,7 @@ export default function BlogClient() {
         <div className="absolute w-full h-full inset-0 z-0">
           <Image
             src="/shape-1.svg"
-            alt="Plombier Montpellier TCS Plomberie"
+            alt=""
             width={500}
             height={500}
             className="absolute object-cover -right-40 -top-25 -rotate-10"
@@ -43,7 +43,7 @@ export default function BlogClient() {
           />
           <Image
             src="/wave-1.svg"
-            alt="Plombier Montpellier TCS Plomberie"
+            alt=""
             width={400}
             height={400}
             className="absolute object-cover -left-35 -bottom-30 -rotate-15"
