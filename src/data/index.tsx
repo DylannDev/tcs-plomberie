@@ -7,9 +7,9 @@ import {
 
 // Navigation links data
 export const navigationLinks = [
-  { href: "/plomberie/montpellier", label: "Plomberie" },
-  { href: "/climatisation/montpellier", label: "Climatisation" },
-  { href: "/chauffage/montpellier", label: "Chauffage" },
+  { href: "/plomberie", label: "Plomberie" },
+  { href: "/climatisation", label: "Climatisation" },
+  { href: "/chauffage", label: "Chauffage" },
   { href: "/tarifs", label: "Tarifs" },
   { href: "/blog", label: "Blog" },
 ];
