@@ -63,7 +63,7 @@ export function SeoColumn({ service }: SeoColumnProps) {
               }}
             >
               <Link
-                href={`/${service}/${formatCityUrl(city)}`}
+                href={`/${service}`}
                 className="block text-lg hover:text-yellow transition-colors duration-150"
               >
                 {prefixes[service]} à {city}

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { formatCityUrl } from "@/src/lib/utils";
 import { cities, services } from "@/src/data";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -41,7 +40,7 @@ export function CoverageTabs() {
             index < 18 && (
               <Link
                 key={city}
-                href={`/${activeTab}/${formatCityUrl(city)}`}
+                href={`/${activeTab}`}
                 className="group p-4 rounded-xl bg-light-blue active:bg-sky-blue text-sky-blue transition-all duration-500 ease-in-out cursor-pointer"
               >
                 <div className="flex justify-center items-center gap-2 text-center h-full ">

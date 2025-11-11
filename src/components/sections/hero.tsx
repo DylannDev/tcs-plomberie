@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden flex justify-center w-full mx-auto px-0 md:px-6 lg:px-8 max-w-[1440px]">
       <div className="relative w-full">
-        <div className="relative text-center flex flex-col md:block h-[calc(100dvh-120px)] md:h-auto">
+        <div className="relative text-center flex flex-col">
           {/* TOP TEXT + SHAPE */}
           <div className="relative top-0 w-full z-50 flex items-center justify-center bg-white md:bg-transparent pt-12 pb-10 lg:absolute lg:inset-0 lg:pt-0 overflow-hidden rounded-4xl">
             <Image
