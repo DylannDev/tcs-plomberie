@@ -1,13 +1,30 @@
 import { MetadataRoute } from "next";
-import { getBlogSlugs } from "../lib/utils";
+import { getAllPosts } from "../lib/blog";
+import { citiesData } from "../data/cities-seo";
 
-interface BlogSlug {
-  slug: string;
-}
+// Slugs des villes avec contenu unique (priorité plus haute dans le sitemap)
+const uniqueContentSlugs = new Set([
+  // Group 1
+  "lattes", "castelnau-le-lez", "juvignac", "grabels", "saint-gely-du-fesc",
+  // Group 2
+  "perols", "mauguio", "saint-jean-de-vedas",
+  // Group 3
+  "sete", "frontignan", "balaruc-les-bains",
+  // Group 4
+  "la-grande-motte", "palavas-les-flots", "aigues-mortes",
+  // Group 5
+  "villeneuve-les-maguelone", "le-cres", "grau-du-roi",
+  // Group 6
+  "pignan", "baillargues", "fabregues",
+  // Group 7
+  "vendargues", "jacou", "castries",
+  // Group 8
+  "gigean", "prades-le-lez", "clapiers",
+]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://tcs-plomberie-montpellier.fr";
-  const posts = getBlogSlugs();
+  const posts = getAllPosts();
 
   // Pages principales avec priorité élevée
   const staticPages = [
@@ -55,13 +72,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Pages d'articles de blog
-  const blogPages = posts.map((post: BlogSlug) => ({
+  // Pages villes par service (priorité différenciée selon contenu unique ou template)
+  const services = ["plomberie", "chauffage", "climatisation"];
+  const cityPages = services.flatMap((service) =>
+    citiesData.map((city) => ({
+      url: `${baseUrl}/${service}/${city.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: uniqueContentSlugs.has(city.slug) ? 0.7 : 0.5,
+    }))
+  );
+
+  // Pages d'articles de blog avec vraies dates
+  const blogPages = posts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(),
+    lastModified: new Date(post.updatedAt || post.date),
     changeFrequency: "weekly" as const,
     priority: 0.6,
   }));
 
-  return [...staticPages, ...blogPages];
+  return [...staticPages, ...cityPages, ...blogPages];
 }

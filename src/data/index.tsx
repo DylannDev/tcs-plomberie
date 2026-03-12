@@ -21,7 +21,7 @@ export const contactInfo = {
   email: "thermoclimsanitaire@gmail.com",
 };
 
-export const seoWords = ["Plombier", "Chauffagiste", "Climatiseur"];
+export const seoWords = ["Plombier", "Chauffagiste", "Climatisation"];
 
 export const socialLinks = [
   {
@@ -423,11 +423,8 @@ export const cities = [
   "Murviel-lès-Montpellier",
   "Vailhauquès",
   "Montarnaud",
-  "Assas",
   "Saint-Clément-de-Rivière",
   "Les Matelles",
-  "Murles",
-  "Claret",
   "Sussargues",
   "Beaulieu",
   "Restinclières",

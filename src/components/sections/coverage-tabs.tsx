@@ -3,8 +3,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { cities, services } from "@/src/data";
+import { formatCityUrl } from "@/src/lib/utils";
+import { getAllCitySlugs } from "@/src/data/cities-seo";
 import { Button } from "../ui/button";
 import Link from "next/link";
+
+const citySlugsWithPages = getAllCitySlugs();
 
 export function CoverageTabs() {
   const [activeTab, setActiveTab] = useState(services[0].id);
@@ -35,22 +39,27 @@ export function CoverageTabs() {
       {/* Cities Grid */}
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {cities.map(
-          (city, index) =>
-            index < 18 && (
-              <Link
-                key={city}
-                href={`/${activeTab}`}
-                className="group p-4 rounded-xl bg-light-blue active:bg-sky-blue text-sky-blue transition-all duration-500 ease-in-out cursor-pointer"
-              >
-                <div className="flex justify-center items-center gap-2 text-center h-full ">
-                  <span className="font-medium group-hover:text-dark-blue group-active:text-white transition-colors">
-                    {city}
-                  </span>
-                </div>
-              </Link>
-            )
-        )}
+        {cities.map((city, index) => {
+          if (index >= 18) return null;
+          const slug = formatCityUrl(city);
+          const hasPage =
+            city !== "Montpellier" && citySlugsWithPages.includes(slug);
+          const href = hasPage ? `/${activeTab}/${slug}` : `/${activeTab}`;
+
+          return (
+            <Link
+              key={city}
+              href={href}
+              className="group p-4 rounded-xl bg-light-blue active:bg-sky-blue text-sky-blue transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div className="flex justify-center items-center gap-2 text-center h-full ">
+                <span className="font-medium group-hover:text-dark-blue group-active:text-white transition-colors">
+                  {city}
+                </span>
+              </div>
+            </Link>
+          );
+        })}
       </div>
     </motion.div>
   );

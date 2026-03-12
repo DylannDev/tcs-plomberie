@@ -1,16 +1,20 @@
 import Image from "next/image";
 import { Typography } from "@/src/components/ui/typography";
 import { PiSnowflake } from "react-icons/pi";
-import { faqClimatisation, sectionsClimatisation } from "@/src/data";
-import { getDisplayCityFromSlug } from "@/src/lib/utils";
 import { Faq } from "@/src/components/sections/faq";
 import { Coverage } from "@/src/components/sections/coverage";
 import { SimilarPosts } from "../sections/similar-posts";
 import { AnimatedHeader } from "../ui/animated-header";
 import { AnimatedCard } from "../ui/animated-card";
+import { cityServiceImages } from "@/src/data/cities-seo";
 
-export default function ClimatisationSeoPage({ city }: SeoPageProps) {
-  const capitalizedCity = getDisplayCityFromSlug(city);
+export default function ClimatisationSeoPage({
+  cityName,
+  heroIntro,
+  sections,
+  faq,
+}: CitySeoPageProps) {
+  const images = cityServiceImages.climatisation;
 
   return (
     <main className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,7 +23,7 @@ export default function ClimatisationSeoPage({ city }: SeoPageProps) {
         <div className="relative w-full aspect-square max-h-[350px] md:aspect-square md:max-h-[450px] mb-12">
           <Image
             src="/climatisation-2.jpg"
-            alt={`Climatisation à ${capitalizedCity}`}
+            alt={`Climatisation à ${cityName}`}
             fill
             sizes="(max-width: 768px) 100vw, 1300px"
             className="object-cover brightness-40 rounded-3xl"
@@ -38,25 +42,21 @@ export default function ClimatisationSeoPage({ city }: SeoPageProps) {
               lineHeight="tight"
               className="text-center text-white text-3xl sm:text-6xl"
             >
-              Climatisation à {capitalizedCity}
+              Climatisation à {cityName}
             </Typography>
             <Typography
               as="p"
               variant="xl"
               weight="medium"
               className="text-center mb-12 text-white text-balance text-base sm:text-xl"
-            >
-              TCS Plomberie intervient rapidement pour tous vos besoins en
-              climatisation à {capitalizedCity} :{" "}
-              <br className="hidden sm:block" />
-              Installation, dépannage, entretien et maintenance.
-            </Typography>
+              dangerouslySetInnerHTML={{ __html: heroIntro }}
+            />
           </div>
         </div>
       </AnimatedHeader>
 
       <div className="flex flex-col gap-16 md:gap-28 py-8 sm:py-16 md:py-28">
-        {sectionsClimatisation.map((section, index) => (
+        {sections.map((section, index) => (
           <AnimatedCard
             key={index}
             index={index}
@@ -72,19 +72,19 @@ export default function ClimatisationSeoPage({ city }: SeoPageProps) {
                 lineHeight="tight"
                 className="mb-4 text-black"
               >
-                {section.title(capitalizedCity)}
+                {section.title}
               </Typography>
               <div
                 className="text-lg text-dark-gray rich-text"
                 dangerouslySetInnerHTML={{
-                  __html: section.content(capitalizedCity),
+                  __html: section.content,
                 }}
               />
             </div>
             <div className="w-full md:w-1/2 relative aspect-square md:aspect-auto lg:aspect-square max-h-[350px] md:max-h-full lg:max-h-[500px] md:h-auto overflow-hidden">
               <Image
-                src={section.image}
-                alt={`Installation et entretien de climatisation à ${capitalizedCity} - TCS Plomberie`}
+                src={images[index % images.length]}
+                alt={`Installation et entretien de climatisation à ${cityName} - TCS Plomberie`}
                 fill
                 sizes="(max-width: 768px) 100vw, 650px"
                 className="object-cover object-right rounded-3xl"
@@ -96,8 +96,8 @@ export default function ClimatisationSeoPage({ city }: SeoPageProps) {
       </div>
 
       <Faq
-        data={faqClimatisation(capitalizedCity)}
-        title={`Questions sur la climatisation à ${capitalizedCity}`}
+        data={faq}
+        title={`Questions sur la climatisation à ${cityName}`}
         badge="FAQ"
         isRichText={true}
       />

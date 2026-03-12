@@ -8,6 +8,7 @@ import { Button } from "./button";
 import { useState } from "react";
 import { PiCaretDownBold } from "react-icons/pi";
 import { motion, AnimatePresence } from "framer-motion";
+import { getAllCitySlugs } from "@/src/data/cities-seo";
 
 interface SeoColumnProps {
   service: "plomberie" | "chauffage" | "climatisation";
@@ -15,13 +16,15 @@ interface SeoColumnProps {
 
 const INITIAL_DISPLAY_COUNT = 18;
 
+const citySlugsWithPages = getAllCitySlugs();
+
 export function SeoColumn({ service }: SeoColumnProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const currentService = services.find((s) => s.id === service);
   const prefixes = {
     plomberie: "Plombier",
     chauffage: "Chauffagiste",
-    climatisation: "Climaticien",
+    climatisation: "Climatisation",
   };
 
   const displayedCities = isExpanded
@@ -31,7 +34,6 @@ export function SeoColumn({ service }: SeoColumnProps) {
 
   const handleToggle = () => {
     setIsExpanded(!isExpanded);
-    // Scroll après un court délai pour laisser l'animation commencer
     setTimeout(() => {
       window.scrollTo({
         top: document.documentElement.scrollHeight,
@@ -50,26 +52,33 @@ export function SeoColumn({ service }: SeoColumnProps) {
       </Typography>
       <div className="space-y-2">
         <AnimatePresence initial={false}>
-          {displayedCities.map((city, index) => (
-            <motion.div
-              key={city}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{
-                duration: 0.3,
-                delay: index * 0.02,
-                ease: "easeOut",
-              }}
-            >
-              <Link
-                href={`/${service}`}
-                className="block text-lg hover:text-yellow transition-colors duration-150"
+          {displayedCities.map((city, index) => {
+            const slug = formatCityUrl(city);
+            const hasPage =
+              city !== "Montpellier" && citySlugsWithPages.includes(slug);
+            const href = hasPage ? `/${service}/${slug}` : `/${service}`;
+
+            return (
+              <motion.div
+                key={city}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{
+                  duration: 0.3,
+                  delay: index * 0.02,
+                  ease: "easeOut",
+                }}
               >
-                {prefixes[service]} à {city}
-              </Link>
-            </motion.div>
-          ))}
+                <Link
+                  href={href}
+                  className="block text-lg hover:text-yellow transition-colors duration-150"
+                >
+                  {prefixes[service]} à {city}
+                </Link>
+              </motion.div>
+            );
+          })}
         </AnimatePresence>
       </div>
       {hasMoreCities && (
