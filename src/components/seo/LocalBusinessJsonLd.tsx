@@ -1,13 +1,7 @@
-"use client";
-
-import Script from "next/script";
-
 export const LocalBusinessJsonLd = () => {
   return (
-    <Script
-      id="localbusiness-jsonld"
+    <script
       type="application/ld+json"
-      strategy="afterInteractive"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org",

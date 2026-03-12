@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { cities, services } from "@/src/data";
 import { formatCityUrl } from "@/src/lib/utils";
 import { getAllCitySlugs } from "@/src/data/cities-seo";
@@ -14,13 +13,7 @@ export function CoverageTabs() {
   const [activeTab, setActiveTab] = useState(services[0].id);
 
   return (
-    <motion.div
-      key={activeTab}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
-      className="flex flex-col gap-8"
-    >
+    <div className="flex flex-col gap-8">
       {/* Tabs */}
       <div className="flex flex-wrap justify-center gap-4">
         {services.map((service) => (
@@ -37,8 +30,10 @@ export function CoverageTabs() {
       </div>
 
       {/* Cities Grid */}
-
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div
+        key={activeTab}
+        className="grid grid-cols-2 md:grid-cols-3 gap-4 animate-fade-in"
+      >
         {cities.map((city, index) => {
           if (index >= 18) return null;
           const slug = formatCityUrl(city);
@@ -61,6 +56,6 @@ export function CoverageTabs() {
           );
         })}
       </div>
-    </motion.div>
+    </div>
   );
 }

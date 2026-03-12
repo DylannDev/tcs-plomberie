@@ -1,9 +1,7 @@
-"use client";
-
 import { Tarif } from "@/src/data/tarifs";
 import { Typography } from "./typography";
-import { motion } from "framer-motion";
-import { PiCheckBold } from "react-icons/pi";
+import { InView } from "./in-view";
+import { Check } from "lucide-react";
 
 interface TarifPerServiceProps extends Tarif {
   index: number;
@@ -16,16 +14,13 @@ export function TarifPerService({
   index,
 }: TarifPerServiceProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+    <InView
+      delay={index * 0.1}
       className="flex items-center justify-between gap-4"
     >
       <div className="flex items-center gap-2">
         <span>
-          <PiCheckBold className="text-yellow text-base sm:text-lg block" />
+          <Check className="w-4 h-4 sm:w-5 sm:h-5 text-yellow" strokeWidth={3} />
         </span>
         <Typography
           as="p"
@@ -49,6 +44,6 @@ export function TarifPerService({
         )}
         <span className="whitespace-nowrap">{price} €</span>
       </Typography>
-    </motion.div>
+    </InView>
   );
 }

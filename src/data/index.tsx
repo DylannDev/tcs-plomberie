@@ -1,9 +1,9 @@
 import {
-  RiFacebookCircleFill,
-  RiInstagramFill,
-  RiWhatsappFill,
-  RiYoutubeFill,
-} from "react-icons/ri";
+  WhatsAppIcon,
+  InstagramIcon,
+  FacebookIcon,
+  YouTubeIcon,
+} from "@/src/components/ui/brand-icons";
 
 // Navigation links data
 export const navigationLinks = [
@@ -21,31 +21,31 @@ export const contactInfo = {
   email: "thermoclimsanitaire@gmail.com",
 };
 
-export const seoWords = ["Plombier", "Chauffagiste", "Climatisation"];
+export const seoWords = ["Plombier ?", "Chauffagiste ?", "Climaticien ?"];
 
 export const socialLinks = [
   {
     platform: "Whatsapp",
     href: "https://wa.me/775715252",
-    icon: <RiWhatsappFill />,
+    icon: <WhatsAppIcon />,
     ariaLabel: "Contacter Thermo Clim Sanitaire sur WhatsApp",
   },
   {
     platform: "Instagram",
     href: "https://instagram.com/tcsplomberiemontpellier",
-    icon: <RiInstagramFill />,
+    icon: <InstagramIcon />,
     ariaLabel: "Contacter Thermo Clim Sanitaire sur Instagram",
   },
   {
     platform: "Facebook",
     href: "https://www.facebook.com/tcsplomberiemontpellier",
-    icon: <RiFacebookCircleFill />,
+    icon: <FacebookIcon />,
     ariaLabel: "Contacter Thermo Clim Sanitaire sur Facebook",
   },
   {
     platform: "Youtube",
     href: "https://www.youtube.com/@tcsplomberiemontpellier",
-    icon: <RiYoutubeFill />,
+    icon: <YouTubeIcon />,
     ariaLabel: "Contacter Thermo Clim Sanitaire sur Youtube",
   },
 ];

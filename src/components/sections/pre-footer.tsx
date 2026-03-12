@@ -1,5 +1,3 @@
-"use client";
-
 import { contactInfo, seoWords } from "@/src/data";
 import { ButtonCall } from "../ui/button-call";
 import { ButtonQuote } from "../ui/button-quote";
@@ -21,7 +19,6 @@ export function PreFooter() {
               className="text-black relative flex flex-wrap items-center justify-center md:justify-start gap-2"
             >
               <span>Besoin d'un</span> <FlipWords words={seoWords} />
-              <span>?</span>
               <span className="sr-only">
                 Plomberie, Plombier, Chauffagiste, Climaticien, Climatiseur
               </span>

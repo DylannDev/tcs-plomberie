@@ -9,7 +9,7 @@ import {
 import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { InView } from "../ui/in-view";
 import { cn } from "@/src/lib/utils";
 
 interface FaqItem {
@@ -54,13 +54,7 @@ export function Faq({
           !isRichText && "px-4 sm:px-6 lg:px-8"
         )}
       >
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
+        <InView className="text-center">
           <Badge>{badge}</Badge>
           <Typography
             as="h2"
@@ -69,22 +63,11 @@ export function Faq({
           >
             {title}
           </Typography>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
+        </InView>
+        <InView delay={0.2}>
           <Accordion className="flex flex-col gap-6" type="single" collapsible>
             {data.map((faq, index) => (
-              <motion.div
-                key={faq.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
+              <InView key={faq.id} delay={index * 0.1}>
                 <AccordionItem value={faq.id}>
                   <AccordionTrigger>{faq.question}</AccordionTrigger>
                   <AccordionContent>
@@ -98,10 +81,10 @@ export function Faq({
                     )}
                   </AccordionContent>
                 </AccordionItem>
-              </motion.div>
+              </InView>
             ))}
           </Accordion>
-        </motion.div>
+        </InView>
       </div>
     </section>
   );

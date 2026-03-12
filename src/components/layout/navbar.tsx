@@ -7,8 +7,7 @@ import { Topbar } from "./topbar";
 import Logo from "../ui/Logo";
 import { ButtonQuote } from "../ui/button-quote";
 import { cn } from "@/src/lib/utils";
-import { motion, AnimatePresence } from "framer-motion";
-import { RiCloseLargeLine, RiMenu3Line } from "react-icons/ri";
+import { X, Menu } from "lucide-react";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -111,31 +110,22 @@ export function Navbar() {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-label="Menu"
               >
-                <AnimatePresence mode="wait">
-                  {isMenuOpen ? (
-                    <motion.div
-                      key="close"
-                      initial={{ rotate: -90, opacity: 0 }}
-                      animate={{ rotate: 0, opacity: 1 }}
-                      exit={{ rotate: 90, opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                      className="cursor-pointer"
-                    >
-                      <RiCloseLargeLine size={28} />
-                    </motion.div>
-                  ) : (
-                    <motion.div
-                      key="menu"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                      className="cursor-pointer"
-                    >
-                      <RiMenu3Line size={28} />
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                <div className="cursor-pointer relative w-7 h-7">
+                  <X
+                    size={28}
+                    className={cn(
+                      "absolute inset-0 transition-all duration-200",
+                      isMenuOpen ? "opacity-100 rotate-0" : "opacity-0 rotate-90"
+                    )}
+                  />
+                  <Menu
+                    size={28}
+                    className={cn(
+                      "absolute inset-0 transition-all duration-200",
+                      isMenuOpen ? "opacity-0" : "opacity-100"
+                    )}
+                  />
+                </div>
               </button>
             </div>
           </div>

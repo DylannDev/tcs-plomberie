@@ -1,5 +1,5 @@
 import { contactInfo } from "@/src/data";
-import { TbMail, TbPhone } from "react-icons/tb";
+import { Mail, Phone } from "lucide-react";
 import { IconLink } from "../ui/icon-link";
 
 export function Topbar() {
@@ -13,14 +13,14 @@ export function Topbar() {
           <div className="text-xs sm:text-base font-semibold flex justify-between md:justify-end w-full items-center gap-4 sm:gap-6">
             <IconLink
               href={`mailto:${contactInfo.email}`}
-              icon={<TbMail className="text-sm sm:text-lg text-white" />}
+              icon={<Mail className="w-3.5 h-3.5 sm:w-[18px] sm:h-[18px] text-white" />}
               className="hover:text-light-blue transition-colors duration-150"
             >
               {contactInfo.email}
             </IconLink>
             <IconLink
               href={`tel:${contactInfo.phone}`}
-              icon={<TbPhone className="text-sm sm:text-lg text-white" />}
+              icon={<Phone className="w-3.5 h-3.5 sm:w-[18px] sm:h-[18px] text-white" />}
               className="hover:text-light-blue transition-colors duration-150 whitespace-nowrap"
             >
               {contactInfo.displayPhone}

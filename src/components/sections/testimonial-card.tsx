@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { capitalizeFirstLetter, cn } from "@/src/lib/utils";
-import { PiStarDuotone, PiStarFill, PiUser } from "react-icons/pi";
+import { Star } from "lucide-react";
 import React from "react";
-import { FcGoogle } from "react-icons/fc";
+import { GoogleIcon } from "../ui/brand-icons";
 
 export const ReviewCard = ({
   name,
@@ -31,15 +31,15 @@ export const ReviewCard = ({
           <div className="flex items-center gap-1">
             {[...Array(MAX_STARS)].map((_, index) =>
               index < stars ? (
-                <PiStarFill key={index} className="text-yellow" />
+                <Star key={index} className="w-4 h-4 text-yellow fill-yellow" />
               ) : (
-                <PiStarDuotone key={index} className="text-yellow" />
+                <Star key={index} className="w-4 h-4 text-yellow" />
               )
             )}
           </div>
         </div>
         <div className="p-2 bg-white rounded-full">
-          <FcGoogle className="text-2xl" />
+          <GoogleIcon className="w-6 h-6" />
         </div>
       </div>
 

@@ -8,11 +8,10 @@ import { FormInput } from "./form-input";
 import { FormTextarea } from "./form-textarea";
 import { ContactFormData } from "@/src/types/contactForm";
 import { contactFormSchema } from "@/src/validation/contactForm";
-import { RiArrowRightLine } from "react-icons/ri";
+import { ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 import { sendContactEmail } from "@/src/app/actions/send-contact-email";
 import { useState } from "react";
 import { Typography } from "@/src/components/ui/typography";
-import { PiCheckCircle, PiXCircle } from "react-icons/pi";
 import { cn } from "@/src/lib/utils";
 
 export function ContactForm() {
@@ -142,7 +141,7 @@ export function ContactForm() {
           disabled={isSubmitting}
         >
           {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
-          <RiArrowRightLine className="text-xl group-hover:translate-x-1 transition-all duration-300" />
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all duration-300" />
         </Button>
 
         {status.type && (
@@ -155,9 +154,9 @@ export function ContactForm() {
             )}
           >
             {status.type === "success" ? (
-              <PiCheckCircle className="text-green text-2xl" />
+              <CheckCircle2 className="w-6 h-6 text-green" />
             ) : (
-              <PiXCircle className="text-red text-2xl" />
+              <XCircle className="w-6 h-6 text-red" />
             )}{" "}
             {status.message}
           </Typography>

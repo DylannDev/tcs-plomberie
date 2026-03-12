@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { RiArrowRightLine } from "react-icons/ri";
+import { ArrowRight } from "lucide-react";
 import { Typography } from "../ui/typography";
+import { InView } from "../ui/in-view";
 
 interface ServiceCardProps {
   service: {
@@ -17,11 +17,8 @@ interface ServiceCardProps {
 export function ServiceCard({ service, index }: ServiceCardProps) {
   return (
     <Link href={`/${service.title}`}>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: index * 0.1 }}
-        viewport={{ once: true }}
+      <InView
+        delay={index * 0.1}
         className="group cursor-pointer rounded-3xl shadow-md transition-shadow h-full flex flex-col hover:shadow-lg"
       >
         <div className="relative w-full h-[300px] overflow-hidden rounded-tl-3xl rounded-tr-3xl">
@@ -66,10 +63,10 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
             className="mt-6 text-lg font-semibold text-center flex items-center justify-center gap-1 transition-colors duration-300 group-hover:text-yellow"
           >
             En savoir plus
-            <RiArrowRightLine className="text-xl group-hover:translate-x-1 transition-all duration-300" />
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all duration-300" />
           </Typography>
         </div>
-      </motion.div>
+      </InView>
     </Link>
   );
 }

@@ -4,7 +4,7 @@ import { contactInfo, navigationLinks, socialLinks } from "@/src/data";
 import Logo from "../ui/Logo";
 import { IconLink } from "../ui/icon-link";
 import { Typography } from "../ui/typography";
-import { TbMail, TbPhone } from "react-icons/tb";
+import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import { Section } from "../ui/section";
 import { AnimatedHeader } from "../ui/animated-header";
@@ -35,8 +35,8 @@ function FooterContact() {
             <IconLink
               href={`mailto:${contactInfo.email}`}
               className="hover:text-yellow transition-colors duration-150 text-xl"
-              icon={<TbMail />}
-              iconClassName="text-yellow text-2xl"
+              icon={<Mail className="w-5 h-5" />}
+              iconClassName="text-yellow"
             >
               {contactInfo.email}
             </IconLink>
@@ -46,8 +46,8 @@ function FooterContact() {
               <IconLink
                 href={`tel:${contactInfo.phone}`}
                 className="hover:text-yellow transition-colors duration-150 text-xl"
-                icon={<TbPhone />}
-                iconClassName="text-yellow text-2xl"
+                icon={<Phone className="w-5 h-5" />}
+                iconClassName="text-yellow"
               >
                 {contactInfo.displayPhone}
               </IconLink>

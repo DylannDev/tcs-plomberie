@@ -1,13 +1,10 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { ServiceCard } from "./service-card";
 import { Typography } from "../ui/typography";
 import { Badge } from "../ui/badge";
-import { PiPipe, PiSnowflake } from "react-icons/pi";
-import { VscFlame } from "react-icons/vsc";
+import { Wrench, Snowflake, Flame } from "lucide-react";
 import { ButtonQuote } from "../ui/button-quote";
 import { cn } from "@/src/lib/utils";
+import { InView } from "../ui/in-view";
 
 const services = [
   {
@@ -15,34 +12,28 @@ const services = [
     title: "plomberie",
     description:
       "Fuites d'eau, robinet cassé, WC bouché ou canalisation à déboucher ? Notre plombier intervient rapidement pour tous vos travaux de plomberie à Montpellier et dans les alentours.",
-    icon: <PiPipe />,
+    icon: <Wrench className="w-6 h-6 sm:w-7 sm:h-7" />,
   },
   {
     imgCard: "/climatisation-1.jpg",
     title: "climatisation",
     description:
       "Installation, entretien ou dépannage de climatisation split ou multisplit. Artisan local, devis rapide et intervention dans toute la métropole de Montpellier.",
-    icon: <PiSnowflake />,
+    icon: <Snowflake className="w-6 h-6 sm:w-7 sm:h-7" />,
   },
   {
     imgCard: "/chauffagiste-1.jpg",
     title: "chauffage",
     description:
       "Entretien, dépannage ou installation de votre système de chauffage. Chaudière gaz, électrique ou ballon d'eau chaude : un chauffagiste réactif intervient à Montpellier et dans tout l'Hérault.",
-    icon: <VscFlame />,
+    icon: <Flame className="w-6 h-6 sm:w-7 sm:h-7" />,
   },
 ];
 
 export function Services() {
   return (
     <section id="services" className="py-20 sm:py-32">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="text-center mb-12"
-      >
+      <InView className="text-center mb-12">
         <Badge>Nos Services</Badge>
         <Typography
           as="h2"
@@ -57,7 +48,7 @@ export function Services() {
           Dépannage, entretien ou installation à Montpellier et alentours.
           Intervention rapide 7j/7 24h/24.
         </Typography>
-      </motion.div>
+      </InView>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {services.map((service, index) => (

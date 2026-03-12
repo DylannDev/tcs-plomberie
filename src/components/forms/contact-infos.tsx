@@ -1,6 +1,6 @@
 import { contactInfo } from "@/src/data";
 import { IconLink } from "@/src/components/ui/icon-link";
-import { TbMail, TbPhone } from "react-icons/tb";
+import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import { Typography } from "../ui/typography";
 
@@ -38,8 +38,8 @@ const ContactInfos = () => {
             <IconLink
               href={`mailto:${contactInfo.email}`}
               className="hover:text-sky-blue transition-colors duration-150 text-lg sm:text-xl font-medium break-all"
-              icon={<TbMail />}
-              iconClassName="text-sky-blue text-xl sm:text-2xl flex-shrink-0"
+              icon={<Mail className="w-5 h-5 sm:w-6 sm:h-6" />}
+              iconClassName="text-sky-blue flex-shrink-0"
             >
               {contactInfo.email}
             </IconLink>
@@ -49,8 +49,8 @@ const ContactInfos = () => {
               <IconLink
                 href={`tel:${contactInfo.phone}`}
                 className="hover:text-sky-blue transition-colors duration-150 text-lg sm:text-xl font-medium"
-                icon={<TbPhone />}
-                iconClassName="text-sky-blue text-xl sm:text-2xl flex-shrink-0"
+                icon={<Phone className="w-5 h-5 sm:w-6 sm:h-6" />}
+                iconClassName="text-sky-blue flex-shrink-0"
               >
                 {contactInfo.displayPhone}
               </IconLink>

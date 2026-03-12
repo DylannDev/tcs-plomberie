@@ -4,7 +4,7 @@ import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 
 import { cn } from "@/src/lib/utils";
-import { PiArrowDownBold } from "react-icons/pi";
+import { ChevronDown } from "lucide-react";
 
 const Accordion = AccordionPrimitive.Root;
 
@@ -38,7 +38,7 @@ const AccordionTrigger = React.forwardRef<
     >
       {children}
       <div className="bg-dark-blue rounded-full p-2 sm:p-3 transition-transform duration-300 ml-4 sm:ml-10">
-        <PiArrowDownBold className="text-xl sm:text-3xl text-white" />
+        <ChevronDown className="w-5 h-5 sm:w-7 sm:h-7 text-white" strokeWidth={3} />
       </div>
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>

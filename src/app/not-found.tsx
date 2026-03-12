@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Typography } from "@/src/components/ui/typography";
 import { Button } from "@/src/components/ui/button";
-import { RiArrowRightLine } from "react-icons/ri";
+import { ArrowRight } from "lucide-react";
 
 export default function NotFound() {
   return (
@@ -49,14 +49,14 @@ export default function NotFound() {
           <Link href="/" className="flex items-center gap-2">
             <Button variant="default">
               Retour à l'accueil
-              <RiArrowRightLine className="text-xl ml-2" />
+              <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
 
           <Link href="/contact" className="flex items-center gap-2">
             <Button variant="black">
               Nous contacter
-              <RiArrowRightLine className="text-xl ml-2" />
+              <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
         </div>

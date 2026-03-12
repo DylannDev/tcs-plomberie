@@ -1,5 +1,3 @@
-"use client";
-
 import { Typography } from "@/src/components/ui/typography";
 import { Button } from "@/src/components/ui/button";
 import { BlogCard } from "@/src/components/ui/blog-card";

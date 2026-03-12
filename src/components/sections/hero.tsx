@@ -27,11 +27,7 @@ export function Hero() {
                 lineHeight="normal"
                 className="text-black sm:leading-normal text-3xl min-[580px]:text-4xl sm:text-5xl md:text-5xl lg:text-6xl relative flex flex-wrap items-center justify-center gap-x-2 md:gap-x-3 mb-6"
               >
-                <span className="whitespace-nowrap leading-normal">
-                  Besoin d'un
-                </span>{" "}
-                <FlipWords words={seoWords} />
-                <span> à Montpellier ?</span>
+                Besoin d'un Plombier à Montpellier ?
               </Typography>
               <Typography
                 as="h2"

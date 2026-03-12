@@ -1,5 +1,3 @@
-"use client";
-
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Marquee } from "../magicui/marquee";
@@ -8,7 +6,7 @@ import { reviewLink, reviews } from "@/src/data";
 import { ReviewCard } from "./testimonial-card";
 import { Badge } from "../ui/badge";
 import { Typography } from "../ui/typography";
-import { FcGoogle } from "react-icons/fc";
+import { GoogleIcon } from "../ui/brand-icons";
 import { AnimatedHeader } from "../ui/animated-header";
 
 const firstRow = reviews.slice(0, reviews.length / 2);
@@ -34,7 +32,7 @@ const Testimonials = () => {
               >
                 Laisser un avis
                 <div className="p-2 bg-white rounded-full ml-2">
-                  <FcGoogle className="text-xl" />
+                  <GoogleIcon className="w-5 h-5" />
                 </div>
               </a>
             </Button>
@@ -75,7 +73,7 @@ const Testimonials = () => {
             >
               Laisser un avis
               <div className="p-2 bg-white rounded-full ml-2">
-                <FcGoogle className="text-xl" />
+                <GoogleIcon className="w-5 h-5" />
               </div>
             </a>
           </Button>

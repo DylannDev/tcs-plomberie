@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Typography } from "@/src/components/ui/typography";
 import { Button } from "@/src/components/ui/button";
-import { AnimatePresence, motion } from "framer-motion";
 import { BlogCard } from "@/src/components/ui/blog-card";
 import Image from "next/image";
 import { AnimatedHeader } from "@/src/components/ui/animated-header";
@@ -91,13 +90,11 @@ export default function BlogClient({ posts }: { posts: BlogPost[] }) {
 
       {/* Blog grid */}
       <div className="max-w-7xl mx-auto pt-12 sm:pt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <AnimatePresence>
-          {filteredPosts.map((post, index) => (
-            <AnimatedCard key={post.title} index={index}>
-              <BlogCard post={post} />
-            </AnimatedCard>
-          ))}
-        </AnimatePresence>
+        {filteredPosts.map((post, index) => (
+          <AnimatedCard key={post.title} index={index}>
+            <BlogCard post={post} />
+          </AnimatedCard>
+        ))}
       </div>
     </main>
   );

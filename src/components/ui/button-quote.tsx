@@ -1,5 +1,5 @@
 import { Button } from "./button";
-import { RiArrowRightLine } from "react-icons/ri";
+import { ArrowRight } from "lucide-react";
 import { cn } from "@/src/lib/utils";
 
 interface ButtonQuoteProps {
@@ -24,7 +24,7 @@ export function ButtonQuote({
       onClick={onClick}
     >
       {label}
-      <RiArrowRightLine className="text-xl group-hover:translate-x-1 transition-all duration-300" />
+      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all duration-300" />
     </Button>
   );
 }

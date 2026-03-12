@@ -1,6 +1,5 @@
 "use client";
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion, LayoutGroup } from "motion/react";
+import React, { useEffect, useState } from "react";
 import { cn } from "@/src/lib/utils";
 
 export const FlipWords = ({
@@ -12,81 +11,43 @@ export const FlipWords = ({
   duration?: number;
   className?: string;
 }) => {
-  const [currentWord, setCurrentWord] = useState(words[0]);
-  const [isAnimating, setIsAnimating] = useState<boolean>(false);
-
-  // thanks for the fix Julian - https://github.com/Julian-AT
-  const startAnimation = useCallback(() => {
-    const word = words[words.indexOf(currentWord) + 1] || words[0];
-    setCurrentWord(word);
-    setIsAnimating(true);
-  }, [currentWord, words]);
+  const [index, setIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    if (!isAnimating)
+    const interval = setInterval(() => {
+      setIsVisible(false);
       setTimeout(() => {
-        startAnimation();
-      }, duration);
-  }, [isAnimating, duration, startAnimation]);
+        setIndex((prev) => (prev + 1) % words.length);
+        setIsVisible(true);
+      }, 300);
+    }, duration);
+    return () => clearInterval(interval);
+  }, [duration, words.length]);
 
   return (
-    <AnimatePresence
-      onExitComplete={() => {
-        setIsAnimating(false);
-      }}
+    <span
+      className={cn("z-10 inline-grid relative overflow-hidden", className)}
     >
-      <motion.div
-        initial={{
-          opacity: 0,
+      {/* Invisible words to reserve the width of the longest one */}
+      {words.map((word) => (
+        <span key={word} className="invisible col-start-1 row-start-1">
+          {word}
+        </span>
+      ))}
+      {/* Visible animated word */}
+      <span
+        className="col-start-1 row-start-1"
+        style={{
+          opacity: isVisible ? 1 : 0,
+          filter: isVisible ? "blur(0px)" : "blur(8px)",
+          transform: isVisible ? "translateY(0)" : "translateY(-10px)",
+          transition:
+            "opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease",
         }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{
-          type: "spring",
-          stiffness: 100,
-          damping: 10,
-        }}
-        exit={{
-          opacity: 0,
-          y: -40,
-          x: 40,
-          filter: "blur(8px)",
-          scale: 2,
-          position: "absolute",
-        }}
-        className={cn("z-10 inline-block relative overflow-hidden", className)}
-        key={currentWord}
       >
-        {/* edit suggested by Sajal: https://x.com/DewanganSajal */}
-        {currentWord.split(" ").map((word, wordIndex) => (
-          <motion.span
-            key={word + wordIndex}
-            initial={{ opacity: 0, filter: "blur(8px)" }}
-            animate={{ opacity: 1, filter: "blur(0px)" }}
-            transition={{
-              delay: wordIndex * 0.3,
-              duration: 0.3,
-            }}
-            className="inline-block whitespace-nowrap"
-          >
-            {word.split("").map((letter, letterIndex) => (
-              <motion.span
-                key={word + letterIndex}
-                initial={{ opacity: 0, filter: "blur(8px)" }}
-                animate={{ opacity: 1, filter: "blur(0px)" }}
-                transition={{
-                  delay: wordIndex * 0.3 + letterIndex * 0.05,
-                  duration: 0.2,
-                }}
-                className="inline-block leading-normal"
-              >
-                {letter}
-              </motion.span>
-            ))}
-          </motion.span>
-        ))}
-      </motion.div>
-    </AnimatePresence>
+        {words[index]}
+      </span>
+    </span>
   );
 };

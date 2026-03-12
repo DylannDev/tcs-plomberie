@@ -6,8 +6,7 @@ import { formatCityUrl } from "@/src/lib/utils";
 import { Typography } from "./typography";
 import { Button } from "./button";
 import { useState } from "react";
-import { PiCaretDownBold } from "react-icons/pi";
-import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 import { getAllCitySlugs } from "@/src/data/cities-seo";
 
 interface SeoColumnProps {
@@ -51,35 +50,23 @@ export function SeoColumn({ service }: SeoColumnProps) {
         {currentService?.label}
       </Typography>
       <div className="space-y-2">
-        <AnimatePresence initial={false}>
-          {displayedCities.map((city, index) => {
-            const slug = formatCityUrl(city);
-            const hasPage =
-              city !== "Montpellier" && citySlugsWithPages.includes(slug);
-            const href = hasPage ? `/${service}/${slug}` : `/${service}`;
+        {displayedCities.map((city) => {
+          const slug = formatCityUrl(city);
+          const hasPage =
+            city !== "Montpellier" && citySlugsWithPages.includes(slug);
+          const href = hasPage ? `/${service}/${slug}` : `/${service}`;
 
-            return (
-              <motion.div
-                key={city}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{
-                  duration: 0.3,
-                  delay: index * 0.02,
-                  ease: "easeOut",
-                }}
+          return (
+            <div key={city}>
+              <Link
+                href={href}
+                className="block text-lg hover:text-yellow transition-colors duration-150"
               >
-                <Link
-                  href={href}
-                  className="block text-lg hover:text-yellow transition-colors duration-150"
-                >
-                  {prefixes[service]} à {city}
-                </Link>
-              </motion.div>
-            );
-          })}
-        </AnimatePresence>
+                {prefixes[service]} à {city}
+              </Link>
+            </div>
+          );
+        })}
       </div>
       {hasMoreCities && (
         <Button
@@ -90,8 +77,8 @@ export function SeoColumn({ service }: SeoColumnProps) {
         >
           {isExpanded ? "Afficher moins" : "Afficher plus"}
 
-          <PiCaretDownBold
-            className={`ml-2 ${isExpanded ? "rotate-180" : "rotate-0"} transition-transform duration-300 ease-in-out`}
+          <ChevronDown
+            className={`ml-2 w-4 h-4 ${isExpanded ? "rotate-180" : "rotate-0"} transition-transform duration-300 ease-in-out`}
           />
         </Button>
       )}

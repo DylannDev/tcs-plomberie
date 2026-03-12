@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Typography } from "@/src/components/ui/typography";
-import { PiSnowflake } from "react-icons/pi";
+import { Snowflake } from "lucide-react";
 import {
   faqClimatisationGenerale,
   sectionsClimatisationGenerale,
@@ -66,7 +66,7 @@ export default function ClimatisationPage() {
           />
           <div className="absolute -bottom-12 left-0 right-0 flex justify-center z-20">
             <div className="bg-yellow rounded-full border-4 sm:border-5 border-white p-4">
-              <PiSnowflake className="text-black text-4xl sm:text-6xl" />
+              <Snowflake className="w-9 h-9 sm:w-14 sm:h-14 text-black" />
             </div>
           </div>
           <div className="relative z-10 flex flex-col gap-4 items-center justify-center h-full px-4">
