@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { Typography } from "@/src/components/ui/typography";
 import { ContactForm } from "@/src/components/forms/contact-form";
 import { AnimatedHeader } from "@/src/components/ui/animated-header";
@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Contactez TCS Plomberie à Montpellier",
   description:
     "Besoin d'un dépannage urgent ou devis gratuit ? Contactez TCS Plomberie à Montpellier. Intervention 7j/7 en plomberie, chauffage et climatisation.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

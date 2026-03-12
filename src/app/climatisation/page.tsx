@@ -10,7 +10,10 @@ import { Coverage } from "@/src/components/sections/coverage";
 import { SimilarPosts } from "@/src/components/sections/similar-posts";
 import { AnimatedHeader } from "@/src/components/ui/animated-header";
 import { AnimatedCard } from "@/src/components/ui/animated-card";
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { generateFaqPageSchema } from "@/src/lib/schema/faqPageSchema";
+import { generateBreadcrumbSchema } from "@/src/lib/schema/breadcrumbSchema";
+import { getAllPosts } from "@/src/lib/blog";
 
 export const metadata: Metadata = {
   title: "Climatisation à Montpellier et alentours - TCS Plomberie",
@@ -18,6 +21,9 @@ export const metadata: Metadata = {
     "TCS Plomberie installe et entretient vos systèmes de climatisation dans tout l'Hérault : installation, dépannage, entretien et optimisation énergétique. Devis gratuit.",
   keywords:
     "climatisation Montpellier, climatiseur Hérault, installation climatisation, dépannage climatisation, entretien climatisation",
+  alternates: {
+    canonical: "/climatisation",
+  },
   openGraph: {
     title: "Climatisation Montpellier et alentours - TCS Plomberie",
     description:
@@ -28,8 +34,24 @@ export const metadata: Metadata = {
 };
 
 export default function ClimatisationPage() {
+  const allPosts = getAllPosts();
+  const faqData = faqClimatisationGenerale();
+  const faqSchema = generateFaqPageSchema(faqData);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Accueil", href: "/" },
+    { name: "Climatisation", href: "/climatisation" },
+  ]);
+
   return (
     <main className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Header */}
       <AnimatedHeader>
         <div className="relative w-full aspect-square max-h-[350px] md:max-h-[450px] mb-12">
@@ -110,7 +132,7 @@ export default function ClimatisationPage() {
       </div>
 
       <Faq
-        data={faqClimatisationGenerale()}
+        data={faqData}
         title="Questions sur la climatisation à Montpellier et ses alentours"
         badge="FAQ"
         isRichText={true}
@@ -118,6 +140,7 @@ export default function ClimatisationPage() {
 
       <Coverage />
       <SimilarPosts
+        allPosts={allPosts}
         title="Consultez nos derniers articles sur la climatisation"
         category="climatisation"
         columns={2}

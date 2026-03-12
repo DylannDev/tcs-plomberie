@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Typography } from "@/src/components/ui/typography";
 import { tarifs } from "@/src/data/tarifs";
@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Tarifs plomberie, chauffage et climatisation | TCS Plomberie",
   description:
     "Tarifs plomberie, chauffage, climatisation à Montpellier : installation, dépannage, entretien. Devis gratuit, prix clairs et transparents.",
+  alternates: {
+    canonical: "/tarifs",
+  },
 };
 
 export default function TarifsPage() {

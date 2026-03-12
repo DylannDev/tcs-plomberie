@@ -7,7 +7,10 @@ import { Coverage } from "@/src/components/sections/coverage";
 import { SimilarPosts } from "@/src/components/sections/similar-posts";
 import { AnimatedHeader } from "@/src/components/ui/animated-header";
 import { AnimatedCard } from "@/src/components/ui/animated-card";
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { generateFaqPageSchema } from "@/src/lib/schema/faqPageSchema";
+import { generateBreadcrumbSchema } from "@/src/lib/schema/breadcrumbSchema";
+import { getAllPosts } from "@/src/lib/blog";
 
 export const metadata: Metadata = {
   title: "Plombier à Montpellier et alentours - TCS Plomberie",
@@ -15,6 +18,9 @@ export const metadata: Metadata = {
     "TCS Plomberie intervient rapidement dans tout l'Hérault pour tous vos besoins en plomberie : dépannage d'urgence, installation sanitaire, entretien et rénovation. Devis gratuit 7j/7.",
   keywords:
     "plombier Montpellier, plomberie Hérault, dépannage plomberie, installation sanitaires, chauffe-eau, fuites d'eau",
+  alternates: {
+    canonical: "/plomberie",
+  },
   openGraph: {
     title: "Plombier Montpellier et alentours - TCS Plomberie",
     description:
@@ -25,8 +31,24 @@ export const metadata: Metadata = {
 };
 
 export default function PlomberiePage() {
+  const allPosts = getAllPosts();
+  const faqData = faqPlomberieGenerale();
+  const faqSchema = generateFaqPageSchema(faqData);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Accueil", href: "/" },
+    { name: "Plomberie", href: "/plomberie" },
+  ]);
+
   return (
     <main className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Header */}
       <AnimatedHeader>
         <div className="relative w-full aspect-square max-h-[350px] md:max-h-[450px] mb-12">
@@ -108,7 +130,7 @@ export default function PlomberiePage() {
       </div>
 
       <Faq
-        data={faqPlomberieGenerale()}
+        data={faqData}
         title="Questions sur la plomberie dans l'Hérault"
         badge="FAQ"
         isRichText={true}
@@ -116,6 +138,7 @@ export default function PlomberiePage() {
 
       <Coverage />
       <SimilarPosts
+        allPosts={allPosts}
         title="Consultez nos derniers articles sur la plomberie"
         category="plomberie"
         columns={2}

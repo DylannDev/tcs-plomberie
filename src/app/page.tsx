@@ -9,8 +9,11 @@ import { faqHomepage } from "../data";
 import { SimilarPosts } from "../components/sections/similar-posts";
 import { HeroMobile } from "../components/sections/hero-mobile";
 import { Certificate } from "../components/sections/certificate-section";
+import { getAllPosts } from "../lib/blog";
 
 export default function Home() {
+  const allPosts = getAllPosts();
+
   return (
     <main className="w-full">
       <Hero />
@@ -31,7 +34,7 @@ export default function Home() {
 
       <Section>
         <Coverage />
-        <SimilarPosts title="Consultez nos derniers articles de blog" />
+        <SimilarPosts allPosts={allPosts} title="Consultez nos derniers articles de blog" />
       </Section>
     </main>
   );

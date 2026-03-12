@@ -9,11 +9,15 @@ import { PreFooter } from "../components/sections/pre-footer";
 import { LocalBusinessJsonLd } from "../components/seo/LocalBusinessJsonLd";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tcs-plomberie-montpellier.fr"),
   title: "Plombier agréé à Montpellier – Chauffage & climatisation",
   description:
     "Plombier agréé à Montpellier, TCS Plomberie intervient 7j/7 : fuites, WC bouchés, dépannage, installation ou entretien chauffage et climatisation.",
   keywords:
     "plombier Montpellier, dépannage plomberie Montpellier, chauffagiste Montpellier, climatisation Montpellier, urgence plombier Montpellier, installation plomberie, entretien chaudière, dépannage climatisation",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title:
       "Plombier, chauffagiste & climatisation à Montpellier | Thermo Clim Sanitaire",

@@ -6,9 +6,16 @@ import { Button } from "@/src/components/ui/button";
 import { AnimatePresence, motion } from "framer-motion";
 import { BlogCard } from "@/src/components/ui/blog-card";
 import Image from "next/image";
-import { blogPosts } from "@/src/data/blogPosts";
 import { AnimatedHeader } from "@/src/components/ui/animated-header";
 import { AnimatedCard } from "@/src/components/ui/animated-card";
+
+interface BlogPost {
+  title: string;
+  description: string;
+  category: "plomberie" | "chauffage" | "climatisation";
+  image: string;
+  slug: string;
+}
 
 // Filter categories
 const categories = [
@@ -18,10 +25,10 @@ const categories = [
   { id: "climatisation", label: "Climatisation" },
 ] as const;
 
-export default function BlogClient() {
+export default function BlogClient({ posts }: { posts: BlogPost[] }) {
   const [activeCategory, setActiveCategory] = useState<string>("all");
 
-  const filteredPosts = blogPosts.filter(
+  const filteredPosts = posts.filter(
     (post) => activeCategory === "all" || post.category === activeCategory
   );
 

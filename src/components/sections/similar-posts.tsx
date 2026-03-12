@@ -3,7 +3,6 @@
 import { Typography } from "@/src/components/ui/typography";
 import { Button } from "@/src/components/ui/button";
 import { BlogCard } from "@/src/components/ui/blog-card";
-import { blogPosts } from "@/src/data/blogPosts";
 import { AnimatedCard } from "@/src/components/ui/animated-card";
 import { AnimatedHeader } from "../ui/animated-header";
 
@@ -17,6 +16,7 @@ interface BlogPost {
 
 interface SimilarPostsProps {
   posts?: BlogPost[];
+  allPosts?: BlogPost[];
   title?: string;
   showAllButton?: boolean;
   category?: "plomberie" | "chauffage" | "climatisation";
@@ -25,6 +25,7 @@ interface SimilarPostsProps {
 
 export function SimilarPosts({
   posts,
+  allPosts = [],
   title = "Articles similaires",
   showAllButton = true,
   category,
@@ -35,16 +36,16 @@ export function SimilarPosts({
     posts ||
     (() => {
       if (category) {
-        return blogPosts
+        return allPosts
           .filter((post) => post.category === category)
           .slice(0, columns);
       }
       // Si pas de catégorie spécifiée, on prend le premier post de chaque catégorie
       const categories = ["plomberie", "climatisation", "chauffage"] as const;
       return categories.map((cat) => {
-        const categoryPosts = blogPosts.filter((post) => post.category === cat);
-        return categoryPosts[0]; // Prend toujours le premier post de chaque catégorie
-      });
+        const categoryPosts = allPosts.filter((post) => post.category === cat);
+        return categoryPosts[0];
+      }).filter(Boolean);
     })();
 
   if (displayPosts.length === 0) return null;
