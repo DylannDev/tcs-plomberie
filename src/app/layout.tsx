@@ -4,15 +4,16 @@ import { Outfit } from "next/font/google";
 import { Navbar } from "../components/layout/navbar";
 import { Footer } from "../components/layout/footer";
 import faqSchema from "../lib/schema/faqSchema";
+import { organizationSchema } from "../lib/schema/organizationSchema";
 import { Section } from "../components/ui/section";
 import { PreFooter } from "../components/sections/pre-footer";
 import { LocalBusinessJsonLd } from "../components/seo/LocalBusinessJsonLd";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tcs-plomberie-montpellier.fr"),
-  title: "Plombier agréé à Montpellier – Chauffage & climatisation",
+  title: "Plombier Montpellier | Dépannage & installation 7j/7 - TCS Plomberie",
   description:
-    "Plombier agréé à Montpellier, TCS Plomberie intervient 7j/7 : fuites, WC bouchés, dépannage, installation ou entretien chauffage et climatisation.",
+    "Plombier à Montpellier, TCS Plomberie intervient 7j/7 pour vos urgences : fuites, WC bouchés, dépannage, installation et entretien chauffage et climatisation. Devis gratuit.",
   keywords:
     "plombier Montpellier, dépannage plomberie Montpellier, chauffagiste Montpellier, climatisation Montpellier, urgence plombier Montpellier, installation plomberie, entretien chaudière, dépannage climatisation",
   alternates: {
@@ -44,6 +45,10 @@ export default function RootLayout({
     <html lang="fr" className={outfit.className}>
       <head>
         <LocalBusinessJsonLd />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

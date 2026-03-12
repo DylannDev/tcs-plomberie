@@ -20,6 +20,15 @@ const uniqueContentSlugs = new Set([
   "vendargues", "jacou", "castries",
   // Group 8
   "gigean", "prades-le-lez", "clapiers",
+  // Quartiers Montpellier
+  "montpellier-antigone", "montpellier-port-marianne", "montpellier-richter",
+  "montpellier-pres-d-arenes", "montpellier-beaux-arts",
+  "montpellier-les-arceaux", "montpellier-centre-ville", "montpellier-boutonnet",
+  "montpellier-aiguelongue", "montpellier-plan-des-4-seigneurs",
+  "montpellier-la-mosson", "montpellier-celleneuve", "montpellier-cevennes",
+  "montpellier-alco", "montpellier-hauts-de-massane",
+  "montpellier-grisettes", "montpellier-ovalie", "montpellier-la-martelle",
+  "montpellier-chamberte", "montpellier-aubes-pompignane",
 ]);
 
 export default function sitemap(): MetadataRoute.Sitemap {

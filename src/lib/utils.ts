@@ -15,7 +15,9 @@ export const formatCityUrl = (city: string) => {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\s+/g, "-");
+    .replace(/['']/g, "-")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
 };
 
 export const capitalizeCity = (city: string): string => {

@@ -61,6 +61,10 @@ import { citiesGroup6 } from "./cities/group6";
 import { citiesGroup7 } from "./cities/group7";
 import { citiesGroup8 } from "./cities/group8";
 import { templateCities } from "./cities/template-cities";
+import { quartiersQ1 } from "./cities/quartiers-q1";
+import { quartiersQ2 } from "./cities/quartiers-q2";
+import { quartiersQ3 } from "./cities/quartiers-q3";
+import { quartiersQ4 } from "./cities/quartiers-q4";
 
 export const citiesData: CityData[] = [
   ...citiesGroup1,
@@ -72,6 +76,10 @@ export const citiesData: CityData[] = [
   ...citiesGroup7,
   ...citiesGroup8,
   ...templateCities,
+  ...quartiersQ1,
+  ...quartiersQ2,
+  ...quartiersQ3,
+  ...quartiersQ4,
 ];
 
 export function getCityBySlug(slug: string): CityData | undefined {
