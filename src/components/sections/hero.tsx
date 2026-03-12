@@ -2,8 +2,6 @@ import { Typography } from "../ui/typography";
 import Image from "next/image";
 import { ButtonCall } from "../ui/button-call";
 import { ButtonQuote } from "../ui/button-quote";
-import { FlipWords } from "../ui/flip-words";
-import { seoWords } from "@/src/data";
 
 export function Hero() {
   return (
@@ -18,7 +16,7 @@ export function Hero() {
               width={600}
               height={600}
               className="absolute -top-28 -right-36 -z-10 md:-left-50 md:scale-x-[-1] md:w-auto md:-top-35"
-              priority
+              loading="eager"
             />
             <div className="max-w-3xl px-4">
               <Typography
