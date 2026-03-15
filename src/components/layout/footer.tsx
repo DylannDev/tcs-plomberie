@@ -126,7 +126,8 @@ function FooterLegal() {
         Site web développé par{" "}
         <a
           href="https://vizionweb.fr/"
-          target="blank"
+          target="_blank"
+          rel="noopener"
           className="underline underline-offset-8 text-yellow hover:text-white transition-colors duration-150 font-semibold"
         >
           Vizion Web

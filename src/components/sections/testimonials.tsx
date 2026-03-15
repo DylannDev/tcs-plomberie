@@ -29,6 +29,7 @@ const Testimonials = () => {
                 className="flex items-center gap-1"
                 href={reviewLink}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Laisser un avis
                 <div className="p-2 bg-white rounded-full ml-2">

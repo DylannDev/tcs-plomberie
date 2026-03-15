@@ -37,6 +37,13 @@ export const LocalBusinessJsonLd = () => {
             "https://www.facebook.com/thermoclimsanitaire",
             "https://www.instagram.com/thermoclimsanitaire",
           ],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.96",
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: "24",
+          },
         }),
       }}
     />

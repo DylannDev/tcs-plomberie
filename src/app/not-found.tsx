@@ -20,7 +20,7 @@ export default function NotFound() {
       </div>
       <div className="max-w-2xl mx-auto text-center">
         <Typography
-          as="h2"
+          as="h1"
           variant="5xl"
           weight="bold"
           className="text-black mb-4"

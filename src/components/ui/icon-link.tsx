@@ -8,6 +8,7 @@ interface IconLinkProps {
   className?: string;
   iconClassName?: string;
   ariaLabel?: string;
+  rel?: string;
 }
 
 export function IconLink({
@@ -17,6 +18,7 @@ export function IconLink({
   className,
   iconClassName = "p-1 sm:p-2 rounded-full bg-yellow",
   ariaLabel,
+  rel = "nofollow noreferrer",
 }: IconLinkProps) {
   return (
     <a
@@ -26,6 +28,7 @@ export function IconLink({
         className
       )}
       target="_blank"
+      rel={rel}
       aria-label={ariaLabel}
     >
       {icon && <span className={iconClassName}>{icon}</span>}
