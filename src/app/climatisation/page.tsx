@@ -13,6 +13,7 @@ import { AnimatedCard } from "@/src/components/ui/animated-card";
 import type { Metadata } from "next";
 import { generateFaqPageSchema } from "@/src/lib/schema/faqPageSchema";
 import { generateBreadcrumbSchema } from "@/src/lib/schema/breadcrumbSchema";
+import { Breadcrumb } from "@/src/components/ui/breadcrumb";
 import { getAllPosts } from "@/src/lib/blog";
 
 export const metadata: Metadata = {
@@ -51,6 +52,12 @@ export default function ClimatisationPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <Breadcrumb
+        items={[
+          { name: "Accueil", href: "/" },
+          { name: "Climatisation", href: "/climatisation" },
+        ]}
       />
       {/* Header */}
       <AnimatedHeader>

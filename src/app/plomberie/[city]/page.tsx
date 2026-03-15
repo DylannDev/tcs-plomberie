@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getCityBySlug, getAllCitySlugs } from "@/src/data/cities-seo";
 import { generateFaqPageSchema } from "@/src/lib/schema/faqPageSchema";
 import { generateBreadcrumbSchema } from "@/src/lib/schema/breadcrumbSchema";
+import { Breadcrumb } from "@/src/components/ui/breadcrumb";
 import PlomberieSeoPage from "@/src/components/pages/PlomberieSeoPage";
 
 export async function generateStaticParams() {
@@ -53,6 +54,15 @@ export default async function PlomberieCityPage({ params }: CityPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Breadcrumb
+          items={[
+            { name: "Accueil", href: "/" },
+            { name: "Plomberie", href: "/plomberie" },
+            { name: `Plombier à ${cityData.name}`, href: `/plomberie/${cityData.slug}` },
+          ]}
+        />
+      </div>
       <PlomberieSeoPage
         cityName={cityData.name}
         heroIntro={cityData.plomberie.heroIntro}

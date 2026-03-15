@@ -5,6 +5,8 @@ import { tarifs } from "@/src/data/tarifs";
 import { TarifsCard } from "@/src/components/sections/tarifs-card";
 import { AnimatedHeader } from "@/src/components/ui/animated-header";
 import { AnimatedCard } from "@/src/components/ui/animated-card";
+import { Breadcrumb } from "@/src/components/ui/breadcrumb";
+import { generateBreadcrumbSchema } from "@/src/lib/schema/breadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Tarifs plomberie, chauffage et climatisation | TCS Plomberie",
@@ -16,8 +18,25 @@ export const metadata: Metadata = {
 };
 
 export default function TarifsPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Accueil", href: "/" },
+    { name: "Tarifs", href: "/tarifs" },
+  ]);
+
   return (
     <main className="px-4 sm:px-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="max-w-7xl mx-auto">
+        <Breadcrumb
+          items={[
+            { name: "Accueil", href: "/" },
+            { name: "Tarifs", href: "/tarifs" },
+          ]}
+        />
+      </div>
       {/* Header */}
       <AnimatedHeader
         className="max-w-[1440px] mx-auto text-center bg-light-blue rounded-4xl px-5 sm:px-10 py-10 sm:py-20 overflow-hidden"

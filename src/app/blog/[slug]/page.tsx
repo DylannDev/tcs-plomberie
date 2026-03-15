@@ -10,6 +10,7 @@ import { getAllPosts, getPostBySlug, getPostSlugs } from "@/src/lib/blog";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { generateArticleSchema } from "@/src/lib/schema/articleSchema";
 import { generateBreadcrumbSchema } from "@/src/lib/schema/breadcrumbSchema";
+import { Breadcrumb } from "@/src/components/ui/breadcrumb";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -115,6 +116,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <Breadcrumb
+        items={[
+          { name: "Accueil", href: "/" },
+          { name: "Blog", href: "/blog" },
+          { name: post.title, href: `/blog/${post.slug}` },
+        ]}
       />
 
       {/* Header */}

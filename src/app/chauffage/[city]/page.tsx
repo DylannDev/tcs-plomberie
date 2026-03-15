@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getCityBySlug, getAllCitySlugs } from "@/src/data/cities-seo";
 import { generateFaqPageSchema } from "@/src/lib/schema/faqPageSchema";
 import { generateBreadcrumbSchema } from "@/src/lib/schema/breadcrumbSchema";
+import { Breadcrumb } from "@/src/components/ui/breadcrumb";
 import ChauffageSeoPage from "@/src/components/pages/ChauffageSeoPage";
 
 export async function generateStaticParams() {
@@ -53,6 +54,15 @@ export default async function ChauffageCityPage({ params }: CityPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Breadcrumb
+          items={[
+            { name: "Accueil", href: "/" },
+            { name: "Chauffage", href: "/chauffage" },
+            { name: `Chauffagiste à ${cityData.name}`, href: `/chauffage/${cityData.slug}` },
+          ]}
+        />
+      </div>
       <ChauffageSeoPage
         cityName={cityData.name}
         heroIntro={cityData.chauffage.heroIntro}
