@@ -267,6 +267,421 @@ export const reviews = [
       "Notre ballon d'eau chaude a rendu l'âme sans prévenir. En urgence, nous avons fait appel à TCS Plomberie Climatisation Montpellier. Ce qui a fait la différence : la transparence et le conseil. Malgré l'urgence, le technicien a pris le temps de nous expliquer les options sans forcer la vente. Il a insisté sur l'importance d'une installation aux normes. Le remplacement a été fait dans la foulée, avec une mise en service et des explications claires. Prix conforme au devis instantané. Une intervention stressante transformée en expérience rassurante. Merci !",
     stars: 5,
   },
+  {
+    id: "32",
+    name: "Dylann Xavero",
+    message:
+      "J'ai fait appel à TCS Plomberie pour l'entretien de ma climatisation et la réparation de mon lavabo. Ma clim ne faisait plus de froid à cause d'un encrassement. Travail rapide et efficace, je recommande.",
+    stars: 5,
+  },
+  {
+    id: "33",
+    name: "Louise Guerin",
+    message:
+      "Je viens de faire installer mon système de climatisation par TCS plomberie climatisation et je suis plus que satisfaite. Travail soigné et professionnel.",
+    stars: 5,
+  },
+  {
+    id: "34",
+    name: "Valentin Mo",
+    message:
+      "J'ai entrepris la rénovation de l'entièreté de la plomberie de mon appartement. Ravi d'avoir fait appel à ses services !",
+    stars: 5,
+  },
+  {
+    id: "35",
+    name: "Luke Louca",
+    message:
+      "Chantier réalisé dans un appartement en rénovation dans l'Écusson : remplacement d'un chauffe eau et installation d'une climatisation réversible monobloc. Travail soigné et professionnel.",
+    stars: 5,
+  },
+  {
+    id: "36",
+    name: "Serdar Yucetepe",
+    message:
+      "Mon chauffe-eau avait lâché en pleine semaine. Intervention rapide sous 24h pour remplacement. Le plombier a su me proposer plusieurs modèles adaptés à mon logement. Je recommande.",
+    stars: 5,
+  },
+  {
+    id: "37",
+    name: "Sefkan Aydogdu",
+    message:
+      "Super plombier, je recommande à 100% ! Intervention rapide, professionnelle et très propre. Le plombier a rapidement identifié et résolu le problème.",
+    stars: 5,
+  },
+  {
+    id: "38",
+    name: "Roxane",
+    message:
+      "Très content de l'installation de ma climatisation Mitsubishi. Le travail est soigné, le technicien était propre et professionnel. Tout fonctionne parfaitement, sans bruit. Devis respecté. Je recommande !",
+    stars: 5,
+  },
+  {
+    id: "39",
+    name: "Denis Gundogdu",
+    message:
+      "Très bonne expérience globale. Dès le premier appel, l'accueil a été chaleureux et informatif. Le devis, très détaillé et clair, m'a été envoyé rapidement. Je recommande.",
+    stars: 5,
+  },
+  {
+    id: "40",
+    name: "Azak Daniel",
+    message:
+      "Je recommande vivement ce plombier pour l'installation de ma climatisation à Lattes. Le travail a été effectué avec professionnalisme, dans les délais.",
+    stars: 5,
+  },
+  {
+    id: "41",
+    name: "Renaud Duprat",
+    message:
+      "Suite à l'explosion de notre chauffe-eau dans la nuit du 24 au 25 décembre, Filiz nous a été recommandé par un autre professionnel qui ne pouvait pas intervenir. Réactivité exceptionnelle.",
+    stars: 5,
+  },
+  {
+    id: "42",
+    name: "F.F",
+    message:
+      "Mon chauffe eau est tombé en panne en plein week-end. J'ai contacté ce plombier et il a réagi aussitôt. Le plombier a installé le nouvel appareil rapidement et proprement. Le prix était transparent et conforme au devis",
+    stars: 5,
+  },
+  {
+    id: "43",
+    name: "Ozgr F",
+    message:
+      "Très satisfait du service. Intervention rapide pour un chauffe eau en panne. Devis professionnel, travail soigné et prix raisonnable. Que demander de plus ? Je recommande 100%",
+    stars: 5,
+  },
+  {
+    id: "44",
+    name: "Serge",
+    message:
+      "Travail parfait, (modification sous plan de travail des écoulements de machines à laver et lave-vaisselle, et entretien de la climatisation) très méticuleux. Je recommande.",
+    stars: 5,
+  },
+  {
+    id: "45",
+    name: "Florian Ines",
+    message:
+      "Venus ce jour pour une révision de mes 4 clims, il a effectué un travail très professionnel et ce fut un plaisir d'échanger avec lui. Je recommande les yeux fermés cette entreprise",
+    stars: 5,
+  },
+  {
+    id: "46",
+    name: "Devran",
+    message:
+      "Une entreprise avec une approche sympathique et chaleureuse. L'équipe écoute attentivement les besoins du client, les comprend parfaitement et propose des solutions efficaces. Un vrai plaisir de collaborer avec eux.",
+    stars: 5,
+  },
+  {
+    id: "47",
+    name: "Nathalie Chapelier",
+    message:
+      "Très satisfaite de cette intervention. Personne à l'écoute, agréable. Travail soigné, propre et sérieux. A pris le temps de tout vérifier pour ne rien laisser au hasard. Je recommande sans hésiter.",
+    stars: 5,
+  },
+  {
+    id: "48",
+    name: "Sidar Gezici",
+    message:
+      "Intervention rapide, efficace et prix raisonnable. Le plombier était ponctuel, travail propre et très sympathique. Je vous recommande les yeux fermés",
+    stars: 5,
+  },
+  {
+    id: "49",
+    name: "Alexis Simon",
+    message:
+      "Un grand merci Fezai ! Remplacement d'un cumulus dans la journée, avec un travail soigné, propre et efficace.",
+    stars: 5,
+  },
+  {
+    id: "50",
+    name: "Gaëlle",
+    message:
+      "Je recommande vivement cette entreprise pour tous vos besoins en plomberie. Récemment, j'ai fait appel à eux pour l'installation d'une climatisation. Résultat impeccable.",
+    stars: 5,
+  },
+  {
+    id: "51",
+    name: "Jean-Luc Rodriguez",
+    message:
+      "Très professionnel. Toujours plein d'idées afin de résoudre les problèmes techniques. Disponible et à l'écoute des besoins ! Top !!!",
+    stars: 5,
+  },
+  {
+    id: "52",
+    name: "Adnan Kourdjee",
+    message:
+      "Merci pour votre réactivité et votre disponibilité très rapide. Nous avons contacté TCS Plomberie pour l'entretien de notre chauffe-eau thermodynamique. Prestation de qualité.",
+    stars: 5,
+  },
+  {
+    id: "53",
+    name: "Lea Helin Tas",
+    message:
+      "Un grand merci à TCS plomberie climatisation pour l'installation de ma climatisation et de mon nouveau chauffe eau électrique. Travail soigné et professionnel.",
+    stars: 5,
+  },
+  {
+    id: "54",
+    name: "Elisa Lario",
+    message:
+      "Très satisfait de l'intervention ! TCS Plomberie est venu réparer ma clim et a été à la fois ponctuel, professionnel et très sympathique. Il a rapidement résolu le problème.",
+    stars: 5,
+  },
+  {
+    id: "55",
+    name: "İsmail Doğan",
+    message:
+      "Merci beaucoup, le devis très clair, le prix raisonnable, travail propre et professionnel. Je recommande les yeux fermés",
+    stars: 5,
+  },
+  {
+    id: "56",
+    name: "Lezap",
+    message:
+      "L'entreprise TCS Plomberie est intervenue pour réparer ma clim, rapidité, ponctualité, qualité du travail. Tout y est !! Je recommande très vivement cette entreprise.",
+    stars: 5,
+  },
+  {
+    id: "57",
+    name: "Michel Ange Fopa",
+    message:
+      "Fezaï est précautionneux et efficace. Il sait se montrer très disponible. Je recommande.",
+    stars: 5,
+  },
+  {
+    id: "58",
+    name: "Caroline Chariot",
+    message:
+      "Très bon professionnel. Efficacité, rapidité, propreté et qualité sont au rendez-vous. Je recommande vivement !",
+    stars: 5,
+  },
+  {
+    id: "59",
+    name: "Mero",
+    message:
+      "L'entreprise est intervenue chez moi pour la rénovation complète d'une salle de bain et la création d'une seconde salle de bain dans une autre pièce. Résultat impeccable.",
+    stars: 5,
+  },
+  {
+    id: "60",
+    name: "Marie Anne",
+    message:
+      "Chauffe-eau installé par TCS Plomberie Climatisation. Travail soigné et professionnel. Je recommande.",
+    stars: 5,
+  },
+  {
+    id: "61",
+    name: "Léa Sellin",
+    message:
+      "Intervention rapide et efficace pour la réparation de mes WC. En plus super sympa, je recommande. Encore merci !!",
+    stars: 5,
+  },
+  {
+    id: "62",
+    name: "Solene Panhaleux",
+    message:
+      "Nous avons contacté TCS plomberie en urgence pour une fuite d'eau dans la cuisine. Nous avons été dépannés rapidement et la personne qui est venue nous dépanner était très professionnelle.",
+    stars: 5,
+  },
+  {
+    id: "63",
+    name: "Carla Jo",
+    message:
+      "Merci à Filiz pour son professionnalisme, sa disponibilité et son sourire. Il a su prendre le temps de vérifier toute la plomberie de notre maison et de nous conseiller.",
+    stars: 5,
+  },
+  {
+    id: "64",
+    name: "D Mi",
+    message:
+      "J'ai fait passer 4 artisans pour une clim. J'ai entendu 4 discours différents + devis très différents. TCS Plomberie m'a convaincu par sa transparence.",
+    stars: 5,
+  },
+  {
+    id: "65",
+    name: "Léa Lecocq",
+    message:
+      "Intervention très rapide et efficace sur notre fuite, un samedi, avec un tarif vraiment raisonnable ! Merci beaucoup !",
+    stars: 5,
+  },
+  {
+    id: "66",
+    name: "Ramy Akl",
+    message:
+      "La prise de rdv a été très facile, j'ai voulu poser un climatiseur en urgence à cause des grosses chaleurs. Très réactif et professionnel, je recommande.",
+    stars: 5,
+  },
+  {
+    id: "67",
+    name: "Azad",
+    message:
+      "Chauffe-eau installé. Pro, propre, pas de surprise. Tout marche. Recommandé.",
+    stars: 5,
+  },
+  {
+    id: "68",
+    name: "Berat Saymadi",
+    message:
+      "J'ai appelé l'entreprise TCS plomberie en urgence, le technicien est venu assez rapidement pour une fuite d'eau aussitôt réparée, professionnel, travail propre, je recommande vivement cette entreprise",
+    stars: 5,
+  },
+  {
+    id: "69",
+    name: "Will Dels",
+    message:
+      "Je recommande !! L'intervention était pour la réparation de notre pompe à chaleur. Diagnostic / réparation était au top !",
+    stars: 5,
+  },
+  {
+    id: "70",
+    name: "Michèle Lopez",
+    message:
+      "L'entreprise est intervenu pour une rénovation des tuyauteries salle de bains et cuisine. Travail soigné et propre, perfection, mieux qu'on espérait. Sérieux, sympa et méthodique, nous sommes ravis, nous recommandons.",
+    stars: 5,
+  },
+  {
+    id: "71",
+    name: "Evelyne Pallet",
+    message:
+      "Très disponible, efficace. Il est venu le 1er mai me réparer une fuite et a accepté de régler mes problèmes du goutte à goutte du jardin. Je le recommande vivement.",
+    stars: 5,
+  },
+  {
+    id: "72",
+    name: "Julien Juljur",
+    message:
+      "J'ai contacté cette société pour déplacer un split de clim. Le travail a été réalisé comme annoncé et dans les temps. Je recommande.",
+    stars: 5,
+  },
+  {
+    id: "73",
+    name: "Thomas Petit",
+    message:
+      "Très réactif ! Il a su gérer avec le service après-vente. Vraiment je recommande !",
+    stars: 5,
+  },
+  {
+    id: "74",
+    name: "Miraz Dersim",
+    message:
+      "Très professionnel, à l'écoute, un devis détaillé, le travail propre et des produits de qualité, prix raisonnable, je suis très satisfait de la prestation.",
+    stars: 5,
+  },
+  {
+    id: "75",
+    name: "Zuhal",
+    message:
+      "Très sympathique et réactif efficace prix raisonnable, bon plombier avec un appel simple il est venu le jour d'intervention avec les matériels nécessaires pour réparer la fuite un grand merci, je recommande 100 %",
+    stars: 5,
+  },
+  {
+    id: "76",
+    name: "Azno Cian",
+    message:
+      "Intervention réactive, la fuite trouvée rapidement, travail soigné et efficace, personnel très sympa, je recommande à 100 %",
+    stars: 5,
+  },
+  {
+    id: "77",
+    name: "Fa Fa",
+    message:
+      "Dr. en pharmacie sur Boutonnet. Besoin d'une climatisation, je suis passée par le bouche à oreille et très satisfaite. Prix raisonnable pour la qualité et le professionnalisme. Finitions parfaites. Je recommande les yeux fermés.",
+    stars: 5,
+  },
+  {
+    id: "78",
+    name: "Aicha El Guilli",
+    message:
+      "Très professionnel et disponible. Son travail est propre, et se fait dans la joie et la bonne humeur. Je le recommande sans hésiter",
+    stars: 5,
+  },
+  {
+    id: "79",
+    name: "Guillaume",
+    message:
+      "Super prestation rapide, technicien serviable qui prend le temps pour bien faire le travail",
+    stars: 5,
+  },
+  {
+    id: "80",
+    name: "Didier",
+    message:
+      "Intervention sur climatisation gainable, un grand merci pour le travail fourni ainsi que les conseils d'entretien. Je recommande",
+    stars: 5,
+  },
+  {
+    id: "81",
+    name: "Julien",
+    message:
+      "Très bon plombier, il m'a changé mon WC. Travaux rapides, propres et sûrs. Je le recommande fortement.",
+    stars: 5,
+  },
+  {
+    id: "82",
+    name: "Aurélien B.",
+    message:
+      "Intervention très rapide qui a résolu mon problème (installation de cartouches filtrantes sur mon installation d'eau). Merci beaucoup !",
+    stars: 5,
+  },
+  {
+    id: "83",
+    name: "Daria Prokofyeva",
+    message:
+      "Efficace et disponible rapidement, très sympa, prix correct, donc on est très content.",
+    stars: 5,
+  },
+  {
+    id: "84",
+    name: "Leon",
+    message:
+      "Devis très pro et interventions rapides, qualité de la prestation, je recommande 100 %",
+    stars: 5,
+  },
+  {
+    id: "85",
+    name: "JM Bellafiore",
+    message: "Agréable, compétent, fiable; excellent, je recommande.",
+    stars: 5,
+  },
+  {
+    id: "86",
+    name: "Arya Restaurant",
+    message: "Merci beaucoup pour la rapidité 👏",
+    stars: 5,
+  },
+  {
+    id: "87",
+    name: "Meddy Lesdel",
+    message: "Sérieux, travail efficace et propre. N'hésitez pas !",
+    stars: 5,
+  },
+  {
+    id: "88",
+    name: "Enzo D'Alessio",
+    message: "Au top, réactif, et du super boulot..",
+    stars: 5,
+  },
+  {
+    id: "89",
+    name: "Sven Mozsar",
+    message: "Très réactif et professionnel !",
+    stars: 5,
+  },
+  {
+    id: "90",
+    name: "Laure Bouvier",
+    message:
+      "Je suis très satisfaite de TCS Plomberie - Climatisation, très sérieux et professionnel.",
+    stars: 5,
+  },
+  {
+    id: "91",
+    name: "Olivia",
+    message:
+      "Service parfait. Devis clair, travail propre. Je recommande vivement.",
+    stars: 5,
+  },
 ];
 
 export const faqHomepage = [
