@@ -219,6 +219,54 @@ export const reviews = [
       "Plombier de confiance, très bonne communication et très réactif. Nous sommes très satisfait du remplacement de notre ballon d'eau chaude,ils nous ont établis un devis très rapidement et sont intervenus très rapidement également sachant que nous n'avions plus d'eau chaude, je vous recommande cette société Thermo Clim Sanitaire",
     stars: 5,
   },
+  {
+    id: "25",
+    name: "Umut Çetinkaya",
+    message:
+      "Plus d'eau chaude un vendredi soir. Appelé l'entreprise TCS plomberie le samedi matin, il était là à 10h. Il a confirmé la panne irréparable, proposé un modèle adapté et procédé au remplacement immédiat. Travail propre et professionnel. J'avais de l'eau chaude le jour même. Très satisfait de la réactivité et de l'efficacité en situation d'urgence, je recommande",
+    stars: 5,
+  },
+  {
+    id: "26",
+    name: "Marius Saltet",
+    message: "Super taf 👍",
+    stars: 5,
+  },
+  {
+    id: "27",
+    name: "Esther",
+    message:
+      "Installation chauffe-eau et climatisation. Nous avons confié à cette entreprise le remplacement de notre vieux chauffe-eau et l'installation d'une nouvelle climatisation. Très bonne expérience. Le devis était clair et détaillé pour les deux postes. Le travail a été effectué avec soin, dans les délais, et l'atelier a été laissé parfaitement propre. Les deux installations fonctionnent parfaitement. Un grand merci pour votre professionnalisme. Je recommande vivement.",
+    stars: 5,
+  },
+  {
+    id: "28",
+    name: "Morgane Cassimally",
+    message:
+      "Le rendez-vous était très bien et rapide, un professionnalisme et un savoir faire au top !! Je recommande vivement !!!",
+    stars: 5,
+  },
+  {
+    id: "29",
+    name: "Pauline Pocapi",
+    message:
+      "Un travail incroyable, la clim réversible et impeccable à l'extérieur comme à l'intérieur. J'ai gagné 10 degrés chez moi avec ça. Merci beaucoup, je le recommande vivement !",
+    stars: 5,
+  },
+  {
+    id: "30",
+    name: "Laurence Ciabrini",
+    message:
+      "Impeccable installation disponibilité rendu du travail propre et soigné",
+    stars: 5,
+  },
+  {
+    id: "31",
+    name: "Kasim Yos",
+    message:
+      "Notre ballon d'eau chaude a rendu l'âme sans prévenir. En urgence, nous avons fait appel à TCS Plomberie Climatisation Montpellier. Ce qui a fait la différence : la transparence et le conseil. Malgré l'urgence, le technicien a pris le temps de nous expliquer les options sans forcer la vente. Il a insisté sur l'importance d'une installation aux normes. Le remplacement a été fait dans la foulée, avec une mise en service et des explications claires. Prix conforme au devis instantané. Une intervention stressante transformée en expérience rassurante. Merci !",
+    stars: 5,
+  },
 ];
 
 export const faqHomepage = [

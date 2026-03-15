@@ -39,10 +39,10 @@ export const LocalBusinessJsonLd = () => {
           ],
           aggregateRating: {
             "@type": "AggregateRating",
-            ratingValue: "4.96",
+            ratingValue: "5.0",
             bestRating: "5",
             worstRating: "1",
-            ratingCount: "24",
+            ratingCount: "94",
           },
         }),
       }}
