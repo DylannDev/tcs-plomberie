@@ -24,7 +24,7 @@ export default function TarifsPage() {
   ]);
 
   return (
-    <main className="px-4 sm:px-6 lg:px-8">
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
