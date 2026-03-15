@@ -6,6 +6,7 @@ import { Coverage } from "../components/sections/coverage";
 import { Section } from "../components/ui/section";
 import { Faq } from "../components/sections/faq";
 import { faqHomepage } from "../data";
+import faqSchema from "../lib/schema/faqSchema";
 import { SimilarPosts } from "../components/sections/similar-posts";
 import { HeroMobile } from "../components/sections/hero-mobile";
 import { Certificate } from "../components/sections/certificate-section";
@@ -16,6 +17,10 @@ export default function Home() {
 
   return (
     <main className="w-full">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Hero />
       {/* <HeroMobile /> */}
 

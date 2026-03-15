@@ -4,7 +4,6 @@ import { Outfit } from "next/font/google";
 import Script from "next/script";
 import { Navbar } from "../components/layout/navbar";
 import { Footer } from "../components/layout/footer";
-import faqSchema from "../lib/schema/faqSchema";
 import { organizationSchema } from "../lib/schema/organizationSchema";
 import { Section } from "../components/ui/section";
 import { PreFooter } from "../components/sections/pre-footer";
@@ -49,10 +48,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
         <Script
           id="gtm"

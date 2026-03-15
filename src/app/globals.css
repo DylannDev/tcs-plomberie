@@ -53,6 +53,9 @@ body {
     padding-left: 1rem;
     @apply list-disc list-inside space-y-1;
   }
+  a {
+    @apply underline underline-offset-4 font-medium text-sky-blue hover:text-black transition-colors;
+  }
 
   @apply text-base sm:text-lg text-dark-gray leading-relaxed;
 }
