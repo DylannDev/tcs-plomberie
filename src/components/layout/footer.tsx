@@ -85,6 +85,35 @@ function FooterMenu() {
   );
 }
 
+function FooterLegalLinks() {
+  return (
+    <div className="flex flex-col items-center md:items-start lg:items-end text-center md:text-left w-full">
+      <div className="flex flex-col">
+        <Typography
+          as="h3"
+          className="text-xl text-yellow font-bold mb-4 md:mb-6 uppercase"
+        >
+          Légal
+        </Typography>
+        <div className="space-y-2">
+          <Link
+            href="/mentions-legales"
+            className="block text-xl hover:text-yellow transition-colors duration-150"
+          >
+            Mentions légales
+          </Link>
+          <Link
+            href="/politique-confidentialite"
+            className="block text-xl hover:text-yellow transition-colors duration-150"
+          >
+            Politique de confidentialité
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function FooterSocial() {
   return (
     <div className="flex flex-col w-full items-center md:items-start lg:items-end">
@@ -173,6 +202,7 @@ export function Footer() {
               </div>
               <div className="w-full lg:w-1/2 flex flex-col md:flex-row lg:flex-row gap-12 md:gap-8">
                 <FooterMenu />
+                <FooterLegalLinks />
                 <FooterSocial />
               </div>
             </div>
