@@ -2,7 +2,6 @@
 
 import { capitalizeFirstLetter, cn } from "@/src/lib/utils";
 import { Star } from "lucide-react";
-import React from "react";
 import { GoogleIcon } from "../ui/brand-icons";
 
 export const ReviewCard = ({
