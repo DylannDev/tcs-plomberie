@@ -60,6 +60,21 @@ export default function RootLayout({
         })(window,document,'script','dataLayer','GTM-PGRTSF25');`,
           }}
         />
+        <Script
+          id="google-ads"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11529087181"
+        />
+        <Script
+          id="google-ads-config"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-11529087181');`,
+          }}
+        />
       </head>
       <body className={`antialiased relative overflow-x-hidden`}>
         <noscript>
