@@ -9,9 +9,9 @@ import { Breadcrumb } from "@/src/components/ui/breadcrumb";
 import { generateBreadcrumbSchema } from "@/src/lib/schema/breadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Tarifs plomberie, chauffage et climatisation | TCS Plomberie",
+  title: "Tarifs plombier & chauffagiste Montpellier - TCS Plomberie",
   description:
-    "Tarifs plomberie, chauffage, climatisation à Montpellier : installation, dépannage, entretien. Devis gratuit, prix clairs et transparents.",
+    "Tarifs plomberie, chauffage et climatisation à Montpellier : dépannage, installation, entretien. Prix clairs, devis gratuit 7j/7 avec TCS Plomberie.",
   alternates: {
     canonical: "/tarifs",
   },

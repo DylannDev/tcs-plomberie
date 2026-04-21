@@ -14,18 +14,18 @@ import { Breadcrumb } from "@/src/components/ui/breadcrumb";
 import { getAllPosts } from "@/src/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Plombier à Montpellier et alentours - TCS Plomberie",
+  title: "Dépannage plombier Montpellier 7j/7 - TCS Plomberie",
   description:
-    "TCS Plomberie intervient rapidement dans tout l'Hérault pour tous vos besoins en plomberie : dépannage d'urgence, installation sanitaire, entretien et rénovation. Devis gratuit 7j/7.",
+    "Dépannage plombier à Montpellier 7j/7 : fuite d'eau, WC bouché, chauffe-eau, sanitaires. Installation, rénovation et entretien. Devis gratuit, artisan local.",
   keywords:
     "plombier Montpellier, plomberie Hérault, dépannage plomberie, installation sanitaires, chauffe-eau, fuites d'eau",
   alternates: {
     canonical: "/plomberie",
   },
   openGraph: {
-    title: "Plombier Montpellier et alentours - TCS Plomberie",
+    title: "Dépannage plombier Montpellier 7j/7 - TCS Plomberie",
     description:
-      "TCS Plomberie intervient rapidement dans tout l'Hérault pour tous vos besoins en plomberie : dépannage d'urgence, installation sanitaire, entretien et rénovation.",
+      "Dépannage plombier à Montpellier 7j/7 : fuite d'eau, WC bouché, chauffe-eau, sanitaires. Installation, rénovation et entretien. Devis gratuit, artisan local.",
     type: "website",
     locale: "fr_FR",
   },

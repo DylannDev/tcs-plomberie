@@ -14,18 +14,18 @@ import { Breadcrumb } from "@/src/components/ui/breadcrumb";
 import { getAllPosts } from "@/src/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Chauffage à Montpellier et alentours - TCS Plomberie",
+  title: "Chauffagiste Montpellier : installation & entretien - TCS",
   description:
-    "TCS Plomberie installe et entretient vos systèmes de chauffage dans tout l'Hérault : pompe à chaleur, radiateurs, entretien et optimisation énergétique. Devis gratuit.",
+    "Chauffagiste à Montpellier : installation & entretien chaudière, pompe à chaleur, radiateurs. Artisan RGE, intervention 7j/7, devis gratuit immédiat.",
   keywords:
-    "chauffage Montpellier, chauffagiste Hérault, pompe à chaleur, installation chauffage, dépannage chauffage",
+    "chauffage Montpellier, chauffagiste Hérault, pompe à chaleur, installation chauffage, entretien chauffage, dépannage chauffage",
   alternates: {
     canonical: "/chauffage",
   },
   openGraph: {
-    title: "Chauffage Montpellier et alentours - TCS Plomberie",
+    title: "Chauffagiste Montpellier : installation & entretien - TCS",
     description:
-      "TCS Plomberie installe et entretient vos systèmes de chauffage dans tout l'Hérault : pompe à chaleur, radiateurs, entretien et optimisation énergétique.",
+      "Chauffagiste à Montpellier : installation & entretien chaudière, pompe à chaleur, radiateurs. Artisan RGE, intervention 7j/7, devis gratuit immédiat.",
     type: "website",
     locale: "fr_FR",
   },

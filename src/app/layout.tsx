@@ -11,19 +11,18 @@ import { LocalBusinessJsonLd } from "../components/seo/LocalBusinessJsonLd";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tcs-plomberie-montpellier.fr"),
-  title: "Plombier Montpellier | Dépannage & installation 7j/7 - TCS Plomberie",
+  title: "Plombier urgence Montpellier 7j/7 - TCS Plomberie",
   description:
-    "Plombier à Montpellier, TCS Plomberie intervient 7j/7 pour vos urgences : fuites, WC bouchés, dépannage, installation et entretien chauffage et climatisation. Devis gratuit.",
+    "Plombier à Montpellier 7j/7 : dépannage urgence fuite, WC bouché, chauffe-eau. Installation plomberie, chauffage, climatisation. Devis gratuit immédiat.",
   keywords:
     "plombier Montpellier, dépannage plomberie Montpellier, chauffagiste Montpellier, climatisation Montpellier, urgence plombier Montpellier, installation plomberie, entretien chaudière, dépannage climatisation",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title:
-      "Plombier, chauffagiste & climatisation à Montpellier | Thermo Clim Sanitaire",
+    title: "Plombier urgence Montpellier 7j/7 - TCS Plomberie",
     description:
-      "Intervention rapide pour vos besoins en plomberie, chauffage et climatisation à Montpellier et alentours. Devis gratuit immédiat avec Thermo Clim Sanitaire Plomberie, artisan de confiance 7j/7.",
+      "Plombier à Montpellier 7j/7 : dépannage urgence fuite, WC bouché, chauffe-eau. Installation plomberie, chauffage, climatisation. Devis gratuit immédiat.",
     type: "website",
     locale: "fr_FR",
   },

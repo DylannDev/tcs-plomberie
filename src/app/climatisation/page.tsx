@@ -17,18 +17,18 @@ import { Breadcrumb } from "@/src/components/ui/breadcrumb";
 import { getAllPosts } from "@/src/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Climatisation à Montpellier et alentours - TCS Plomberie",
+  title: "Installation, devis & entretien climatisation Montpellier",
   description:
-    "TCS Plomberie installe et entretient vos systèmes de climatisation dans tout l'Hérault : installation, dépannage, entretien et optimisation énergétique. Devis gratuit.",
+    "Climatisation à Montpellier : installation, devis & entretien clim réversible. Pompe à chaleur air/air, mono et multi-split. Intervention 7j/7 avec TCS.",
   keywords:
-    "climatisation Montpellier, climatiseur Hérault, installation climatisation, dépannage climatisation, entretien climatisation",
+    "climatisation Montpellier, climatiseur Hérault, installation climatisation, devis climatisation, entretien climatisation, pompe à chaleur",
   alternates: {
     canonical: "/climatisation",
   },
   openGraph: {
-    title: "Climatisation Montpellier et alentours - TCS Plomberie",
+    title: "Installation, devis & entretien climatisation Montpellier",
     description:
-      "TCS Plomberie installe et entretient vos systèmes de climatisation dans tout l'Hérault : installation, dépannage, entretien et optimisation énergétique.",
+      "Climatisation à Montpellier : installation, devis & entretien clim réversible. Pompe à chaleur air/air, mono et multi-split. Intervention 7j/7 avec TCS.",
     type: "website",
     locale: "fr_FR",
   },

@@ -5,9 +5,9 @@ import { Breadcrumb } from "@/src/components/ui/breadcrumb";
 import { generateBreadcrumbSchema } from "@/src/lib/schema/breadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Blog plomberie, chauffage et climatisation | TCS Plomberie",
+  title: "Blog plomberie & chauffage Montpellier - TCS Plomberie",
   description:
-    "Conseils et guides pour l'entretien, la réparation et l'installation en plomberie, chauffage et climatisation. TCS Plomberie à votre service.",
+    "Conseils et guides plomberie, chauffage et climatisation à Montpellier. Entretien, réparation, installation : tous les conseils de TCS Plomberie.",
   alternates: {
     canonical: "/blog",
   },

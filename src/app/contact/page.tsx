@@ -7,9 +7,9 @@ import { Breadcrumb } from "@/src/components/ui/breadcrumb";
 import { generateBreadcrumbSchema } from "@/src/lib/schema/breadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Contactez TCS Plomberie à Montpellier",
+  title: "Contact plombier Montpellier 7j/7 - TCS Plomberie",
   description:
-    "Besoin d'un dépannage urgent ou devis gratuit ? Contactez TCS Plomberie à Montpellier. Intervention 7j/7 en plomberie, chauffage et climatisation.",
+    "Contactez TCS Plomberie à Montpellier pour un dépannage urgent ou un devis gratuit. Intervention 7j/7 en plomberie, chauffage et climatisation.",
   alternates: {
     canonical: "/contact",
   },
