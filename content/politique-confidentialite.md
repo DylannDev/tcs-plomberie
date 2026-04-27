@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-<p className="text-gray-dark text-center">Mise à jour : 16/03/2026</p>
+<p className="text-gray-dark text-center">Mise à jour : 27/04/2026</p>
 
 ## 1. Données collectées
 
@@ -31,3 +31,15 @@ Les données collectées sont destinées exclusivement à **Thermo Clim Sanitair
 Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'opposition et de suppression de vos données.
 
 Pour exercer vos droits : [thermoclimsanitaire@gmail.com](mailto:thermoclimsanitaire@gmail.com)
+
+## 6. Cookies et traceurs
+
+Le site utilise des cookies pour mesurer son audience et suivre l'efficacité de ses campagnes publicitaires. Aucun cookie non essentiel n'est déposé avant votre consentement.
+
+Cookies utilisés :
+
+- **Google Tag Manager** : gestionnaire de balises permettant de déclencher les outils ci-dessous.
+- **Google Analytics 4** : mesure d'audience (statistiques de visite, pages consultées).
+- **Google Ads** : suivi des conversions publicitaires.
+
+Vous pouvez accepter, refuser ou modifier votre choix à tout moment depuis la page [Préférences cookies](/preferences-cookies). Votre choix est conservé pendant 6 mois sur votre navigateur.

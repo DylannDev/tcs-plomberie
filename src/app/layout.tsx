@@ -8,6 +8,7 @@ import { organizationSchema } from "../lib/schema/organizationSchema";
 import { Section } from "../components/ui/section";
 import { PreFooter } from "../components/sections/pre-footer";
 import { LocalBusinessJsonLd } from "../components/seo/LocalBusinessJsonLd";
+import { CookieBanner } from "../components/layout/cookie-banner";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tcs-plomberie-montpellier.fr"),
@@ -47,6 +48,24 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <Script
+          id="consent-default"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied',
+              'functionality_storage': 'denied',
+              'personalization_storage': 'denied',
+              'security_storage': 'granted',
+              'wait_for_update': 500
+            });`,
+          }}
         />
         <Script
           id="gtm"
@@ -93,6 +112,7 @@ export default function RootLayout({
           </Section>
           <Footer />
         </div>
+        <CookieBanner />
       </body>
     </html>
   );
